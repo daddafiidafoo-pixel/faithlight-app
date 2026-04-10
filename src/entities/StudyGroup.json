@@ -1,0 +1,43 @@
+{
+  "name": "StudyGroup",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Group name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Group description and purpose"
+    },
+    "creatorEmail": {
+      "type": "string",
+      "description": "Email of group creator"
+    },
+    "creatorName": {
+      "type": "string",
+      "description": "Name of group creator"
+    },
+    "memberEmails": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [],
+      "description": "Array of member emails"
+    },
+    "memberCount": {
+      "type": "number",
+      "default": 1,
+      "description": "Total member count"
+    },
+    "isPrivate": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether group is private"
+    },
+    "inviteCode": {
+      "type": "string",
+      "description": "Invite code for joining"
+    }
+  },
+  "required": ["name", "description", "creatorEmail", "creatorName"]
+}

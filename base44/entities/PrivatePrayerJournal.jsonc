@@ -1,0 +1,95 @@
+{
+  "name": "PrivatePrayerJournal",
+  "type": "object",
+  "properties": {
+    "userEmail": {
+      "type": "string",
+      "description": "Email of the user who owns this journal entry"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the prayer entry"
+    },
+    "content": {
+      "type": "string",
+      "description": "Full prayer text or journal entry"
+    },
+    "entryDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date and time of the prayer entry"
+    },
+    "mood": {
+      "type": "string",
+      "enum": [
+        "grateful",
+        "hopeful",
+        "struggling",
+        "peaceful",
+        "seeking",
+        "joyful",
+        "anxious",
+        "reflective"
+      ],
+      "description": "User's emotional state when writing"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "personal",
+        "family",
+        "health",
+        "work",
+        "faith",
+        "gratitude",
+        "intercession",
+        "other"
+      ],
+      "default": "personal",
+      "description": "Prayer category"
+    },
+    "isFavorite": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether this entry is marked as favorite"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "User-defined tags for organization"
+    },
+    "linkedVerseReference": {
+      "type": "string",
+      "description": "Optional Bible verse reference (e.g., John 3:16)"
+    },
+    "reflections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "note": {
+            "type": "string"
+          },
+          "answered": {
+            "type": "boolean"
+          }
+        }
+      },
+      "default": [],
+      "description": "Array of reflections added to this prayer over time"
+    }
+  },
+  "required": [
+    "userEmail",
+    "title",
+    "content",
+    "entryDate"
+  ]
+}

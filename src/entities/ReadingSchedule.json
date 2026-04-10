@@ -1,0 +1,38 @@
+{
+  "name": "ReadingSchedule",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User email"
+    },
+    "title": {
+      "type": "string",
+      "description": "Reading plan title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Plan description"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Plan start date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Plan end date"
+    },
+    "chapters_per_day": {
+      "type": "number",
+      "default": 1,
+      "description": "Target chapters per day"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": ["user_email", "title", "start_date"]
+}

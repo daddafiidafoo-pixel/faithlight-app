@@ -1,0 +1,78 @@
+{
+  "name": "PrayerJournalEntry",
+  "type": "object",
+  "properties": {
+    "userEmail": {
+      "type": "string",
+      "description": "Email of the user who created the entry"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title or topic of the prayer/reflection"
+    },
+    "content": {
+      "type": "string",
+      "description": "Full prayer request or reflection text"
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "en",
+        "om",
+        "am"
+      ],
+      "default": "en",
+      "description": "Language of the entry"
+    },
+    "mood": {
+      "type": "string",
+      "enum": [
+        "grateful",
+        "hopeful",
+        "struggling",
+        "peaceful",
+        "seeking",
+        "joyful"
+      ],
+      "description": "User's emotional state when writing"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "personal",
+        "family",
+        "health",
+        "work",
+        "guidance",
+        "thanksgiving",
+        "intercession",
+        "other"
+      ],
+      "default": "personal",
+      "description": "Prayer category for organization"
+    },
+    "linked_prayer_request_id": {
+      "type": "string",
+      "description": "Optional ID linking to a CommunityPrayerRequest or PinnedPrayerRequest"
+    },
+    "isFavorite": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether entry is marked as favorite"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "User-defined tags for organization",
+      "default": []
+    }
+  },
+  "required": [
+    "userEmail",
+    "title",
+    "content",
+    "language"
+  ]
+}

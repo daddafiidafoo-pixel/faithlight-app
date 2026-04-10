@@ -1,0 +1,34 @@
+# Build artifacts
+node_modules/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Auto-generated platform files (Base44 scaffolding - prevent regeneration)
+# These should NOT be in the project and are blocking production release
+src/components/ACCESSIBILITY_AUDIT_WCAG2.jsx
+src/components/ACCESSIBILITY_AUDIT_WCAG2.1.jsx
+src/components/BibleGatewayImplementation/
+src/components/studyrooms/modals.jsx
+src/components/studyrooms/modals.spec.jsx
+src/components/studyrooms/workflows.jsx
+src/components/studyrooms/workflows.spec.jsx
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*

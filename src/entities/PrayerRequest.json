@@ -1,0 +1,45 @@
+{
+  "name": "PrayerRequest",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Requester email"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "Requester name"
+    },
+    "title": {
+      "type": "string",
+      "description": "Prayer request title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Full prayer request text"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["health", "family", "work", "faith", "other"],
+      "default": "other",
+      "description": "Prayer category"
+    },
+    "prayer_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of people praying"
+    },
+    "prayed_by_emails": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [],
+      "description": "Emails of people who prayed"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether request is active"
+    }
+  },
+  "required": ["user_email", "user_name", "title", "description"]
+}

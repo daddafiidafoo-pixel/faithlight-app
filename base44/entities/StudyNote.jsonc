@@ -1,0 +1,70 @@
+{
+  "name": "StudyNote",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the note owner"
+    },
+    "title": {
+      "type": "string",
+      "description": "Note title"
+    },
+    "content": {
+      "type": "string",
+      "description": "Note body text"
+    },
+    "folder": {
+      "type": "string",
+      "default": "General",
+      "description": "Folder/category name"
+    },
+    "book_id": {
+      "type": "string",
+      "description": "Bible book ID (e.g. JHN)"
+    },
+    "book_name": {
+      "type": "string",
+      "description": "Display name of the book"
+    },
+    "chapter": {
+      "type": "number",
+      "description": "Chapter number"
+    },
+    "verse_number": {
+      "type": "number",
+      "description": "Verse number"
+    },
+    "verse_reference": {
+      "type": "string",
+      "description": "Formatted reference e.g. John 3:16"
+    },
+    "verse_text": {
+      "type": "string",
+      "description": "Snapshot of the verse text"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "User tags"
+    },
+    "color": {
+      "type": "string",
+      "enum": [
+        "yellow",
+        "blue",
+        "green",
+        "pink",
+        "purple"
+      ],
+      "default": "yellow"
+    }
+  },
+  "required": [
+    "user_email",
+    "content"
+  ]
+}

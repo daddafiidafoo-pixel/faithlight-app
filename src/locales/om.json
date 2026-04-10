@@ -1,0 +1,472 @@
+{
+  "meta": {
+    "language": "om",
+    "name": "Afaan Oromoo",
+    "nativeName": "Afaan Oromoo",
+    "reviewed": true,
+    "reviewDate": "2026-03-30",
+    "version": "1.0.0",
+    "notes": "Single source of truth for all Afaan Oromoo UI strings. Bible verse content comes from Bible Brain only."
+  },
+  "common": {
+    "ok": "Kabajaa",
+    "cancel": "Haqi",
+    "close": "Cufi",
+    "back": "Duubatti",
+    "next": "Itti Fufaa",
+    "prev": "Duraa",
+    "retry": "Irra deebi'i yaali",
+    "loading": "Fe'amaa jira...",
+    "error": "Dhadhachuun tokko ta'e",
+    "noData": "Odeeffannoo hin argamne",
+    "settings": "Qindaa'ina",
+    "profile": "Profaayila",
+    "logout": "Bahuun",
+    "language": "Afaan",
+    "save": "Kuufaa",
+    "delete": "Haqaa",
+    "edit": "Guchiisa",
+    "search": "Barbaadi",
+    "filter": "Hiri",
+    "sort": "Deebisaa"
+  },
+  "home": {
+    "greetings": {
+      "morning": "Akkam Bulte",
+      "afternoon": "Akkam Oolte",
+      "evening": "Akkam Galgaloofte"
+    },
+    "subtitle": "Imala kee guyyaa guyyaan Waaqayyo wajjin",
+    "heroLine": "Guyyaa hunda dubbii Waaqayyoo keessatti jabaadhu",
+    "verseOfDay": "Aayata Guyyaa",
+    "openBible": "Macaafa Qulqulluu Bani",
+    "explainVerse": "Luqqisa Ibsi",
+    "share": "Qoodi",
+    "bookmark": "Mallattoo Dubbisaa",
+    "continueReading": "Dubbisuu Itti Fufi",
+    "streak": "Itti Fufuu Dubbisuu",
+    "selectLanguage": "Afaan Filadhu",
+    "verseError": "Aayanni hin argamne",
+    "noVerse": "Aayatni hin argamne",
+    "nowPlaying": "Amma Dhaggeeffachaa Jira",
+    "quickActions": {
+      "readBible": "Macaafa Qulqulluu Dubbisi",
+      "listenAudio": "Sagalee Dhaggeeffadhu",
+      "searchVerse": "Aayata Barbaadi",
+      "savedVerses": "Aayata Kuufaman"
+    }
+  },
+  "bible": {
+    "title": "Dubbisaa Macaafa Qulqulluu",
+    "selectBook": "Kitaaba Filadhu",
+    "selectChapter": "Boqonnaa Filadhu",
+    "playAudio": "Dhaggeeffadhu",
+    "noAudio": "Sagaleen aayata kanaaf hin jiru",
+    "chapterUnavailable": "Afaan Oromoo Bible yeroo ammaa hin argamu. Maaloo afaan Ingiliffaa itti fayyadami.",
+    "audioUnavailable": "Sagaleen boqonnaa kanaaf hin jiru",
+    "verseUnavailable": "Barruun aayataa yeroo ammaa hin argamu",
+    "tryAnother": "Boqonnaa biraa yaali",
+    "highlight": "Cimsii",
+    "copy": "Koppii Godhi",
+    "attachPrayer": "Kadhataatti Maxxansi",
+    "attachComment": "Yaadannoo irratti Maxxansi",
+    "createImage": "Suuraa Uumi",
+    "oldTestament": "Kakuu Moofaa",
+    "newTestament": "Kakuu Haaraa",
+    "loadingScripture": "Macaafa Qulqulluu fe'amaa jira...",
+    "fallbackNote": "Macaafni Qulqulluun afaan kanaan hin argamu — afaan Ingiliffaan agarsiifamaa jira"
+  },
+  "audio": {
+    "play": "Jalqabi",
+    "pause": "Raajii",
+    "stop": "Haqi",
+    "volume": "Sagalee",
+    "speed": "Ariifni",
+    "loading": "Sagalee fe'amaa jira...",
+    "nowPlaying": "Amma Dhaggeeffachaa Jira",
+    "notAvailable": "Sagaleen hin jiru",
+    "restart": "Irra deebi'i"
+  },
+  "prayer": {
+    "myPrayers": "Kadhata Koo",
+    "newPrayer": "Kadhata Haaraa",
+    "addPrayer": "Kadhata Ida'i",
+    "deletePrayer": "Kadhata Haqaa",
+    "editPrayer": "Kadhata Guchiisa",
+    "title": "Mataduree",
+    "content": "Jidha",
+    "category": "Gosa",
+    "mood": "Miira",
+    "favorite": "Midhagga Barbachisu"
+  },
+  "notifications": {
+    "daily": "Beeksisa Guyyaa",
+    "reminder": "Beeksisa",
+    "turnOn": "Kamchiisi",
+    "turnOff": "Haqi",
+    "time": "Yeroo",
+    "enabled": "Bulcha",
+    "disabled": "Haqi"
+  },
+  "profile": {
+    "name": "Maqaa",
+    "email": "Email",
+    "language": "Afaan",
+    "theme": "Facaasa",
+    "light": "Ifa",
+    "dark": "Gara Dhumaatti",
+    "notifications": "Beeksisoota",
+    "privacy": "Ichaafuu",
+    "logout": "Bahuun",
+    "accountSettings": "Qindaa'ina Akkaawuntii",
+    "appearance": "Fakkaachuu"
+  },
+  "store": {
+    "premium": "Ijaaraa",
+    "subscribe": "Gadda",
+    "cancel": "Haqi",
+    "price": "Gatii",
+    "features": "Facaasinni",
+    "monthly": "Jiidha",
+    "yearly": "Waggaa",
+    "freeVersion": "Utuu Duwwaa"
+  },
+  "settings": {
+    "appSettings": "Qindaa'ina Appi",
+    "generalSettings": "Qindaa'ina Waaltiin",
+    "advancedSettings": "Qindaa'ina Caasaa",
+    "about": "Waa'ee",
+    "version": "Baankii",
+    "privacyPolicy": "Seera Ichaafuu",
+    "termsOfService": "Hariiroo Tajaajilaa",
+    "contactSupport": "Deggertaa Quunnamaa",
+    "clearCache": "Meemori Fooqsi"
+  },
+  "errors": {
+    "networkError": "Rakkoo marsariitii irraa ka'e",
+    "oromoUnavailable": "Afaan Oromoo Bible yeroo ammaa hin argamu. Maaloo afaan Ingiliffaa itti fayyadami.",
+    "loadingFailed": "Fe'amuu hin milkaa'e",
+    "tryAgain": "Irra deebi'i yaali",
+    "goBack": "Duubatti deemi",
+    "bibleBrainError": "Bible Brain service unavailable"
+  },
+  "communityPrayerBoard": {
+    "title": "Gabatee Kadhannaa",
+    "subtitle": "Kadhannaadhaan wal jajjabeessaa",
+    "requestButton": "Gaaffii",
+    "shareRequest": "Gaaffii Ibsi",
+    "emptyTitle": "Ammaaf gaaffiin kadhannaa hin jiru",
+    "emptySubtitle": "Fedhii kee keessaa isa jalqabaa qoodi",
+    "prayerAnswered": "Kadhaan dhaabbate",
+    "filterActive": "Kadhaa kan jira",
+    "filterAnswered": "Kadhaa dhaabbate",
+    "selectLanguage": "Afaan filadhu",
+    "prayerRequests": "Gaaffiiwwan Kadhannaa",
+    "categories": {
+      "all": "Hunda",
+      "health": "Fayyaa",
+      "family": "Maatii",
+      "faith": "Amantii",
+      "work": "Hojii",
+      "relationships": "Hariiroo",
+      "gratitude": "Galata",
+      "guidance": "Gargaarsa",
+      "other": "Kan Biroo"
+    },
+    "historyTitle": "Seenaa Kadhaa",
+    "historyEmpty": "Seenaa kadhaa hin argamne",
+    "spiritualEncouragement": "Jaalala Miidga",
+    "sendWordOfEncouragement": "Dubbii miidgaa ergaa",
+    "sendEncouragement": "Miidga Ergaa",
+    "typeMessage": "Dubbii Baressi...",
+    "prayedCount": "Kadhate",
+    "markAnswered": "Dhaabbate Mallatta",
+    "beFirst": "Ilmaan duraa ta'aa",
+    "addEncouragement": "Miidga Ida'i",
+    "replyingTo": "Deebisu:",
+    "toastMessageSent": "Dubbiin ergame",
+    "toastEncouragementSent": "Miidgaan ergame",
+    "toastPrayed": "Kadhate",
+    "toastSignInRequired": "Sisii ga'i",
+    "toastFillFields": "Foddaawwan guuta",
+    "toastPosted": "Kadhaan poostame",
+    "toastFailPost": "Postuu hin milkaa'e",
+    "toastFailUpdate": "Haaromsiisuu hin milkaa'e",
+    "toastSaved": "Kuufame",
+    "toastUnsaved": "Kuufamnii haqame",
+    "posting": "Postuu...",
+    "postButton": "Poostaa",
+    "titlePlaceholder": "Mataduree Kadhaa...",
+    "bodyPlaceholder": "Kadhaa Baressi...",
+    "postAnonymously": "Waan moggaa saanii poostaa"
+  },
+  "praiseReport": {
+    "title": "Galataan Waa'ee",
+    "subtitle": "Seenaa kadhawwan dhaabbatan qoodi",
+    "share": "Qoodi",
+    "titleLabel": "Mataduree",
+    "titlePlaceholder": "Waan Waaqayyo godhe maal?",
+    "testimonyLabel": "Seenaa Kee",
+    "testimonyPlaceholder": "Seenaa kee qoodi...",
+    "postButton": "Poostaa",
+    "likeLabel": "Ameen",
+    "originalRequest": "Kadhaa Duraa Ilaali",
+    "toastPosted": "Galataan poostame",
+    "empty": "Galataan hin argamne. Kan duraa qoodi!"
+  },
+  "prayerMap": {
+    "noLocationRequests": "Kadhaalee iddoo hinargamne asii mul'ata",
+    "dragMarker": "Iddoo keetti kadhaa poostuu tokkoo qoodi"
+  },
+  "communityImpact": {
+    "title": "Dhiibbaa Hawaasaa",
+    "totalPrayers": "Kadhawwan Guutuu",
+    "answered": "Dhaabbate",
+    "activeRequests": "Kadhaa Jiru",
+    "successRate": "Haalata Dhaabbachuu",
+    "topCategories": "Gosaa Kadhaa Guddaa"
+  },
+  "notifications": {
+    "dailyReminder": "Beeksisa Kadhaa Guyyaa",
+    "reminderDescription": "Kadhuu hogganu kan jedhuu beeksi",
+    "reminderTime": "Yeroo Beeksisaa",
+    "reminderNote": "Beeksisaan jedhuu kan yeroo kana guyyaa guyyaan argattu",
+    "reminderEnabled": "Beeksisoota guyyaa bulcha",
+    "reminderDisabled": "Beeksisoota guyyaa haqi",
+    "reminderTimeUpdated": "Yeroo beeksisaa jijjiire"
+  },
+  "communityPrayerBoard": {
+    "filterByCategory": "Gosaa Hiruun"
+  },
+  "journal": {
+    "title": "Kitaaba Kadhaa",
+    "subtitle": "Karjaa itti jirtaa keessaa kadhaa keessaa qofa tuula",
+    "newEntry": "Seensa Kadhaa Haaraa",
+    "search": "Seensa barbaadi...",
+    "mood": "Miira",
+    "allMoods": "Miira Hundi",
+    "category": "Gosaa",
+    "allCategories": "Gosaa Hundi",
+    "entryTitle": "Seensa kadhaa...",
+    "entryContent": "Kadhaa kee as barreessi...",
+    "verseReference": "Barataa raga (e.g., John 3:16)",
+    "addTag": "Labela dabaluu...",
+    "add": "Dabal",
+    "markFavorite": "Giddugaleessaa jajjabeessaa",
+    "loadError": "Seensa seequun dhabame",
+    "entrySaved": "Kadhaa seequame",
+    "entryUpdated": "Seensa haaraa jijjiire",
+    "saveError": "Seena seequun dhabame",
+    "confirmDelete": "Seensa kanaa haqi?",
+    "deleted": "Seensa haqi",
+    "deleteError": "Seensa haquu dhabame",
+    "reflectionAdded": "Jeedharsi dabalamee",
+    "noEntries": "Kadhaa tuulaa hin jiru"
+  },
+  "circles": {
+    "title": "Miila Kadhaa",
+    "subtitle": "Wajjin kadhuu keessa jiraa",
+    "createNew": "Miila Haaraa Godhuu",
+    "joinWithCode": "Koodiin seensa waliin",
+    "members": "nama",
+    "created": "Miila kadhaa ulfi",
+    "createError": "Miila godhuu dhabame",
+    "invalidCode": "Koodii sirrii hin jiru",
+    "alreadyMember": "Ati dammakaa jira",
+    "full": "Miila guute",
+    "joined": "Miilaan seenu",
+    "joinError": "Miilaa seenuun dhabame",
+    "noCircles": "Miila tuula hin jiru",
+    "circleName": "Maqaa miilaa...",
+    "description": "Miila kanaaf dabarsii...",
+    "maxMembers": "Namoota hang",
+    "privateCircle": "Qaamoo dhuunfaa (seena qofa)",
+    "noMessages": "Haasawa hin jiru",
+    "messageSent": "Haasawa ergamee",
+    "sendError": "Haasawa erguun dhabame",
+    "messageType": "Gosa haasawa",
+    "encouragement": "Jajjabeessaa",
+    "prayerRequest": "Kadhaa gaafatuu",
+    "update": "Haaraa",
+    "typeMessage": "Haasawa barreessi...",
+    "codeCopied": "Koodii qopi",
+    "viewChat": "Haasawa ilaaluu"
+  },
+  "verse": {
+    "shareVerse": "Barataa qoodi",
+    "verseReference": "e.g., John 3:16",
+    "verseText": "Barataa madhaa maasii...",
+    "preview": "Ilaaluu & Qoodi",
+    "template": "Akhaasii",
+    "shareMessage": "Haasawa dabaluu (dirqama hin jiru)...",
+    "back": "Jalqaa",
+    "shareToBoard": "Miila kadhaa keessa qoodi",
+    "selectVerseFirst": "Barataa filachuu jalqabaa",
+    "sharedToCommunity": "Barataa hawaasaa qoodi",
+    "shareError": "Barataa qooduun dhabame"
+  },
+  "audio": {
+    "title": "Sagalee Macaafa Qulqulluu",
+    "play": "Dhaggeeffadhu",
+    "pause": "Dhaabaa",
+    "stop": "Gadhiisi",
+    "next": "Itti Fufuu",
+    "previous": "Duraa",
+    "loading": "Koktuu jira...",
+    "notAvailable": "Sagaleen boqonnaa kanaaf Afaan Oromootiin amma hin jiru",
+    "failedToLoad": "Sagalee seequun dhabame",
+    "chooseBook": "Macaafa fi Aayata Filadhu",
+    "oldTestament": "Seera Dubbii",
+    "newTestament": "Seera Haaraa",
+    "chapters": "Aayatoota",
+    "playbackSettings": "Haala Dhaggeeffannaa",
+    "speed": "Saffisa",
+    "volume": "Sagalee"
+  },
+  "bibleSearch": {
+    "title": "Barbaacha Kitaaba Qulqulluu",
+    "description": "Aayata, boqonnaa, ykn jecha barbaadi.",
+    "englishBibleNotice": "Kitaabni Qulqulluun Afaan filatame keessatti guutummaatti hin argamu taanaan, NT keessaa qofa barbaacha kana.",
+    "searchLabel": "Barbaacha Kitaaba Qulqulluu",
+    "searchPlaceholder": "Aayata ykn jecha barreessi",
+    "searchButton": "Barbaadi",
+    "startTitle": "Barbaacha jalqabi",
+    "startDescription": "Aayata ykn jecha barbaaduuf olitti barreessi.",
+    "resultsCount": "Firiin argame",
+    "noResultsTitle": "Firiin argamne",
+    "noResultsDescription": "Jecha ykn barataa biraa yaali.",
+    "open": "Bani"
+  },
+  "languageSelector": {
+    "label": "Afaan filadhu",
+    "helperText": "Afaan dubbisaaf barbaaddu filadhu."
+  },
+  "bibleVersionSelector": {
+    "label": "Hiikkaa Kitaaba Qulqulluu",
+    "helperText": "Hiikkaa dubbisuu barbaaddu filadhu."
+  },
+  "settingsNotifications": {
+    "sectionLabel": "Qindaa'ina",
+    "title": "Beeksisoota",
+    "description": "Akeekkachiisota, yaadachiisota fi odeeffannoowwan kam akka argattu filadhu.",
+    "cardTitle": "Filannoo Beeksisaa",
+    "cardDescription": "Beeksisoota yeroo barbaadde banuu ykn cufuu dandeessa.",
+    "quickActionsTitle": "Tarkaanfii ariifachiisaa",
+    "quickActionsDescription": "Tuqaa tokkoon beeksisoota appii hunda bani ykn cufi.",
+    "noteTitle": "Hubachiisa",
+    "noteBody": "Qindaa'inni kun filannoo beeksisa appii keessaa to'ata. Hayyamni beeksisa bilbila keetii keessattis banamuu qabaachuu mala.",
+    "actions": {
+      "save": "Jijjiirama kuusi",
+      "saving": "Kuusaa jira...",
+      "cancel": "Haqi",
+      "enableAll": "Hunda bani",
+      "disableAll": "Hunda cufi"
+    },
+    "messages": {
+      "saved": "Qindaa'inni beeksisaa milkaa'inaan haaromfameera.",
+      "saveError": "Qindaa'ina beeksisaa kuusuu hin dandeenye. Mee irra deebi'ii yaali."
+    },
+    "options": {
+      "prayerReminders": {
+        "title": "Yaadachiisa kadhannaa",
+        "description": "Akka kadhattu si yaadachiisa; jireenya hafuuraa kee keessatti itti fufiinsa akka qabaattu si gargaara."
+      },
+      "communityUpdates": {
+        "title": "Haaromsa hawaasaa",
+        "description": "Sochii gabatee kadhannaa fi odeeffannoo barbaachisaa hawaasaa irratti beeksifami."
+      },
+      "dailyVerse": {
+        "title": "Keeyyata guyyaa",
+        "description": "Guyyaa guyyaan keeyyata Kitaaba Qulqulluu ykn jajjabina gabaabaa argadhu."
+      },
+      "appAnnouncements": {
+        "title": "Beeksisa appii",
+        "description": "Amaloota haaraa, fooyya'iinsa fi oduu barbaachisaa appii irratti beeka ta'i."
+      }
+    }
+  },
+  "sermonPreparation": {
+    "title": "Qophii Lallabaa",
+    "outputLanguage": {
+      "label": "Afaan Lallabni Itti Ba'u",
+      "required": "(barbaachisaa)",
+      "helper": "Afaan kamiitu guutummaatti deeggarsa qaba?"
+    },
+    "sermonType": {
+      "label": "Gosa Lallabaa",
+      "sunday": {
+        "title": "Lallaba Dilbataa",
+        "description": "Lallaba walga'ii waldaa waliigalaa"
+      },
+      "youth": {
+        "title": "Lallaba Dargaggootaa",
+        "description": "Dargaggootaa fi mootummaa isaanii irratti xiyyeeffata"
+      },
+      "bibleStudy": {
+        "title": "Qajeelfama Qo'annoo Kitaaba Qulqulluu",
+        "description": "Qo'annoo bal'aa gaaffii marii waliin"
+      },
+      "funeral": {
+        "title": "Lallaba Awwaalchaa",
+        "description": "Jajjabinaa fi abdii yeroo gaddaa"
+      }
+    },
+    "form": {
+      "topic": "Mata-duree Lallabaa",
+      "scripture": "Lakkofsa Fudhii Macaafa Qulqulluu",
+      "scripturePlaceholder": "Fakkeenyaaf: Roomaa 8:28, Yaaqoob 1:2-4",
+      "audience": "Dhaggeeffattoota",
+      "tone": "Haala Lallabaa",
+      "doctrine": "Mormii / Amantiis Duudhaa",
+      "duration": "Yeroo Lallabaa",
+      "outputType": "Bifa Baasii",
+      "generate": "Lallaba Uumi"
+    },
+    "audienceOptions": {
+      "general": "Dhaggeeffattoota waldaa waliigalaa",
+      "youth": "Dhaggeeffattoota dargaggootaa",
+      "children": "Ijoollee",
+      "families": "Maatiiwwan",
+      "smallChurch": "Waldaa xixiqqoo",
+      "bibleStudy": "Garee qo'annoo Kitaaba Qulqulluu",
+      "evangelism": "Wangeela / Tajaajila keessaa alaa"
+    },
+    "toneOptions": {
+      "pastoral": "Tajaajilaa — Ho'aa, kunuunsaa, gara-laafessa",
+      "teaching": "Barsiisaa — Ifa, sirrii, ibsaa",
+      "preaching": "Lallabaa — Jabaataa, nama amansiisu, humna qabu",
+      "devotional": "Kadhannaa keessaa — Dhuunfaa, xiinxalaa, hafuuraa",
+      "encouraging": "Jajjabeessaa",
+      "serious": "Cimaa",
+      "simple": "Salphaa"
+    },
+    "doctrineOptions": {
+      "generalChristian": "Kiristaana waliigalaa — hunda hammata, mootummaa tokko qofaan hin daangeffamne",
+      "evangelical": "Wangeela lallabaa",
+      "pentecostal": "Pheenxeqoosxii / Kennaa hafuuraa",
+      "reformed": "Sirreeffamaa",
+      "orthodox": "Ortodoksii",
+      "catholic": "Katolikaa",
+      "baptist": "Baatistii"
+    },
+    "outputOptions": {
+      "full": "Lallaba guutuu jechuun seensa, qaama guddaa fi xumura qabu",
+      "outline": "Qabxii lallabaa gabaabaa",
+      "teachingNotes": "Yaadannoo barsiisaa",
+      "bibleStudy": "Qabxii qo'annoo Kitaaba Qulqulluu",
+      "prayer": "Ergaa kadhannaa irratti xiyyeeffate"
+    },
+    "duration": {
+      "label": "Yeroo Lallabaa",
+      "minutes": "daqiiqaa"
+    },
+    "validation": {
+      "topicRequired": "Mata-dureen lallabaa barbaachisaa dha",
+      "scriptureRequired": "Mee lakkoofsa fudhii Macaafa Qulqulluu galchi"
+    },
+    "status": {
+      "translating": "Hiikaa jira...",
+      "comingSoon": "Dhufuuf jira"
+    }
+  }
+  }

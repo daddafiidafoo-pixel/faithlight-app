@@ -1,0 +1,53 @@
+{
+  "name": "PrayerCircleMessage",
+  "type": "object",
+  "properties": {
+    "circleId": {
+      "type": "string",
+      "description": "Reference to the PrayerCircle"
+    },
+    "senderEmail": {
+      "type": "string",
+      "description": "Email of the message sender"
+    },
+    "senderName": {
+      "type": "string",
+      "description": "Display name of the sender"
+    },
+    "messageType": {
+      "type": "string",
+      "enum": [
+        "message",
+        "prayer_request",
+        "encouragement",
+        "update"
+      ],
+      "default": "message",
+      "description": "Type of message"
+    },
+    "content": {
+      "type": "string",
+      "description": "Message content"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the message was sent"
+    },
+    "linkedPrayerId": {
+      "type": "string",
+      "description": "Optional link to a prayer request in the circle"
+    },
+    "reactions": {
+      "type": "object",
+      "description": "Emoji reactions to the message (e.g., {amen: 2, heart: 3})",
+      "default": {}
+    }
+  },
+  "required": [
+    "circleId",
+    "senderEmail",
+    "senderName",
+    "content"
+  ]
+}

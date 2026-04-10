@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* WCAG 2.1 AA Focus Ring Utility */
+  .focus-ring {
+    @apply outline-0;
+  }
+  .focus-ring:focus-visible {
+    @apply outline-4 outline-offset-2 outline-indigo-600;
+  }
+
+  /* Mobile-first responsive grid — avoid horizontal scroll */
+  .responsive-grid {
+    @apply grid w-full;
+  }
+  .responsive-grid-auto {
+    @apply grid gap-4 w-full;
+  }
+  @media (max-width: 768px) {
+    .responsive-grid-auto {
+      @apply grid-cols-1;
+    }
+  }
+  @media (min-width: 768px) {
+    .responsive-grid-auto {
+      @apply grid-cols-2;
+    }
+  }
+  @media (min-width: 1024px) {
+    .responsive-grid-auto {
+      @apply grid-cols-3;
+    }
+  }
+
+  /* SafeAreaWrapper padding for mobile notches */
+  .safe-area-container {
+    @apply pt-safe pb-safe pl-safe pr-safe;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* RTL/LTR Support */
+html[dir="rtl"] body {
+  text-align: right;
+}
+
+html[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .rtl-row {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .rtl-text-start {
+  text-align: right;
+}
+
+html[dir="ltr"] .rtl-text-start {
+  text-align: left;
+}
+
+/* ── WCAG 2.1 AA Focus Rings (3px indigo + 2px offset) ── */
+:focus-visible {
+  outline: 3px solid #6C5CE7 !important;
+  outline-offset: 2px !important;
+}
+
+button:focus-visible,
+a:focus-visible,
+[role="button"]:focus-visible,
+[role="tab"]:focus-visible,
+[role="switch"]:focus-visible,
+[role="menuitem"]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #6C5CE7 !important;
+  outline-offset: 2px !important;
+}
+
+/* ── iOS WebView Safe Area Support ── */
+.pt-safe { padding-top: max(var(--safe-area-inset-top, 0px), 1rem); }
+.pb-safe { padding-bottom: max(var(--safe-area-inset-bottom, 0px), 1rem); }
+.pl-safe { padding-left: max(var(--safe-area-inset-left, 0px), 1rem); }
+.pr-safe { padding-right: max(var(--safe-area-inset-right, 0px), 1rem); }
+
+@supports (padding-bottom: max(1px, env(safe-area-inset-bottom))) {
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* ── Mobile: Force vertical stack, eliminate horizontal scroll ── */
+@media (max-width: 767px) {
+  main {
+    padding-bottom: calc(56px + env(safe-area-inset-bottom));
+    overflow-x: hidden;
+  }
+  
+  [class*="grid-cols-"] {
+    overflow-x: hidden !important;
+  }
+}
+
+/* ── Accessibility: Small pill buttons (px-3 py-1.5 text-xs) ── */
+/* Ensure minimum 44×44px tap target for all small rounded buttons */
+button[class*="px-3"][class*="py-1"][class*="rounded-full"],
+button.px-3.py-1\.5.rounded-full.text-xs,
+button.px-3.py-1\.5.rounded-full {
+  min-height: 44px !important;
+  min-width: auto !important;
+  padding: 10px 12px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

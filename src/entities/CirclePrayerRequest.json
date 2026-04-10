@@ -1,0 +1,42 @@
+{
+  "name": "CirclePrayerRequest",
+  "type": "object",
+  "properties": {
+    "circleId": {
+      "type": "string",
+      "description": "ID of the PrayerCircle"
+    },
+    "circleName": {
+      "type": "string",
+      "description": "Cached circle name"
+    },
+    "authorEmail": {
+      "type": "string",
+      "description": "Email of the person posting the request"
+    },
+    "authorName": {
+      "type": "string",
+      "description": "Display name"
+    },
+    "body": {
+      "type": "string",
+      "description": "The prayer request text"
+    },
+    "prayedByEmails": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [],
+      "description": "Emails of members who have prayed for this"
+    },
+    "prayedCount": {
+      "type": "number",
+      "default": 0
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "answered"],
+      "default": "active"
+    }
+  },
+  "required": ["circleId", "authorEmail", "authorName", "body"]
+}

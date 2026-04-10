@@ -1,0 +1,46 @@
+{
+  "name": "OfflineDownload",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User email"
+    },
+    "book_id": {
+      "type": "string",
+      "description": "Bible book ID (e.g., GEN, JHN)"
+    },
+    "book_name": {
+      "type": "string",
+      "description": "Book display name"
+    },
+    "language_code": {
+      "type": "string",
+      "description": "Language code (en, om, am)"
+    },
+    "chapters_downloaded": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "default": [],
+      "description": "Downloaded chapter numbers"
+    },
+    "download_status": {
+      "type": "string",
+      "enum": ["pending", "downloading", "completed", "failed"],
+      "default": "pending",
+      "description": "Download status"
+    },
+    "file_size_mb": {
+      "type": "number",
+      "description": "Download size in MB"
+    },
+    "downloaded_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Download timestamp"
+    }
+  },
+  "required": ["user_email", "book_id", "book_name", "language_code"]
+}

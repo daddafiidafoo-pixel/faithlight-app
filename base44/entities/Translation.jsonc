@@ -1,0 +1,31 @@
+{
+  "name": "Translation",
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "Translation key (e.g. greeting_afternoon, verse_of_the_day) \u2014 unique"
+    },
+    "en": {
+      "type": "string",
+      "description": "English text"
+    },
+    "om": {
+      "type": "string",
+      "description": "Afaan Oromoo text"
+    },
+    "description": {
+      "type": "string",
+      "description": "Where/how this string is used"
+    },
+    "group_name": {
+      "type": "string",
+      "description": "Logical group: home, verse, audio, bible, common"
+    }
+  },
+  "required": [
+    "key",
+    "en",
+    "om"
+  ]
+}

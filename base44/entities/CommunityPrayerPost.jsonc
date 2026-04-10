@@ -1,0 +1,76 @@
+{
+  "name": "CommunityPrayerPost",
+  "type": "object",
+  "properties": {
+    "authorEmail": {
+      "type": "string",
+      "description": "Email of the person posting"
+    },
+    "authorName": {
+      "type": "string",
+      "description": "Display name of the author"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title or brief summary of the prayer request"
+    },
+    "body": {
+      "type": "string",
+      "description": "Full text of the prayer request"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "health",
+        "family",
+        "faith",
+        "work",
+        "relationships",
+        "gratitude",
+        "other"
+      ],
+      "default": "other",
+      "description": "Prayer category"
+    },
+    "isAnonymous": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the post is anonymous"
+    },
+    "prayedByEmails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Emails of people who have prayed for this request"
+    },
+    "prayedCount": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of people praying for this request"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "answered"
+      ],
+      "default": "active",
+      "description": "Status of the prayer request"
+    },
+    "notifyOnPray": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether to notify author when people pray"
+    }
+  },
+  "required": [
+    "authorEmail",
+    "authorName",
+    "title",
+    "body",
+    "category",
+    "status"
+  ]
+}

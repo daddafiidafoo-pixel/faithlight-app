@@ -1,0 +1,32 @@
+{
+  "name": "PrayerLocation",
+  "type": "object",
+  "properties": {
+    "prayer_post_id": {
+      "type": "string",
+      "description": "Reference to the CommunityPrayerPost"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "Latitude coordinate (anonymized to ~100km radius)"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Longitude coordinate (anonymized to ~100km radius)"
+    },
+    "region": {
+      "type": "string",
+      "description": "Human-readable region (city/country level)"
+    },
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user who posted"
+    }
+  },
+  "required": [
+    "prayer_post_id",
+    "latitude",
+    "longitude",
+    "user_email"
+  ]
+}

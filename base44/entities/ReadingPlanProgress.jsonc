@@ -1,0 +1,70 @@
+{
+  "name": "ReadingPlanProgress",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User email who started the plan"
+    },
+    "plan_id": {
+      "type": "string",
+      "description": "Reference to ReadingPlan"
+    },
+    "started_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When user started the plan"
+    },
+    "completed_days": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "description": "Array of completed day numbers (e.g., [1, 2, 3])"
+    },
+    "current_day": {
+      "type": "number",
+      "description": "Current day in plan progression"
+    },
+    "is_completed": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether user finished entire plan"
+    },
+    "completed_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When plan was fully completed"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "day": {
+            "type": "number"
+          },
+          "note_text": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "description": "User reflections per day"
+    },
+    "last_accessed": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last time user viewed this plan"
+    }
+  },
+  "required": [
+    "user_email",
+    "plan_id",
+    "started_date",
+    "current_day"
+  ]
+}

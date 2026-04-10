@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "language": "om",
+    "language_name": "Afaan Oromoo",
+    "version_id": "oromo_bible",
+    "version_name": "Afaan Oromoo Bible"
+  },
+  "book_id": "john",
+  "book_name": "Yohannis",
+  "book_abbr": "Yoh",
+  "chapters": [
+    {
+      "chapter": 1,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "[OROMO VERSE TEXT PLACEHOLDER]",
+          "reference": "Yohannis 1:1"
+        },
+        {
+          "verse": 2,
+          "text": "[OROMO VERSE TEXT PLACEHOLDER]",
+          "reference": "Yohannis 1:2"
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verses": [
+        {
+          "verse": 16,
+          "text": "[OROMO VERSE TEXT PLACEHOLDER]",
+          "reference": "Yohannis 3:16"
+        }
+      ]
+    }
+  ]
+}

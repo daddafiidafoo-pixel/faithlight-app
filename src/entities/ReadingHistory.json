@@ -1,0 +1,67 @@
+{
+  "name": "ReadingHistory",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user"
+    },
+    "content_type": {
+      "type": "string",
+      "enum": ["bible_passage", "study_plan", "devotional"],
+      "description": "Type of content accessed"
+    },
+    "book_id": {
+      "type": "string",
+      "description": "Bible book ID (e.g., JHN, PSA)"
+    },
+    "book_name": {
+      "type": "string",
+      "description": "Display name of the book"
+    },
+    "chapter": {
+      "type": "number",
+      "description": "Chapter number"
+    },
+    "verse_start": {
+      "type": "number",
+      "description": "Starting verse number"
+    },
+    "verse_end": {
+      "type": "number",
+      "description": "Ending verse number"
+    },
+    "reference": {
+      "type": "string",
+      "description": "Formatted reference (e.g., John 3:16-17)"
+    },
+    "plan_id": {
+      "type": "string",
+      "description": "Reference to reading plan if applicable"
+    },
+    "plan_title": {
+      "type": "string",
+      "description": "Title of the reading plan"
+    },
+    "progress_percentage": {
+      "type": "number",
+      "description": "Reading progress as percentage (0-100)",
+      "default": 0
+    },
+    "last_accessed": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last time this content was accessed"
+    },
+    "language": {
+      "type": "string",
+      "default": "en",
+      "description": "Language code"
+    }
+  },
+  "required": [
+    "user_email",
+    "content_type",
+    "last_accessed"
+  ]
+}

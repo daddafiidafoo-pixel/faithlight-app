@@ -1,0 +1,67 @@
+{
+  "name": "PrayerVerseLink",
+  "type": "object",
+  "properties": {
+    "prayer_id": {
+      "type": "string",
+      "description": "Reference to MyPrayer"
+    },
+    "user_id": {
+      "type": "string",
+      "description": "User ID for security"
+    },
+    "language_code": {
+      "type": "string",
+      "description": "Language code (en, om, am, ti, ar, sw)"
+    },
+    "bible_id": {
+      "type": "string",
+      "description": "Bible Brain bible identifier (e.g. ENGESV, GAZGAZ)"
+    },
+    "book_id": {
+      "type": "string",
+      "description": "Book ID (GEN, PSA, JHN, etc.)"
+    },
+    "book_name": {
+      "type": "string",
+      "description": "Localized book name"
+    },
+    "chapter": {
+      "type": "number",
+      "description": "Chapter number"
+    },
+    "verse_start": {
+      "type": "number",
+      "description": "Starting verse number"
+    },
+    "verse_end": {
+      "type": "number",
+      "description": "Ending verse number"
+    },
+    "reference_text": {
+      "type": "string",
+      "description": "Formatted reference (e.g. John 3:16)"
+    },
+    "verse_text": {
+      "type": "string",
+      "description": "Full verse text"
+    },
+    "audio_fileset_id": {
+      "type": "string",
+      "description": "Bible Brain audio fileset ID (optional)"
+    }
+  },
+  "required": [
+    "prayer_id",
+    "user_id",
+    "language_code",
+    "bible_id",
+    "book_id",
+    "book_name",
+    "chapter",
+    "verse_start",
+    "verse_end",
+    "reference_text",
+    "verse_text"
+  ]
+}

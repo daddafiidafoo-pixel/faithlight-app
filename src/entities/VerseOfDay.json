@@ -1,0 +1,62 @@
+{
+  "name": "VerseOfDay",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of the verse"
+    },
+    "book_id": {
+      "type": "string",
+      "description": "Bible book ID (e.g., JHN, PSA)"
+    },
+    "book_name": {
+      "type": "string",
+      "description": "Display name of the book"
+    },
+    "chapter": {
+      "type": "number",
+      "description": "Chapter number"
+    },
+    "verse_start": {
+      "type": "number",
+      "description": "Starting verse number"
+    },
+    "verse_end": {
+      "type": "number",
+      "description": "Ending verse number"
+    },
+    "reference": {
+      "type": "string",
+      "description": "Formatted reference (e.g., John 3:16)"
+    },
+    "text": {
+      "type": "string",
+      "description": "Full verse text"
+    },
+    "commentary": {
+      "type": "string",
+      "description": "Optional commentary on the verse"
+    },
+    "language": {
+      "type": "string",
+      "default": "en",
+      "description": "Language code"
+    },
+    "theme": {
+      "type": "string",
+      "description": "Theme or topic of the verse (e.g., Hope, Faith, Love)"
+    }
+  },
+  "required": [
+    "date",
+    "book_id",
+    "book_name",
+    "chapter",
+    "verse_start",
+    "reference",
+    "text",
+    "language"
+  ]
+}

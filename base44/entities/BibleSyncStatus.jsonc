@@ -1,0 +1,46 @@
+{
+  "name": "BibleSyncStatus",
+  "type": "object",
+  "properties": {
+    "language_code": {
+      "type": "string",
+      "description": "ISO language code: en, hae, gaz, am, fr, sw, ar"
+    },
+    "bible_id": {
+      "type": "string",
+      "description": "Bible Brain bible ID e.g. ENGESV, HAEBSE, GAZBIB"
+    },
+    "fileset_id": {
+      "type": "string",
+      "description": "Bible Brain fileset ID used for content delivery e.g. HAEBSEN_ET-json, GAZBIBN_ET-json"
+    },
+    "sync_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "success",
+        "failed"
+      ],
+      "default": "pending",
+      "description": "Last sync result"
+    },
+    "last_synced_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last time sync was attempted"
+    },
+    "last_success_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last time sync succeeded"
+    },
+    "last_error": {
+      "type": "string",
+      "description": "Error message from last failed sync"
+    }
+  },
+  "required": [
+    "language_code",
+    "sync_status"
+  ]
+}

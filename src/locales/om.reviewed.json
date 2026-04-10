@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "language": "om",
+    "name": "Afaan Oromoo",
+    "nativeName": "Afaan Oromoo",
+    "reviewed": true,
+    "reviewDate": "2026-03-30",
+    "version": "1.0.0",
+    "notes": "Centralized reviewed Oromo UI localization. Single source of truth for all app labels, buttons, and messages."
+  },
+  "common": {
+    "ok": "Kabajaa",
+    "cancel": "Haqi",
+    "close": "Cufi",
+    "back": "Duubatti",
+    "next": "Itti Fufaa",
+    "prev": "Duraa",
+    "retry": "Irra deebi'i yaali",
+    "loading": "Fe'amaa jira...",
+    "error": "Dhadhachuun tokko ta'e",
+    "noData": "Odeeffannoo hin argamne",
+    "settings": "Qindaa'ina",
+    "profile": "Profaayila",
+    "logout": "Bahuun",
+    "language": "Afaan"
+  },
+  "home": {
+    "greetings": {
+      "morning": "Akkam Bulte",
+      "afternoon": "Akkam Oolte",
+      "evening": "Akkam Galgaloofte"
+    },
+    "subtitle": "Imala kee guyyaa guyyaan Waaqayyo wajjin",
+    "heroLine": "Guyyaa hunda dubbii Waaqayyoo keessatti jabaadhu",
+    "verseOfDay": "Aayata Guyyaa",
+    "openBible": "Macaafa Qulqulluu Bani",
+    "explainVerse": "Luqqisa Ibsi",
+    "share": "Qoodi",
+    "bookmark": "Mallattoo Dubbisaa",
+    "continueReading": "Dubbisuu Itti Fufi",
+    "streak": "Itti Fufuu Dubbisuu",
+    "selectLanguage": "Afaan Filadhu",
+    "verseError": "Aayanni hin argamne",
+    "noVerse": "Aayatni hin argamne",
+    "nowPlaying": "Amma Dhaggeeffachaa Jira",
+    "quickActions": {
+      "readBible": "Macaafa Qulqulluu Dubbisi",
+      "listenAudio": "Sagalee Dhaggeeffadhu",
+      "searchVerse": "Aayata Barbaadi",
+      "savedVerses": "Aayata Kuufaman"
+    }
+  },
+  "bible": {
+    "title": "Dubbisaa Macaafa Qulqulluu",
+    "selectBook": "Kitaaba Filadhu",
+    "selectChapter": "Boqonnaa Filadhu",
+    "playAudio": "Dhaggeeffadhu",
+    "noAudio": "Sagaleen aayata kanaaf hin jiru",
+    "chapterUnavailable": "Afaan Oromoo Bible yeroo ammaa hin argamu. Maaloo afaan Ingiliffaa itti fayyadami.",
+    "audioUnavailable": "Sagaleen boqonnaa kanaaf hin jiru",
+    "verseUnavailable": "Barruun aayataa yeroo ammaa hin argamu",
+    "tryAnother": "Boqonnaa biraa yaali",
+    "highlight": "Cimsii",
+    "copy": "Koppii Godhi",
+    "attachPrayer": "Kadhataatti Maxxansi",
+    "attachComment": "Yaadannoo irratti Maxxansi",
+    "createImage": "Suuraa Uumi"
+  },
+  "audio": {
+    "play": "Jalqabi",
+    "pause": "Raajii",
+    "stop": "Haqi",
+    "volume": "Sagalee",
+    "speed": "Ariifni",
+    "loading": "Sagalee fe'amaa jira...",
+    "nowPlaying": "Amma Dhaggeeffachaa Jira",
+    "notAvailable": "Sagaleen hin jiru"
+  },
+  "prayer": {
+    "myPrayers": "Kadhata Koo",
+    "newPrayer": "Kadhata Haaraa",
+    "addPrayer": "Kadhata Ida'i",
+    "deletePrayer": "Kadhata Haqaa",
+    "editPrayer": "Kadhata Guchiisa",
+    "save": "Kuufaa",
+    "title": "Mataduree",
+    "content": "Jidha",
+    "category": "Gosa",
+    "mood": "Miira",
+    "favorite": "Midhagga Barbachisu",
+    "share": "Qoodi"
+  },
+  "notifications": {
+    "daily": "Beeksisa Guyyaa",
+    "reminder": "Beeksisa",
+    "turnOn": "Kamchiisi",
+    "turnOff": "Haqi",
+    "time": "Yeroo",
+    "enabled": "Bulcha",
+    "disabled": "Haqi"
+  },
+  "profile": {
+    "name": "Maqaa",
+    "email": "Email",
+    "language": "Afaan",
+    "theme": "Facaasa",
+    "light": "Ifa",
+    "dark": "Gara Dhumaatti",
+    "notifications": "Beeksisoota",
+    "privacy": "Ichaafuu",
+    "logout": "Bahuun",
+    "accountSettings": "Qindaa'ina Akkaawuntii",
+    "appearance": "Fakkaachuu"
+  },
+  "store": {
+    "premium": "Ijaaraa",
+    "subscribe": "Gadda",
+    "cancel": "Haqi",
+    "price": "Gatii",
+    "features": "Facaasinni",
+    "monthly": "Jiidha",
+    "yearly": "Waggaa",
+    "freeVersion": "Utuu Duwwaa"
+  },
+  "settings": {
+    "appSettings": "Qindaa'ina Appi",
+    "generalSettings": "Qindaa'ina Waaltiin",
+    "advancedSettings": "Qindaa'ina Caasaa",
+    "about": "Waa'ee",
+    "version": "Baankii",
+    "privacyPolicy": "Seera Ichaafuu",
+    "termsOfService": "Hariiroo Tajaajilaa",
+    "contactSupport": "Deggertaa Quunnamaa",
+    "clearCache": "Meemori Fooqsi",
+    "language": "Afaan Filadhu"
+  },
+  "errors": {
+    "networkError": "Rakkoo marsariitii irraa ka'e",
+    "oromoUnavailable": "Afaan Oromoo Bible yeroo ammaa hin argamu. Maaloo afaan Ingiliffaa itti fayyadami.",
+    "loadingFailed": "Fe'amuu hin milkaa'e",
+    "tryAgain": "Irra deebi'i yaali",
+    "goBack": "Duubatti deemi"
+  },
+  "actions": {
+    "save": "Kuufaa",
+    "delete": "Haqaa",
+    "edit": "Guchiisa",
+    "search": "Barbaadi",
+    "filter": "Hiri",
+    "sort": "Deebisaa",
+    "expand": "Baldhisaa",
+    "collapse": "Xumuraa",
+    "download": "Buusuun",
+    "upload": "Olkaasaa",
+    "import": "Seenuun",
+    "export": "Gad Fudhin"
+  },
+  "statusMessages": {
+    "success": "Milkaa'e",
+    "loading": "Fe'amaa jira...",
+    "error": "Dhadhachuun tokko ta'e",
+    "offline": "Walqunnamtiun hin jiru",
+    "online": "Walquunnama",
+    "saved": "Kuufamte",
+    "deleted": "Haqame",
+    "updated": "Fooyya'amte"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "UserStudyPlanEnrollment",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the enrolled user"
+    },
+    "study_plan_id": {
+      "type": "string",
+      "description": "Reference to StudyPlan"
+    },
+    "plan_title": {
+      "type": "string",
+      "description": "Cached plan title"
+    },
+    "plan_topic": {
+      "type": "string",
+      "description": "Cached plan topic"
+    },
+    "enrolled_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When user enrolled"
+    },
+    "completed_days": {
+      "type": "array",
+      "items": { "type": "number" },
+      "default": [],
+      "description": "Array of completed day numbers"
+    },
+    "current_day": {
+      "type": "number",
+      "default": 1,
+      "description": "Current day in plan"
+    },
+    "is_completed": {
+      "type": "boolean",
+      "default": false
+    },
+    "last_accessed": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last time user accessed the plan"
+    }
+  },
+  "required": ["user_email", "study_plan_id", "plan_title", "plan_topic", "enrolled_date"]
+}

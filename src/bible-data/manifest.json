@@ -1,0 +1,80 @@
+{
+  "version": "1.0",
+  "description": "FaithLight multilingual Bible dataset manifest",
+  "last_updated": "2026-03-29",
+  "languages": [
+    {
+      "code": "om",
+      "name": "Afaan Oromoo",
+      "native_name": "Afaan Oromoo",
+      "direction": "ltr",
+      "bible_available": true,
+      "version_id": "oromo_bible",
+      "version_name": "Afaan Oromoo Bible",
+      "books": ["genesis", "exodus", "psalms", "john", "romans"],
+      "fallback": null
+    },
+    {
+      "code": "am",
+      "name": "Amharic",
+      "native_name": "አማርኛ",
+      "direction": "ltr",
+      "bible_available": true,
+      "version_id": "amharic_bible",
+      "version_name": "Amharic Bible",
+      "books": ["genesis", "exodus", "psalms", "john", "romans"],
+      "fallback": "en"
+    },
+    {
+      "code": "sw",
+      "name": "Swahili",
+      "native_name": "Kiswahili",
+      "direction": "ltr",
+      "bible_available": true,
+      "version_id": "swahili_bible",
+      "version_name": "Swahili Bible",
+      "books": ["genesis", "exodus", "psalms", "john", "romans"],
+      "fallback": "en"
+    },
+    {
+      "code": "ti",
+      "name": "Tigrinya",
+      "native_name": "ትግርኛ",
+      "direction": "ltr",
+      "bible_available": false,
+      "version_id": null,
+      "version_name": null,
+      "books": [],
+      "fallback": "am"
+    },
+    {
+      "code": "ar",
+      "name": "Arabic",
+      "native_name": "العربية",
+      "direction": "rtl",
+      "bible_available": false,
+      "version_id": null,
+      "version_name": null,
+      "books": [],
+      "fallback": "en"
+    },
+    {
+      "code": "en",
+      "name": "English",
+      "native_name": "English",
+      "direction": "ltr",
+      "bible_available": true,
+      "version_id": "english_esv",
+      "version_name": "English Standard Version",
+      "books": ["genesis", "exodus", "psalms", "john", "romans"],
+      "fallback": null
+    }
+  ],
+  "book_mapping": [
+    { "book_id": "genesis", "order": 1, "testament": "OT" },
+    { "book_id": "exodus", "order": 2, "testament": "OT" },
+    { "book_id": "psalms", "order": 19, "testament": "OT" },
+    { "book_id": "john", "order": 43, "testament": "NT" },
+    { "book_id": "romans", "order": 45, "testament": "NT" }
+  ]
+}

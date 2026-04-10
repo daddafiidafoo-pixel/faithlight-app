@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "language": "en",
+    "name": "English",
+    "nativeName": "English",
+    "reviewed": true,
+    "reviewDate": "2026-04-02",
+    "version": "1.0.0",
+    "notes": "Single source of truth for English UI strings. Bible verse content comes from Bible Brain only."
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "prev": "Previous",
+    "retry": "Retry",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "noData": "No data found",
+    "settings": "Settings",
+    "profile": "Profile",
+    "logout": "Logout",
+    "language": "Language",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort"
+  },
+  "home": {
+    "greetings": {
+      "morning": "Good morning",
+      "afternoon": "Good afternoon",
+      "evening": "Good evening"
+    },
+    "subtitle": "Your daily Christian spiritual journey",
+    "heroLine": "Transform your life through God's Word daily",
+    "verseOfDay": "Verse of the Day",
+    "openBible": "Open Bible",
+    "explainVerse": "Explain",
+    "share": "Share",
+    "bookmark": "Bookmark",
+    "continueReading": "Continue Reading",
+    "streak": "Reading Streak",
+    "selectLanguage": "Select Language",
+    "verseError": "Verse not found",
+    "noVerse": "No verse found",
+    "nowPlaying": "Now Playing"
+  },
+  "bible": {
+    "title": "Bible Reader",
+    "selectBook": "Select Book",
+    "selectChapter": "Select Chapter",
+    "playAudio": "Play Audio",
+    "noAudio": "Audio not available for this chapter",
+    "chapterUnavailable": "English Bible version not currently available. Please use English.",
+    "audioUnavailable": "Audio not available for this chapter",
+    "verseUnavailable": "This verse is not currently available",
+    "tryAnother": "Try another chapter",
+    "highlight": "Highlight",
+    "copy": "Copy",
+    "attachPrayer": "Attach to Prayer",
+    "attachComment": "Attach Comment",
+    "createImage": "Create Image",
+    "oldTestament": "Old Testament",
+    "newTestament": "New Testament",
+    "chapters": "Chapters",
+    "verses": "Verses",
+    "books": "Books",
+    "search": "Search",
+    "searchPlaceholder": "Enter word or verse...",
+    "noResults": "No results found",
+    "read": "Read",
+    "listen": "Listen",
+    "share": "Share",
+    "next": "Next",
+    "previous": "Previous",
+    "selectVerse": "Select Verse",
+    "loading": "Chapter loading...",
+    "fallbackNote": "This language version is not available — showing English"
+  },
+  "audio": {
+    "play": "Play",
+    "pause": "Pause",
+    "stop": "Stop",
+    "volume": "Volume",
+    "speed": "Speed",
+    "loading": "Audio loading...",
+    "nowPlaying": "Now Playing",
+    "notAvailable": "Audio not available"
+  },
+  "prayer": {
+    "myPrayers": "My Prayers",
+    "newPrayer": "New Prayer",
+    "addPrayer": "Add Prayer",
+    "deletePrayer": "Delete Prayer",
+    "editPrayer": "Edit Prayer"
+  },
+  "communityPrayerBoard": {
+    "title": "Prayer Board",
+    "subtitle": "Support each other in prayer",
+    "selectLanguage": "Select Language",
+    "request": "Request",
+    "categories": {
+      "all": "All",
+      "health": "Health",
+      "family": "Family",
+      "faith": "Faith",
+      "work": "Work",
+      "relationships": "Relationships",
+      "gratitude": "Gratitude",
+      "other": "Other"
+    },
+    "emptyState": {
+      "title": "No prayer requests yet",
+      "subtitle": "Share the first request"
+    },
+    "form": {
+      "title": "Submit Prayer Request",
+      "name": "Your Name",
+      "request": "Your Prayer Request",
+      "category": "Category",
+      "submit": "Submit",
+      "cancel": "Cancel"
+    }
+  },
+  "notifications": {
+    "daily": "Daily Notification",
+    "reminder": "Reminder",
+    "turnOn": "Turn On",
+    "turnOff": "Turn Off",
+    "enabled": "Enabled",
+    "disabled": "Disabled"
+  },
+  "profile": {
+    "name": "Name",
+    "email": "Email",
+    "language": "Language",
+    "theme": "Theme",
+    "logout": "Logout"
+  },
+  "store": {
+    "premium": "Premium",
+    "subscribe": "Subscribe",
+    "cancel": "Cancel",
+    "price": "Price"
+  },
+  "settings": {
+    "appSettings": "Settings",
+    "about": "About",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "errors": {
+    "networkError": "Network error",
+    "amharicUnavailable": "Amharic version not currently available. Please use English.",
+    "loadingFailed": "Loading failed"
+  },
+  "settingsNotifications": {
+    "sectionLabel": "Settings",
+    "title": "Notifications",
+    "description": "Choose which alerts, reminders, and updates you want to receive from the app.",
+    "cardTitle": "Notification Preferences",
+    "cardDescription": "You can turn notifications on or off at any time.",
+    "quickActionsTitle": "Quick Actions",
+    "quickActionsDescription": "Toggle all app notifications on or off with one tap.",
+    "noteTitle": "Note",
+    "noteBody": "These settings control notification preferences within the app. You may also need to enable device-level notification permission in your phone settings.",
+    "actions": {
+      "save": "Save Changes",
+      "saving": "Saving...",
+      "cancel": "Cancel",
+      "enableAll": "Enable All",
+      "disableAll": "Disable All"
+    },
+    "messages": {
+      "saved": "Notification settings updated successfully.",
+      "saveError": "Unable to save notification settings. Please try again."
+    },
+    "options": {
+      "prayerReminders": {
+        "title": "Prayer Reminders",
+        "description": "Receive reminders to pray and maintain consistent spiritual practice."
+      },
+      "communityUpdates": {
+        "title": "Community Updates",
+        "description": "Get notified about prayer board activity and important community news."
+      },
+      "dailyVerse": {
+        "title": "Verse of the Day",
+        "description": "Receive a daily Bible quote or brief encouragement from the app."
+      },
+      "appAnnouncements": {
+        "title": "App Announcements",
+        "description": "Stay informed about new features, updates, and important app news."
+      }
+    }
+  },
+  "sermonPreparation": {
+    "title": "Sermon Preparation",
+    "outputLanguage": {
+      "label": "Sermon Output Language",
+      "required": "(required)",
+      "helper": "Which languages are fully supported?"
+    },
+    "sermonType": {
+      "label": "Sermon Type",
+      "sunday": {
+        "title": "Sunday Sermon",
+        "description": "General church gathering sermon"
+      },
+      "youth": {
+        "title": "Youth Sermon",
+        "description": "Tailored for young adults and teens"
+      },
+      "bibleStudy": {
+        "title": "Bible Study Guide",
+        "description": "Detailed study with discussion questions"
+      },
+      "funeral": {
+        "title": "Funeral Sermon",
+        "description": "Comfort and hope in times of loss"
+      }
+    },
+    "form": {
+      "topic": "Sermon Topic",
+      "scripture": "Key Bible References",
+      "scripturePlaceholder": "For example: Romans 8:28, James 1:2-4",
+      "audience": "Audience",
+      "tone": "Tone",
+      "doctrine": "Doctrine / Faith Tradition",
+      "duration": "Sermon Length",
+      "outputType": "Output Type",
+      "generate": "Generate Sermon"
+    },
+    "audienceOptions": {
+      "general": "General church audience",
+      "youth": "Youth audience",
+      "children": "Children",
+      "families": "Families",
+      "smallChurch": "Small church",
+      "bibleStudy": "Bible study group",
+      "evangelism": "Evangelism / outreach"
+    },
+    "toneOptions": {
+      "pastoral": "Pastoral — Warm, caring, compassionate",
+      "teaching": "Teaching — Clear, structured, explanatory",
+      "preaching": "Preaching — Strong, persuasive, powerful",
+      "devotional": "Devotional — Personal, reflective, spiritual",
+      "encouraging": "Encouraging",
+      "serious": "Serious",
+      "simple": "Simple"
+    },
+    "doctrineOptions": {
+      "generalChristian": "General Christian — Inclusive, non-denominational",
+      "evangelical": "Evangelical",
+      "pentecostal": "Pentecostal / Charismatic",
+      "reformed": "Reformed",
+      "orthodox": "Orthodox",
+      "catholic": "Catholic",
+      "baptist": "Baptist"
+    },
+    "outputOptions": {
+      "full": "Full sermon with introduction, body, and conclusion",
+      "outline": "Short sermon outline",
+      "teachingNotes": "Teaching notes",
+      "bibleStudy": "Bible study outline",
+      "prayer": "Prayer-focused message"
+    },
+    "duration": {
+      "label": "Sermon Length",
+      "minutes": "minutes"
+    },
+    "validation": {
+      "topicRequired": "Sermon topic is required",
+      "scriptureRequired": "Please enter Bible references"
+    },
+    "status": {
+      "translating": "Translating...",
+      "comingSoon": "Coming Soon"
+    }
+  }
+}

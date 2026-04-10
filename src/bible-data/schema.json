@@ -1,0 +1,81 @@
+{
+  "title": "FaithLight Bible Book Schema",
+  "description": "Schema for individual Bible book JSON files",
+  "type": "object",
+  "required": ["meta", "book_id", "book_name", "chapters"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["language", "version_id"],
+      "properties": {
+        "language": {
+          "type": "string",
+          "description": "ISO language code (om, am, sw, ti, ar, en)",
+          "enum": ["om", "am", "sw", "ti", "ar", "en"]
+        },
+        "language_name": {
+          "type": "string",
+          "description": "Display name of language"
+        },
+        "version_id": {
+          "type": "string",
+          "description": "Unique Bible version identifier"
+        },
+        "version_name": {
+          "type": "string",
+          "description": "Display name of Bible version"
+        }
+      }
+    },
+    "book_id": {
+      "type": "string",
+      "description": "Stable English book identifier (genesis, john, etc)",
+      "pattern": "^[a-z_]+$"
+    },
+    "book_name": {
+      "type": "string",
+      "description": "Localized book name"
+    },
+    "book_abbr": {
+      "type": "string",
+      "description": "Abbreviated book name (2-4 characters)"
+    },
+    "chapters": {
+      "type": "array",
+      "description": "Array of chapter objects",
+      "items": {
+        "type": "object",
+        "required": ["chapter", "verses"],
+        "properties": {
+          "chapter": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Chapter number"
+          },
+          "verses": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["verse", "text"],
+              "properties": {
+                "verse": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "description": "Verse number"
+                },
+                "text": {
+                  "type": "string",
+                  "description": "Verse text"
+                },
+                "reference": {
+                  "type": "string",
+                  "description": "Full reference (e.g. Yohannis 3:16)"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

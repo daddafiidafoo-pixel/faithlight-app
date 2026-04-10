@@ -1,0 +1,45 @@
+{
+  "name": "UserReadingPlanProgress",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user"
+    },
+    "reading_plan_id": {
+      "type": "string",
+      "description": "Reference to the UserReadingPlan"
+    },
+    "plan_title": {
+      "type": "string",
+      "description": "Cached plan title"
+    },
+    "current_day": {
+      "type": "number",
+      "default": 1,
+      "description": "Current day in the plan"
+    },
+    "completed_days": {
+      "type": "array",
+      "items": { "type": "number" },
+      "default": [],
+      "description": "Array of completed day numbers"
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the user started the plan"
+    },
+    "last_opened_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last time the plan was opened"
+    },
+    "is_completed": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the plan is fully completed"
+    }
+  },
+  "required": ["user_email", "reading_plan_id", "plan_title", "started_at"]
+}

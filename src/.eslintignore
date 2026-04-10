@@ -1,0 +1,11 @@
+# Auto-generated platform scaffolding - do not lint
+src/components/ACCESSIBILITY_AUDIT_WCAG2*
+src/components/ACCESSIBILITY_AUDIT_WCAG2.1*
+src/components/BibleGatewayImplementation/
+src/components/studyrooms/modals*
+src/components/studyrooms/workflows*
+
+# Standard
+node_modules/
+dist/
+build/

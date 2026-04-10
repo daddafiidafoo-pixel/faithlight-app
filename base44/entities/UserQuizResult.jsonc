@@ -1,0 +1,51 @@
+{
+  "name": "UserQuizResult",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user who took the quiz"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "Display name of the user"
+    },
+    "quiz_id": {
+      "type": "string",
+      "description": "Reference to the BibleQuiz"
+    },
+    "book_id": {
+      "type": "string",
+      "description": "Bible book ID"
+    },
+    "score": {
+      "type": "number",
+      "description": "Number of correct answers"
+    },
+    "total_questions": {
+      "type": "number",
+      "description": "Total questions in the quiz"
+    },
+    "points_earned": {
+      "type": "number",
+      "description": "Points awarded for this quiz"
+    },
+    "completion_time_seconds": {
+      "type": "number",
+      "description": "Time taken to complete quiz in seconds"
+    },
+    "percentage": {
+      "type": "number",
+      "description": "Score percentage (0-100)"
+    }
+  },
+  "required": [
+    "user_email",
+    "user_name",
+    "quiz_id",
+    "book_id",
+    "score",
+    "total_questions",
+    "points_earned"
+  ]
+}

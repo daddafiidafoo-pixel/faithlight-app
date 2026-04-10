@@ -1,0 +1,42 @@
+{
+  "name": "BibleVerseText",
+  "type": "object",
+  "properties": {
+    "language_code": {
+      "type": "string",
+      "description": "ISO language code (en, om, am, sw, etc.)"
+    },
+    "book_id": {
+      "type": "string",
+      "description": "Standard Bible book code (GEN, PSA, JHN, etc.)"
+    },
+    "book_name": {
+      "type": "string",
+      "description": "Localized book name"
+    },
+    "chapter": {
+      "type": "number",
+      "description": "Chapter number"
+    },
+    "verse": {
+      "type": "number",
+      "description": "Verse number"
+    },
+    "text": {
+      "type": "string",
+      "description": "The verse text in the specified language"
+    },
+    "reference": {
+      "type": "string",
+      "description": "Formatted reference (e.g., Psalm 25:1 or Faarfannaa 25:1)"
+    }
+  },
+  "required": [
+    "language_code",
+    "book_id",
+    "book_name",
+    "chapter",
+    "verse",
+    "text"
+  ]
+}

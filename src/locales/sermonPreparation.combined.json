@@ -1,0 +1,260 @@
+{
+  "en": {
+    "sermonPreparation": {
+      "title": "Sermon Preparation",
+      "outputLanguage": {
+        "label": "Sermon Output Language",
+        "required": "(required)",
+        "helper": "Which languages are fully supported?"
+      },
+      "sermonType": {
+        "label": "Sermon Type",
+        "sunday": {
+          "title": "Sunday Sermon",
+          "description": "General church gathering sermon"
+        },
+        "youth": {
+          "title": "Youth Sermon",
+          "description": "Tailored for young adults and teens"
+        },
+        "bibleStudy": {
+          "title": "Bible Study Guide",
+          "description": "Detailed study with discussion questions"
+        },
+        "funeral": {
+          "title": "Funeral Sermon",
+          "description": "Comfort and hope in times of loss"
+        }
+      },
+      "form": {
+        "topic": "Sermon Topic",
+        "scripture": "Key Bible References",
+        "scripturePlaceholder": "For example: Romans 8:28, James 1:2-4",
+        "audience": "Audience",
+        "tone": "Tone",
+        "doctrine": "Doctrine / Faith Tradition",
+        "duration": "Sermon Length",
+        "outputType": "Output Type",
+        "generate": "Generate Sermon"
+      },
+      "audienceOptions": {
+        "general": "General church audience",
+        "youth": "Youth audience",
+        "children": "Children",
+        "families": "Families",
+        "smallChurch": "Small church",
+        "bibleStudy": "Bible study group",
+        "evangelism": "Evangelism / outreach"
+      },
+      "toneOptions": {
+        "pastoral": "Pastoral — Warm, caring, compassionate",
+        "teaching": "Teaching — Clear, structured, explanatory",
+        "preaching": "Preaching — Strong, persuasive, powerful",
+        "devotional": "Devotional — Personal, reflective, spiritual",
+        "encouraging": "Encouraging",
+        "serious": "Serious",
+        "simple": "Simple"
+      },
+      "doctrineOptions": {
+        "generalChristian": "General Christian — Inclusive, non-denominational",
+        "evangelical": "Evangelical",
+        "pentecostal": "Pentecostal / Charismatic",
+        "reformed": "Reformed",
+        "orthodox": "Orthodox",
+        "catholic": "Catholic",
+        "baptist": "Baptist"
+      },
+      "outputOptions": {
+        "full": "Full sermon with introduction, body, and conclusion",
+        "outline": "Short sermon outline",
+        "teachingNotes": "Teaching notes",
+        "bibleStudy": "Bible study outline",
+        "prayer": "Prayer-focused message"
+      },
+      "duration": {
+        "label": "Sermon Length",
+        "minutes": "minutes"
+      },
+      "validation": {
+        "topicRequired": "Sermon topic is required",
+        "scriptureRequired": "Please enter Bible references"
+      },
+      "status": {
+        "translating": "Translating...",
+        "comingSoon": "Coming Soon"
+      }
+    }
+  },
+  "om": {
+    "sermonPreparation": {
+      "title": "Qophii Lallabaa",
+      "outputLanguage": {
+        "label": "Afaan Lallabni Itti Ba'u",
+        "required": "(barbaachisaa)",
+        "helper": "Afaan kamiitu guutummaatti deeggarsa qaba?"
+      },
+      "sermonType": {
+        "label": "Gosa Lallabaa",
+        "sunday": {
+          "title": "Lallaba Dilbataa",
+          "description": "Lallaba walga'ii waldaa waliigalaa"
+        },
+        "youth": {
+          "title": "Lallaba Dargaggootaa",
+          "description": "Dargaggootaa fi mootummaa isaanii irratti xiyyeeffata"
+        },
+        "bibleStudy": {
+          "title": "Qajeelfama Qo'annoo Kitaaba Qulqulluu",
+          "description": "Qo'annoo bal'aa gaaffii marii waliin"
+        },
+        "funeral": {
+          "title": "Lallaba Awwaalchaa",
+          "description": "Jajjabinaa fi abdii yeroo gaddaa"
+        }
+      },
+      "form": {
+        "topic": "Mata-duree Lallabaa",
+        "scripture": "Lakkofsa Fudhii Macaafa Qulqulluu",
+        "scripturePlaceholder": "Fakkeenyaaf: Roomaa 8:28, Yaaqoob 1:2-4",
+        "audience": "Dhaggeeffattoota",
+        "tone": "Haala Lallabaa",
+        "doctrine": "Mormii / Amantiis Duudhaa",
+        "duration": "Yeroo Lallabaa",
+        "outputType": "Bifa Baasii",
+        "generate": "Lallaba Uumi"
+      },
+      "audienceOptions": {
+        "general": "Dhaggeeffattoota waldaa waliigalaa",
+        "youth": "Dhaggeeffattoota dargaggootaa",
+        "children": "Ijoollee",
+        "families": "Maatiiwwan",
+        "smallChurch": "Waldaa xixiqqoo",
+        "bibleStudy": "Garee qo'annoo Kitaaba Qulqulluu",
+        "evangelism": "Wangeela / Tajaajila keessaa alaa"
+      },
+      "toneOptions": {
+        "pastoral": "Tajaajilaa — Ho'aa, kunuunsaa, gara-laafessa",
+        "teaching": "Barsiisaa — Ifa, sirrii, ibsaa",
+        "preaching": "Lallabaa — Jabaataa, nama amansiisu, humna qabu",
+        "devotional": "Kadhannaa keessaa — Dhuunfaa, xiinxalaa, hafuuraa",
+        "encouraging": "Jajjabeessaa",
+        "serious": "Cimaa",
+        "simple": "Salphaa"
+      },
+      "doctrineOptions": {
+        "generalChristian": "Kiristaana waliigalaa — hunda hammata, mootummaa tokko qofaan hin daangeffamne",
+        "evangelical": "Wangeela lallabaa",
+        "pentecostal": "Pheenxeqoosxii / Kennaa hafuuraa",
+        "reformed": "Sirreeffamaa",
+        "orthodox": "Ortodoksii",
+        "catholic": "Katolikaa",
+        "baptist": "Baatistii"
+      },
+      "outputOptions": {
+        "full": "Lallaba guutuu jechuun seensa, qaama guddaa fi xumura qabu",
+        "outline": "Qabxii lallabaa gabaabaa",
+        "teachingNotes": "Yaadannoo barsiisaa",
+        "bibleStudy": "Qabxii qo'annoo Kitaaba Qulqulluu",
+        "prayer": "Ergaa kadhannaa irratti xiyyeeffate"
+      },
+      "duration": {
+        "label": "Yeroo Lallabaa",
+        "minutes": "daqiiqaa"
+      },
+      "validation": {
+        "topicRequired": "Mata-dureen lallabaa barbaachisaa dha",
+        "scriptureRequired": "Mee lakkoofsa fudhii Macaafa Qulqulluu galchi"
+      },
+      "status": {
+        "translating": "Hiikaa jira...",
+        "comingSoon": "Dhufuuf jira"
+      }
+    }
+  },
+  "am": {
+    "sermonPreparation": {
+      "title": "የስብከት ዝግጅት",
+      "outputLanguage": {
+        "label": "ስብከቱ የሚወጣበት ቋንቋ",
+        "required": "(አስፈላጊ)",
+        "helper": "የትኞቹ ቋንቋዎች ሙሉ በሙሉ ይደገፋሉ?"
+      },
+      "sermonType": {
+        "label": "የስብከት አይነት",
+        "sunday": {
+          "title": "የእሁድ ስብከት",
+          "description": "ለአጠቃላይ የቤተ ክርስቲያን ስብሰባ የሚሆን ስብከት"
+        },
+        "youth": {
+          "title": "የወጣቶች ስብከት",
+          "description": "ለወጣቶችና ለወጣት አዋቂዎች የተዘጋጀ"
+        },
+        "bibleStudy": {
+          "title": "የመጽሐፍ ቅዱስ ጥናት መመሪያ",
+          "description": "ዝርዝር ጥናት ከውይይት ጥያቄዎች ጋር"
+        },
+        "funeral": {
+          "title": "የቀብር ስብከት",
+          "description": "በሐዘን ጊዜ መጽናናትና ተስፋ"
+        }
+      },
+      "form": {
+        "topic": "የስብከት ርዕስ",
+        "scripture": "ዋና ዋና የመጽሐፍ ቅዱስ ጥቅሶች",
+        "scripturePlaceholder": "ለምሳሌ፦ ሮሜ 8:28፣ ያዕቆብ 1:2-4",
+        "audience": "ተደራሲዎች",
+        "tone": "የስብከቱ ቅጥ",
+        "doctrine": "የእምነት ባህል / መሠረት",
+        "duration": "የስብከት ቆይታ",
+        "outputType": "የውጤት አይነት",
+        "generate": "ስብከት ፍጠር"
+      },
+      "audienceOptions": {
+        "general": "አጠቃላይ የቤተ ክርስቲያን ተደራሲ",
+        "youth": "የወጣቶች ተደራሲ",
+        "children": "ሕፃናት",
+        "families": "ቤተሰቦች",
+        "smallChurch": "ትንሽ ቤተ ክርስቲያን",
+        "bibleStudy": "የመጽሐፍ ቅዱስ ጥናት ቡድን",
+        "evangelism": "ወንጌል / ውጭ አገልግሎት"
+      },
+      "toneOptions": {
+        "pastoral": "እረኛዊ — ሙቀት ያለው፣ ተንከባካቢ፣ ርኅሩኅ",
+        "teaching": "የማስተማር — ግልጽ፣ የተዋቀረ፣ አብራሪ",
+        "preaching": "የስብከት — ጠንካራ፣ አሳማኝ፣ ሀይለኛ",
+        "devotional": "መንፈሳዊ — ግላዊ፣ አስተንታኝ፣ መንፈሳዊ",
+        "encouraging": "አበረታች",
+        "serious": "ቁምነገር ያለው",
+        "simple": "ቀላል"
+      },
+      "doctrineOptions": {
+        "generalChristian": "አጠቃላይ ክርስቲያናዊ — ሁሉን የሚያካትት፣ ከተወሰነ ድርጅት ውጪ",
+        "evangelical": "ወንጌላዊ",
+        "pentecostal": "ጴንጤቆስጤ / ካሪዝማቲክ",
+        "reformed": "ሪፎርምድ",
+        "orthodox": "ኦርቶዶክስ",
+        "catholic": "ካቶሊክ",
+        "baptist": "ባፕቲስት"
+      },
+      "outputOptions": {
+        "full": "ሙሉ ስብከት ከመግቢያ፣ ከዋና ክፍል እና ከመደምደሚያ ጋር",
+        "outline": "አጭር የስብከት እቅድ",
+        "teachingNotes": "የማስተማር ማስታወሳዎች",
+        "bibleStudy": "የመጽሐፍ ቅዱስ ጥናት እቅድ",
+        "prayer": "በጸሎት ላይ የተመሰረተ መልእክት"
+      },
+      "duration": {
+        "label": "የስብከት ቆይታ",
+        "minutes": "ደቂቃ"
+      },
+      "validation": {
+        "topicRequired": "የስብከት ርዕስ አስፈላጊ ነው",
+        "scriptureRequired": "እባክዎ የመጽሐፍ ቅዱስ ጥቅሶችን ያስገቡ"
+      },
+      "status": {
+        "translating": "በመተርጎም ላይ...",
+        "comingSoon": "በቅርቡ"
+      }
+    }
+  }
+}

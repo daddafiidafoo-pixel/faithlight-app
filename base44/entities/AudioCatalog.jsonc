@@ -1,0 +1,69 @@
+{
+  "name": "AudioCatalog",
+  "type": "object",
+  "properties": {
+    "provider_id": {
+      "type": "string",
+      "default": "BIBLE_BRAIN",
+      "description": "Audio provider identifier (e.g. BIBLE_BRAIN)"
+    },
+    "language_code": {
+      "type": "string",
+      "description": "ISO language code (e.g. en, hae, gaz, am, fr, ar)"
+    },
+    "language_name": {
+      "type": "string",
+      "description": "Human-readable language name"
+    },
+    "bible_id": {
+      "type": "string",
+      "description": "Bible Brain bible identifier (e.g. ENGKJV, HAEBSE, GAZBIB)"
+    },
+    "bible_name": {
+      "type": "string",
+      "description": "Human-readable Bible version name (e.g. King James Version)"
+    },
+    "fileset_id_audio": {
+      "type": "string",
+      "description": "Bible Brain audio fileset ID (e.g. ENGKJVO1DA, HAEBSEN2SA, GAZBIBN1DA)"
+    },
+    "media": {
+      "type": "string",
+      "enum": [
+        "audio",
+        "audio_drama"
+      ],
+      "default": "audio",
+      "description": "Media type"
+    },
+    "has_audio": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether audio is currently available"
+    },
+    "download_allowed": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether offline download is permitted by provider"
+    },
+    "is_default_for_language": {
+      "type": "boolean",
+      "default": false,
+      "description": "Default version shown for this language"
+    },
+    "priority": {
+      "type": "number",
+      "default": 1,
+      "description": "1 = highest priority for this language"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Licensing or provider notes"
+    }
+  },
+  "required": [
+    "language_code",
+    "language_name",
+    "has_audio"
+  ]
+}

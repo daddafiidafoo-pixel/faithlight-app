@@ -1,0 +1,32 @@
+{
+  "name": "ReadingProgress",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User email"
+    },
+    "schedule_id": {
+      "type": "string",
+      "description": "Reference to ReadingSchedule"
+    },
+    "book": {
+      "type": "string",
+      "description": "Bible book name"
+    },
+    "chapter": {
+      "type": "number",
+      "description": "Chapter number"
+    },
+    "completed_on": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When chapter was completed"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Personal notes on this chapter"
+    }
+  },
+  "required": ["user_email", "schedule_id", "book", "chapter"]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "SocialShareCard",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User who created the card"
+    },
+    "card_type": {
+      "type": "string",
+      "enum": ["verse", "devotion", "ai_insight"],
+      "description": "Type of content shared"
+    },
+    "title": {
+      "type": "string",
+      "description": "Card title"
+    },
+    "content": {
+      "type": "string",
+      "description": "Main content (verse text, devotion, etc.)"
+    },
+    "reference": {
+      "type": "string",
+      "description": "Bible reference or source"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Generated card image URL"
+    },
+    "background_style": {
+      "type": "string",
+      "enum": ["gradient_purple", "gradient_blue", "gradient_gold", "solid_dark"],
+      "default": "gradient_purple",
+      "description": "Background style"
+    },
+    "shared_platforms": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [],
+      "description": "Platforms shared to (whatsapp, instagram, facebook)"
+    },
+    "share_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of times shared"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": ["user_email", "card_type", "title", "content"]
+}

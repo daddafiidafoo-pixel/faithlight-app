@@ -1,0 +1,36 @@
+{
+  "name": "DailyVerse",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of the daily verse"
+    },
+    "book": {
+      "type": "string",
+      "description": "Bible book name"
+    },
+    "chapter": {
+      "type": "number",
+      "description": "Chapter number"
+    },
+    "verse": {
+      "type": "number",
+      "description": "Verse number"
+    },
+    "reference": {
+      "type": "string",
+      "description": "Formatted verse reference (e.g., John 3:16)"
+    },
+    "text": {
+      "type": "string",
+      "description": "Verse text"
+    },
+    "reflection": {
+      "type": "string",
+      "description": "Daily reflection or commentary"
+    }
+  },
+  "required": ["date", "book", "chapter", "verse", "reference", "text"]
+}

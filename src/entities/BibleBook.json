@@ -1,0 +1,41 @@
+{
+  "name": "BibleBook",
+  "type": "object",
+  "properties": {
+    "canonical_order": {
+      "type": "number",
+      "description": "Position in canonical Bible order (1-66)"
+    },
+    "name": {
+      "type": "string",
+      "description": "Full book name (e.g., 'Genesis')"
+    },
+    "abbreviation": {
+      "type": "string",
+      "description": "Standard abbreviation (e.g., 'Gen')"
+    },
+    "testament": {
+      "type": "string",
+      "enum": ["OT", "NT"],
+      "description": "Old Testament or New Testament"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["Law", "History", "Poetry", "Major Prophets", "Minor Prophets", "Gospels", "NT History", "Pauline Epistles", "General Epistles", "Prophecy"],
+      "description": "Literary category"
+    },
+    "chapter_count": {
+      "type": "number",
+      "description": "Number of chapters"
+    },
+    "author": {
+      "type": "string",
+      "description": "Traditional author (if known)"
+    },
+    "period": {
+      "type": "string",
+      "description": "Approximate period written (e.g., '1400 BC')"
+    }
+  },
+  "required": ["canonical_order", "name", "abbreviation", "testament", "category", "chapter_count"]
+}

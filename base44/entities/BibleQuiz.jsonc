@@ -1,0 +1,64 @@
+{
+  "name": "BibleQuiz",
+  "type": "object",
+  "properties": {
+    "book_id": {
+      "type": "string",
+      "description": "Bible book ID (e.g., JHN, PSA, GEN)"
+    },
+    "book_name": {
+      "type": "string",
+      "description": "Display name of the book"
+    },
+    "topic": {
+      "type": "string",
+      "description": "Quiz topic or theme"
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "question": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "correct_answer": {
+            "type": "number"
+          },
+          "explanation": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Quiz questions with multiple choice options"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "default": "medium"
+    },
+    "points_reward": {
+      "type": "number",
+      "default": 100,
+      "description": "Points earned for completing quiz"
+    }
+  },
+  "required": [
+    "book_id",
+    "book_name",
+    "questions"
+  ]
+}

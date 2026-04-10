@@ -1,0 +1,24 @@
+{
+  "name": "CircleMember",
+  "type": "object",
+  "properties": {
+    "circle_id": {
+      "type": "string",
+      "description": "Reference to PrayerCircle"
+    },
+    "user_email": {
+      "type": "string",
+      "description": "Email of member"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "Display name of member"
+    },
+    "joined_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When user joined"
+    }
+  },
+  "required": ["circle_id", "user_email", "user_name", "joined_at"]
+}

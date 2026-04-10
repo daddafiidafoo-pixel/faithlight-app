@@ -1,0 +1,26 @@
+{
+  "name": "DailyVerseAssignment",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "description": "Date in YYYY-MM-DD format (used as unique identifier)"
+    },
+    "verseId": {
+      "type": "string",
+      "description": "Reference to the verse (e.g., 'jer-29-11')"
+    },
+    "reference": {
+      "type": "string",
+      "description": "Bible reference (e.g., 'Jeremiah 29:11')"
+    },
+    "translations": {
+      "type": "object",
+      "description": "Translations by language code",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  },
+  "required": ["date", "verseId", "reference", "translations"]
+}

@@ -1,0 +1,286 @@
+{
+  "meta": {
+    "language": "am",
+    "name": "Amharic",
+    "nativeName": "አማርኛ",
+    "reviewed": true,
+    "reviewDate": "2026-03-30",
+    "version": "1.0.0",
+    "notes": "Single source of truth for Amharic UI strings. Bible verse content comes from Bible Brain only."
+  },
+  "common": {
+    "ok": "ሪ",
+    "cancel": "ይቅር",
+    "close": "ዝጋ",
+    "back": "ወደ ኋላ",
+    "next": "ቀጣይ",
+    "prev": "ቀደም",
+    "retry": "ድጋሚ ሞክር",
+    "loading": "በሰኞ ላይ...",
+    "error": "ስህተት ተከስቷል",
+    "noData": "ማንኛውም ውሂብ አልተገኘም",
+    "settings": "ቅንብራት",
+    "profile": "መገለጫ",
+    "logout": "ውጫ",
+    "language": "ቋንቋ",
+    "save": "ቆምጣጭ",
+    "delete": "删除",
+    "edit": "ተስተካካይ",
+    "search": "ፈልግ",
+    "filter": "ማጣሪያ",
+    "sort": "ተደርድር"
+  },
+  "home": {
+    "greetings": {
+      "morning": "ጠዋት ጥሩ",
+      "afternoon": "ከሞከ በኋላ ጥሩ",
+      "evening": "ምሽት ጥሩ"
+    },
+    "subtitle": "ዕለታዊ ክርስትናዊ መንፈሳዊ ጉዞ",
+    "heroLine": "በተለይ ሥራ የሕይወትህ ለውጥ አምጣ",
+    "verseOfDay": "የቀኑ ቁራጭ",
+    "openBible": "ጅማሌ ክፍት",
+    "explainVerse": "ተብራራ",
+    "share": "ያጋሩ",
+    "bookmark": "ቅመር",
+    "continueReading": "ማንበብ ይቀጥሉ",
+    "streak": "ማንበብ ተከታታይ",
+    "selectLanguage": "ቋንቋ ይምረጡ",
+    "verseError": "ቁራጩ አልተገኘም",
+    "noVerse": "ምንም ቁራጭ አልተገኘም",
+    "nowPlaying": "አሁን ሲጫወት"
+  },
+  "bible": {
+    "title": "መጽሐፍ ቅዱስ",
+    "selectBook": "መጽሐፍ ይምረጡ",
+    "selectChapter": "ምዕራፍ ይምረጡ",
+    "playAudio": "ሰምትዋ",
+    "noAudio": "ይህ ምዕራፍ ለሞትና የለም",
+    "chapterUnavailable": "አማርኛ ቅጽ አሁን ለመድረስ できませんでした። እባክዎ ኢንግሊዝኛ ይጠቀሙ።",
+    "audioUnavailable": "የዚህ ምዕራፍ ድምጽ ለመድረስ できませんでした",
+    "verseUnavailable": "ይህ ቁራጭ አሁን ለመድረስ できませんでした",
+    "tryAnother": "ሌላ ምዕራፍ ይሞክሩ",
+    "highlight": "ስምምባ",
+    "copy": "ከግራ",
+    "attachPrayer": "ጸሎት ላይ ያያይዙ",
+    "attachComment": "አስተያየት ላይ ያያይዙ",
+    "createImage": "ሥዕል ፍጠር",
+    "oldTestament": "ድሩስ ኪዳን",
+    "newTestament": "አዲስ ኪዳን",
+    "chapters": "ምዕራፎች",
+    "verses": "ቁጥሮች",
+    "books": "መጻሕፍት",
+    "search": "ፈልግ",
+    "searchPlaceholder": "ቃል ወይም ቁጥር አስገባ...",
+    "noResults": "ምንም አልተገኘም",
+    "read": "አንብብ",
+    "listen": "አዳምጥ",
+    "share": "አጋራ",
+    "copy": "ቅዳ",
+    "next": "ቀጣይ",
+    "previous": "ቀዳሚ",
+    "selectVerse": "ቁጥር ይምረጡ",
+    "loading": "ቅጽ በሰኞ ላይ...",
+    "fallbackNote": "ይህ ቋንቋ ቅጽ ለመድረስ できませんでした — ኢንግሊዝኛ ሲይ"
+  },
+  "audio": {
+    "play": "ጀምር",
+    "pause": "ቆም",
+    "stop": "ተወ",
+    "volume": "ድምጽ",
+    "speed": "ፍጥነት",
+    "loading": "ድምጽ በሰኞ ላይ...",
+    "nowPlaying": "አሁን ሲጫወት",
+    "notAvailable": "ድምጽ ለመድረስ できませんでした"
+  },
+  "prayer": {
+    "myPrayers": "ጸሎቴ",
+    "newPrayer": "አዲስ ጸሎት",
+    "addPrayer": "ጸሎት ያክሉ",
+    "deletePrayer": "ጸሎት ያስወግዱ",
+    "editPrayer": "ጸሎት ወርሱ"
+  },
+  "communityPrayerBoard": {
+    "title": "የጸሎት ሰሌዳ",
+    "subtitle": "በጸሎት እርስ በእርሳችን እንደግፍ",
+    "selectLanguage": "ቋንቋ ይምረጡ",
+    "request": "ጥያቄ",
+    "categories": {
+      "all": "ሁሉም",
+      "health": "ጤና",
+      "family": "ቤተሰብ",
+      "faith": "እምነት",
+      "work": "ስራ",
+      "relationships": "ግንኙነት",
+      "gratitude": "ምስጋና",
+      "other": "ሌላ"
+    },
+    "emptyState": {
+      "title": "እስካሁን የጸሎት ጥያቄዎች የሉም",
+      "subtitle": "መጀመሪያ የሆነ ጥያቄ አጋራ"
+    },
+    "form": {
+      "title": "የጸሎት ጥያቄ አስገባ",
+      "name": "ስምዎ",
+      "request": "የጸሎት ጥያቄዎ",
+      "category": "ምድብ",
+      "submit": "አስገባ",
+      "cancel": "ይቅር"
+    }
+  },
+  "notifications": {
+    "daily": "ዕለታዊ ማሳወቂያ",
+    "reminder": "ማሳወቂያ",
+    "turnOn": "ያብራሩ",
+    "turnOff": "ዝጋ",
+    "enabled": "ነቅሱ",
+    "disabled": "ዝጋ"
+  },
+  "profile": {
+    "name": "ስም",
+    "email": "ኢሜይል",
+    "language": "ቋንቋ",
+    "theme": "ገፅታ",
+    "logout": "ውጫ"
+  },
+  "store": {
+    "premium": "ጥሩ",
+    "subscribe": "ይመዝገቡ",
+    "cancel": "ይቅር",
+    "price": "ዋጋ"
+  },
+  "settings": {
+    "appSettings": "ቅንብራት",
+    "about": "ስለ",
+    "privacyPolicy": "ግላዊነት ፖሊሲ"
+  },
+  "errors": {
+    "networkError": "የ네ットワར�ክ ስህተት",
+    "amharicUnavailable": "አማርኛ ቅጽ አሁን ለመድረስ できませんでした። እባክዎ ኢንግሊዝኛ ይጠቀሙ።",
+    "loadingFailed": "ሸክላ አልተሳካም"
+  },
+  "settingsNotifications": {
+    "sectionLabel": "ቅንብሮች",
+    "title": "ማሳወቂያዎች",
+    "description": "ከመተግበሪያው ማግኘት የሚፈልጉትን ማንቂያዎች፣ አስታዋሾች እና ዝማኔዎች ይምረጡ።",
+    "cardTitle": "የማሳወቂያ ምርጫዎች",
+    "cardDescription": "ማሳወቂያዎችን በማንኛውም ጊዜ ማብራት ወይም ማጥፋት ይችላሉ።",
+    "quickActionsTitle": "ፈጣን ተግባሮች",
+    "quickActionsDescription": "ሁሉንም የመተግበሪያ ማሳወቂያዎች በአንድ መንካት ያብሩ ወይም ያጥፉ።",
+    "noteTitle": "ማስታወሻ",
+    "noteBody": "እነዚህ ቅንብሮች በመተግበሪያው ውስጥ ያሉ የማሳወቂያ ምርጫዎችን ይቆጣጠራሉ። በስልክዎ ቅንብሮች ውስጥ ያለው የመሣሪያ ደረጃ የማሳወቂያ ፈቃድም መብራት ሊያስፈልግ ይችላል።",
+    "actions": {
+      "save": "ለውጦችን አስቀምጥ",
+      "saving": "በማስቀመጥ ላይ...",
+      "cancel": "ሰርዝ",
+      "enableAll": "ሁሉንም አብራ",
+      "disableAll": "ሁሉንም አጥፋ"
+    },
+    "messages": {
+      "saved": "የማሳወቂያ ቅንብሮች በተሳካ ሁኔታ ተዘምነዋል።",
+      "saveError": "የማሳወቂያ ቅንብሮችን ማስቀመጥ አልተቻለም። እባክዎ እንደገና ይሞክሩ።"
+    },
+    "options": {
+      "prayerReminders": {
+        "title": "የጸሎት አስታዋሾች",
+        "description": "ለመጸለይ ማስታወሳዎችን ይቀበሉ እና በመንፈሳዊ ልምድዎ ውስጥ የተስተካከለ ቀጣይነት ያስጠብቁ።"
+      },
+      "communityUpdates": {
+        "title": "የማህበረሰብ ዝማኔዎች",
+        "description": "ስለ የጸሎት ሰሌዳ እንቅስቃሴ እና አስፈላጊ የማህበረሰብ ዝማኔዎች ማሳወቂያ ይቀበሉ።"
+      },
+      "dailyVerse": {
+        "title": "የዕለቱ ቃል",
+        "description": "የዕለቱን የመጽሐፍ ቅዱስ ጥቅስ ወይም አጭር ማበረታቻ ከመተግበሪያው ይቀበሉ።"
+      },
+      "appAnnouncements": {
+        "title": "የመተግበሪያ ማስታወቂያዎች",
+        "description": "ስለ አዲስ ባህሪያት፣ ማሻሻያዎች እና አስፈላጊ የመተግበሪያ ዜናዎች መረጃ ያግኙ።"
+      }
+    }
+  },
+  "sermonPreparation": {
+    "title": "የስብከት ዝግጅት",
+    "outputLanguage": {
+      "label": "ስብከቱ የሚወጣበት ቋንቋ",
+      "required": "(አስፈላጊ)",
+      "helper": "የትኞቹ ቋንቋዎች ሙሉ በሙሉ ይደገፋሉ?"
+    },
+    "sermonType": {
+      "label": "የስብከት አይነት",
+      "sunday": {
+        "title": "የእሁድ ስብከት",
+        "description": "ለአጠቃላይ የቤተ ክርስቲያን ስብሰባ የሚሆን ስብከት"
+      },
+      "youth": {
+        "title": "የወጣቶች ስብከት",
+        "description": "ለወጣቶችና ለወጣት አዋቂዎች የተዘጋጀ"
+      },
+      "bibleStudy": {
+        "title": "የመጽሐፍ ቅዱስ ጥናት መመሪያ",
+        "description": "ዝርዝር ጥናት ከውይይት ጥያቄዎች ጋር"
+      },
+      "funeral": {
+        "title": "የቀብር ስብከት",
+        "description": "በሐዘን ጊዜ መጽናናትና ተስፋ"
+      }
+    },
+    "form": {
+      "topic": "የስብከት ርዕስ",
+      "scripture": "ዋና ዋና የመጽሐፍ ቅዱስ ጥቅሶች",
+      "scripturePlaceholder": "ለምሳሌ፦ ሮሜ 8:28፣ ያዕቆብ 1:2-4",
+      "audience": "ተደራሲዎች",
+      "tone": "የስብከቱ ቅጥ",
+      "doctrine": "የእምነት ባህል / መሠረት",
+      "duration": "የስብከት ቆይታ",
+      "outputType": "የውጤት አይነት",
+      "generate": "ስብከት ፍጠር"
+    },
+    "audienceOptions": {
+      "general": "አጠቃላይ የቤተ ክርስቲያን ተደራሲ",
+      "youth": "የወጣቶች ተደራሲ",
+      "children": "ሕፃናት",
+      "families": "ቤተሰቦች",
+      "smallChurch": "ትንሽ ቤተ ክርስቲያን",
+      "bibleStudy": "የመጽሐፍ ቅዱስ ጥናት ቡድን",
+      "evangelism": "ወንጌል / ውጭ አገልግሎት"
+    },
+    "toneOptions": {
+      "pastoral": "እረኛዊ — ሙቀት ያለው፣ ተንከባካቢ፣ ርኅሩኅ",
+      "teaching": "የማስተማር — ግልጽ፣ የተዋቀረ፣ አብራሪ",
+      "preaching": "የስብከት — ጠንካራ፣ አሳማኝ፣ ሀይለኛ",
+      "devotional": "መንፈሳዊ — ግላዊ፣ አስተንታኝ፣ መንፈሳዊ",
+      "encouraging": "አበረታች",
+      "serious": "ቁምነገር ያለው",
+      "simple": "ቀላል"
+    },
+    "doctrineOptions": {
+      "generalChristian": "አጠቃላይ ክርስቲያናዊ — ሁሉን የሚያካትት፣ ከተወሰነ ድርጅት ውጪ",
+      "evangelical": "ወንጌላዊ",
+      "pentecostal": "ጴንጤቆስጤ / ካሪዝማቲክ",
+      "reformed": "ሪፎርምድ",
+      "orthodox": "ኦርቶዶክስ",
+      "catholic": "ካቶሊክ",
+      "baptist": "ባፕቲስት"
+    },
+    "outputOptions": {
+      "full": "ሙሉ ስብከት ከመግቢያ፣ ከዋና ክፍል እና ከመደምደሚያ ጋር",
+      "outline": "አጭር የስብከት እቅድ",
+      "teachingNotes": "የማስተማር ማስታወሳዎች",
+      "bibleStudy": "የመጽሐፍ ቅዱስ ጥናት እቅድ",
+      "prayer": "በጸሎት ላይ የተመሰረተ መልእክት"
+    },
+    "duration": {
+      "label": "የስብከት ቆይታ",
+      "minutes": "ደቂቃ"
+    },
+    "validation": {
+      "topicRequired": "የስብከት ርዕስ አስፈላጊ ነው",
+      "scriptureRequired": "እባክዎ የመጽሐፍ ቅዱስ ጥቅሶችን ያስገቡ"
+    },
+    "status": {
+      "translating": "በመተርጎም ላይ...",
+      "comingSoon": "በቅርቡ"
+    }
+  }
+  }

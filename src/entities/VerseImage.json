@@ -1,0 +1,42 @@
+{
+  "name": "VerseImage",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User's email"
+    },
+    "verse_reference": {
+      "type": "string",
+      "description": "Bible reference"
+    },
+    "verse_text": {
+      "type": "string",
+      "description": "Full verse text"
+    },
+    "font_style": {
+      "type": "string",
+      "enum": ["elegant", "bold", "modern", "serif"],
+      "default": "elegant"
+    },
+    "background_option": {
+      "type": "string",
+      "enum": ["gradient_purple", "gradient_blue", "solid_navy", "texture_wood", "nature_sunset"],
+      "default": "gradient_purple"
+    },
+    "overlay_filter": {
+      "type": "string",
+      "enum": ["none", "subtle_glow", "soft_blur", "high_contrast"],
+      "default": "none"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Generated image URL"
+    },
+    "is_favorite": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": ["user_email", "verse_reference", "verse_text", "image_url"]
+}

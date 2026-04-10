@@ -1,0 +1,82 @@
+{
+  "name": "SermonTranscriptAnalysis",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user who uploaded the transcript"
+    },
+    "sermon_title": {
+      "type": "string",
+      "description": "Title of the sermon"
+    },
+    "preacher_name": {
+      "type": "string",
+      "description": "Name of the preacher (optional)"
+    },
+    "transcript": {
+      "type": "string",
+      "description": "Full sermon transcript text"
+    },
+    "key_takeaways": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "AI-generated key takeaways from the sermon"
+    },
+    "biblical_references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "reference": {
+            "type": "string",
+            "description": "Bible verse reference (e.g., John 3:16)"
+          },
+          "book": {
+            "type": "string",
+            "description": "Book name"
+          },
+          "context": {
+            "type": "string",
+            "description": "How it was mentioned in the sermon"
+          }
+        },
+        "required": ["reference"]
+      },
+      "description": "Biblical references mentioned in the sermon"
+    },
+    "personal_action_plan": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "day": {
+            "type": "string",
+            "description": "Day of the week (Monday-Sunday)"
+          },
+          "action": {
+            "type": "string",
+            "description": "Specific action or reflection for the day"
+          },
+          "scripture": {
+            "type": "string",
+            "description": "Related scripture reference"
+          }
+        },
+        "required": ["day", "action"]
+      },
+      "description": "Weekly action plan based on sermon message"
+    },
+    "summary": {
+      "type": "string",
+      "description": "Brief AI-generated summary of the sermon"
+    },
+    "main_theme": {
+      "type": "string",
+      "description": "Main theme or topic of the sermon"
+    }
+  },
+  "required": ["user_email", "sermon_title", "transcript", "key_takeaways", "biblical_references", "personal_action_plan"]
+}

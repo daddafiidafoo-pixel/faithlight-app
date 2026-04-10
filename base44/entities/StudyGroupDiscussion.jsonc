@@ -1,0 +1,48 @@
+{
+  "name": "StudyGroupDiscussion",
+  "type": "object",
+  "properties": {
+    "groupBook": {
+      "type": "string",
+      "description": "Bible book this group discussion belongs to"
+    },
+    "authorName": {
+      "type": "string",
+      "description": "Display name of message author"
+    },
+    "authorEmail": {
+      "type": "string",
+      "description": "Email of message author"
+    },
+    "content": {
+      "type": "string",
+      "description": "Message content"
+    },
+    "messageType": {
+      "type": "string",
+      "enum": [
+        "discussion",
+        "insight",
+        "question",
+        "prayer"
+      ],
+      "default": "discussion",
+      "description": "Type of message"
+    },
+    "verseReference": {
+      "type": "string",
+      "description": "Optional verse reference this message relates to"
+    },
+    "likes": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of likes"
+    }
+  },
+  "required": [
+    "groupBook",
+    "authorName",
+    "authorEmail",
+    "content"
+  ]
+}

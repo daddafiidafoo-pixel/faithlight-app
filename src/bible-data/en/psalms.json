@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "language": "en",
+    "language_name": "English",
+    "version_id": "english_bible",
+    "version_name": "English Bible",
+    "direction": "ltr"
+  },
+  "book_id": "psalms",
+  "book_name": "Psalms",
+  "book_abbr": "Psa",
+  "chapters": [
+    {
+      "chapter": 23,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "The Lord is my shepherd; I shall not want."
+        },
+        {
+          "verse": 2,
+          "text": "He maketh me to lie down in green pastures: he leadeth me beside the still waters."
+        },
+        {
+          "verse": 3,
+          "text": "He restoreth my soul: he leadeth me in the paths of righteousness for his name's sake."
+        },
+        {
+          "verse": 4,
+          "text": "Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me."
+        }
+      ]
+    }
+  ]
+}

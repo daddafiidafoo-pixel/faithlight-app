@@ -1,0 +1,90 @@
+{
+  "name": "ReadingPlan",
+  "type": "object",
+  "properties": {
+    "theme": {
+      "type": "string",
+      "enum": [
+        "hope",
+        "anxiety",
+        "peace",
+        "faith",
+        "gratitude",
+        "healing"
+      ],
+      "description": "Theme of the reading plan"
+    },
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user who created/started the plan"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the reading plan"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the reading plan"
+    },
+    "days": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "day": {
+            "type": "number",
+            "description": "Day number (1-7)"
+          },
+          "book_id": {
+            "type": "string",
+            "description": "Bible book ID (e.g., JHN, PSA)"
+          },
+          "chapter": {
+            "type": "number"
+          },
+          "verse_start": {
+            "type": "number"
+          },
+          "verse_end": {
+            "type": "number"
+          },
+          "reference": {
+            "type": "string",
+            "description": "Formatted reference (e.g., John 3:16)"
+          },
+          "reflection_prompt": {
+            "type": "string",
+            "description": "Reflection question for the day"
+          }
+        }
+      },
+      "description": "7-day verse schedule"
+    },
+    "started_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When user started the plan"
+    },
+    "completed_days": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "default": [],
+      "description": "Array of completed day numbers"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether plan is currently active"
+    }
+  },
+  "required": [
+    "theme",
+    "user_email",
+    "title",
+    "description",
+    "days",
+    "started_date"
+  ]
+}

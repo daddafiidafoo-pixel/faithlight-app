@@ -1,0 +1,93 @@
+{
+  "en": {
+    "visionTitle": "Our Vision",
+    "visionText": "To build a global, safe, and structured discipleship platform that guides believers from spiritual infancy to mature Christian leadership.",
+    "missionTitle": "Our Mission",
+    "missionIntro": "FaithLight exists to:",
+    "missionPoints": [
+      "Provide clear, step-by-step spiritual growth pathways",
+      "Protect believers through verified leadership and trusted community safeguards",
+      "Deliver multilingual and accessible Christian teaching",
+      "Equip and raise biblically grounded leaders",
+      "Foster authentic Christian fellowship in a safe digital environment"
+    ]
+  },
+  "om": {
+    "visionTitle": "Mul'ata Keenya",
+    "visionText": "Waltajjii bartoota Yesus addunyaa guutuu keessatti, nageenya qabuu fi sirna qabeessa ta'e ijaaruun, amantoota sadarkaa jalqabaa irraa gara hoggansa Kiristaanaa bilchinaatti qajeelchuu.",
+    "missionTitle": "Ergama Keenya",
+    "missionIntro": "FaithLight kan jiru:",
+    "missionPoints": [
+      "Karaa guddina hafuuraa ifaa fi tartiiba qabu diriirsuu",
+      "Amantoota hoggansa mirkanaa'e fi hawaasa amanamaa keessatti eegu",
+      "Barnoota Kiristaanaa afaanota hedduun salphaatti dhiyeessuu",
+      "Hoggantoota Macaaba Qulqulluu irratti hundaa'an leenjisuu fi guddisuu",
+      "Walitti dhufeenya Kiristaanaa dhugaa ta'e bakka dijitaalaa nageenya qabu keessatti jabeessuu"
+    ]
+  },
+  "fr": {
+    "visionTitle": "Notre Vision",
+    "visionText": "Construire une plateforme mondiale, sûre et structurée de formation de disciples, guidant les croyants de l'enfance spirituelle vers une maturité en leadership chrétien.",
+    "missionTitle": "Notre Mission",
+    "misionIntro": "FaithLight existe pour :",
+    "missionPoints": [
+      "Offrir des parcours de croissance spirituelle clairs et progressifs",
+      "Protéger les croyants grâce à un leadership vérifié et une communauté sécurisée",
+      "Fournir un enseignement chrétien accessible en plusieurs langues",
+      "Former et équiper des leaders fondés sur la Bible",
+      "Favoriser une communion chrétienne authentique dans un environnement numérique sûr"
+    ]
+  },
+  "es": {
+    "visionTitle": "Nuestra Visión",
+    "visionText": "Construir una plataforma global, segura y estructurada de discipulado que guíe a los creyentes desde la infancia espiritual hasta un liderazgo cristiano maduro.",
+    "missionTitle": "Nuestra Misión",
+    "missionIntro": "FaithLight existe para:",
+    "missionPoints": [
+      "Proporcionar caminos claros y progresivos de crecimiento espiritual",
+      "Proteger a los creyentes mediante liderazgo verificado y una comunidad segura",
+      "Ofrecer enseñanza cristiana accesible en múltiples idiomas",
+      "Equipar y formar líderes fundamentados en la Biblia",
+      "Fomentar una comunión cristiana auténtica en un entorno digital seguro"
+    ]
+  },
+  "am": {
+    "visionTitle": "የእኛ ራዕይ",
+    "visionText": "ከመንፈሳዊ ህፃናትነት ወደ የበሰለ ክርስቲያናዊ መሪነት የሚመራ ዓለም አቀፍ፣ ደህንነቱ የተጠበቀ እና የተዋቀረ የደቀ መዝሙር መድረክ መገንባት።",
+    "missionTitle": "የእኛ ተልዕኮ",
+    "missionIntro": "FaithLight የሚኖረው:",
+    "missionPoints": [
+      "ግልጽና ደረጃ በደረጃ የሚመራ መንፈሳዊ እድገት መንገዶችን ማቅረብ",
+      "አረጋጋጭ መሪነትና ደህንነት ባለው ማህበረሰብ አማካኝነት አማኞችን መጠበቅ",
+      "በብዙ ቋንቋዎች ተደራሽ የሆነ የክርስቲያናዊ ትምህርት ማቅረብ",
+      "በመጽሐፍ ቅዱስ የተመሰረቱ መሪዎችን ማብቃትና ማሰልጠን",
+      "በደህንነት የተጠበቀ ዲጂታል አካባቢ ውስጥ እውነተኛ ክርስቲያናዊ ኅብረትን ማበረታታት"
+    ]
+  },
+  "sw": {
+    "visionTitle": "Maono Yetu",
+    "visionText": "Kujenga jukwaa la kimataifa, salama na lenye mpangilio wa ufuasi wa Kristo, linalowaongoza waumini kutoka ukuaji wa kiroho wa awali hadi uongozi wa Kikristo uliokomaa.",
+    "missionTitle": "Dhamira Yetu",
+    "missionIntro": "FaithLight ipo kwa ajili ya:",
+    "missionPoints": [
+      "Kutoa njia zilizo wazi za ukuaji wa kiroho hatua kwa hatua",
+      "Kulinda waumini kupitia uongozi uliothibitishwa na jamii salama",
+      "Kutoa mafundisho ya Kikristo yanayopatikana kwa lugha nyingi",
+      "Kuwaandaa na kuwainua viongozi walio na msingi wa Biblia",
+      "Kukuza ushirika wa Kikristo wa kweli katika mazingira salama ya kidijitali"
+    ]
+  },
+  "ar": {
+    "visionTitle": "رؤيتنا",
+    "visionText": "بناء منصة عالمية آمنة ومنظمة للتلمذة، تقود المؤمنين من الطفولة الروحية إلى النضج في القيادة المسيحية.",
+    "missionTitle": "رسالتنا",
+    "missionIntro": "FaithLight موجود من أجل:",
+    "missionPoints": [
+      "توفير مسارات واضحة ومتدرجة للنمو الروحي",
+      "حماية المؤمنين من خلال قيادة موثوقة ومجتمع آمن",
+      "تقديم تعليم مسيحي متاح بعدة لغات",
+      "تأهيل وإعداد قادة قائمين على الكتاب المقدس",
+      "تعزيز شركة مسيحية حقيقية في بيئة رقمية آمنة"
+    ]
+  }
+}

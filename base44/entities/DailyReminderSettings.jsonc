@@ -1,0 +1,57 @@
+{
+  "name": "DailyReminderSettings",
+  "type": "object",
+  "properties": {
+    "userEmail": {
+      "type": "string",
+      "description": "Email of the user"
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "en",
+        "om",
+        "am"
+      ],
+      "default": "en",
+      "description": "User's preferred language"
+    },
+    "isEnabled": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether daily reminders are enabled"
+    },
+    "reminderTime": {
+      "type": "string",
+      "description": "Preferred time for reminder (HH:MM format, e.g., 09:00)"
+    },
+    "remindersShown": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string"
+          },
+          "topic": {
+            "type": "string"
+          },
+          "verse": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "History of reminders shown to user",
+      "default": []
+    },
+    "lastReminderDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Last date a reminder was shown"
+    }
+  },
+  "required": [
+    "userEmail",
+    "language"
+  ]
+}

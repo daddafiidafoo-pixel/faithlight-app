@@ -1,0 +1,60 @@
+{
+  "name": "UserReadingPlanProgress",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user"
+    },
+    "plan_id": {
+      "type": "string",
+      "description": "Reference to TopicalReadingPlan"
+    },
+    "plan_title": {
+      "type": "string",
+      "description": "Cached plan title"
+    },
+    "plan_topic": {
+      "type": "string",
+      "description": "Cached plan topic"
+    },
+    "plan_emoji": {
+      "type": "string",
+      "description": "Cached plan emoji"
+    },
+    "plan_duration_days": {
+      "type": "number",
+      "description": "Total days in plan"
+    },
+    "completed_days": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "default": [],
+      "description": "Array of completed day numbers"
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When user subscribed"
+    },
+    "last_read_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last reading activity"
+    },
+    "is_completed": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "user_email",
+    "plan_id",
+    "plan_title",
+    "plan_topic",
+    "plan_duration_days",
+    "started_at"
+  ]
+}

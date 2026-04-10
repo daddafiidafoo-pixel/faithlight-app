@@ -1,0 +1,56 @@
+{
+  "name": "SermonNote",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user who created the note"
+    },
+    "sermon_id": {
+      "type": "string",
+      "description": "Optional reference to sermon/audio"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the sermon note"
+    },
+    "content": {
+      "type": "string",
+      "description": "Main note content/transcript"
+    },
+    "timestamp": {
+      "type": "number",
+      "description": "Audio timestamp in seconds when note was created"
+    },
+    "verse_references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Array of Bible verse references (e.g., 'John 3:16')"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "User-defined tags for organization"
+    },
+    "sermon_title": {
+      "type": "string",
+      "description": "Title of the sermon being noted"
+    },
+    "is_favorite": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether note is marked as favorite"
+    }
+  },
+  "required": [
+    "user_email",
+    "title",
+    "content"
+  ]
+}

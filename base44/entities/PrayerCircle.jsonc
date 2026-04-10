@@ -1,0 +1,54 @@
+{
+  "name": "PrayerCircle",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the prayer circle"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the circle's purpose"
+    },
+    "creatorEmail": {
+      "type": "string",
+      "description": "Email of the user who created the circle"
+    },
+    "creatorName": {
+      "type": "string",
+      "description": "Name of the circle creator"
+    },
+    "isPrivate": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the circle is private (invite-only)"
+    },
+    "memberEmails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Array of member email addresses"
+    },
+    "memberCount": {
+      "type": "number",
+      "default": 1,
+      "description": "Number of members in the circle"
+    },
+    "inviteCode": {
+      "type": "string",
+      "description": "Optional code for members to join the circle"
+    },
+    "maxMembers": {
+      "type": "number",
+      "default": 20,
+      "description": "Maximum number of members allowed"
+    }
+  },
+  "required": [
+    "name",
+    "creatorEmail",
+    "creatorName"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "StudySession",
+  "type": "object",
+  "properties": {
+    "groupId": {
+      "type": "string",
+      "description": "Reference to StudyGroup"
+    },
+    "title": {
+      "type": "string",
+      "description": "Session title"
+    },
+    "passage": {
+      "type": "string",
+      "description": "Bible passage to study"
+    },
+    "description": {
+      "type": "string",
+      "description": "Session description and focus"
+    },
+    "sessionDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Scheduled session date and time"
+    },
+    "createdBy": {
+      "type": "string",
+      "description": "Email of session creator"
+    }
+  },
+  "required": ["groupId", "title", "passage", "sessionDate", "createdBy"]
+}

@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "language": "fr",
+    "name": "French",
+    "nativeName": "Français",
+    "reviewed": true,
+    "reviewDate": "2026-03-30",
+    "version": "1.0.0",
+    "notes": "Single source of truth for French UI strings. Bible verse content comes from Bible Brain only."
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "back": "Retour",
+    "next": "Suivant",
+    "prev": "Précédent",
+    "retry": "Réessayer",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "noData": "Aucune donnée trouvée",
+    "settings": "Paramètres",
+    "profile": "Profil",
+    "logout": "Déconnexion",
+    "language": "Langue",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier"
+  },
+  "home": {
+    "greetings": {
+      "morning": "Bonjour",
+      "afternoon": "Bon après-midi",
+      "evening": "Bonsoir"
+    },
+    "subtitle": "Votre voyage spirituel quotidien avec Dieu",
+    "heroLine": "Commencez votre journée avec la Parole de Dieu",
+    "verseOfDay": "Verset du jour",
+    "openBible": "Ouvrir la Bible",
+    "explainVerse": "Expliquer",
+    "share": "Partager",
+    "bookmark": "Ajouter un signet",
+    "continueReading": "Continuer la lecture",
+    "streak": "Série de lectures",
+    "selectLanguage": "Sélectionner la langue",
+    "verseError": "Verset introuvable",
+    "noVerse": "Aucun verset trouvé",
+    "nowPlaying": "En lecture"
+  },
+  "bible": {
+    "title": "Lecteur de Bible",
+    "selectBook": "Sélectionner le livre",
+    "selectChapter": "Sélectionner le chapitre",
+    "playAudio": "Lecture audio",
+    "noAudio": "L'audio n'est pas disponible pour ce chapitre",
+    "chapterUnavailable": "La Bible en français n'est pas disponible pour le moment. Veuillez utiliser l'anglais.",
+    "audioUnavailable": "L'audio n'est pas disponible pour ce chapitre",
+    "verseUnavailable": "Ce verset n'est pas disponible pour le moment",
+    "tryAnother": "Essayez un autre chapitre",
+    "highlight": "Mettre en surbrillance",
+    "copy": "Copier",
+    "attachPrayer": "Joindre à la prière",
+    "attachComment": "Joindre le commentaire",
+    "createImage": "Créer une image",
+    "oldTestament": "Ancien Testament",
+    "newTestament": "Nouveau Testament",
+    "loading": "Chargement de la Bible...",
+    "fallbackNote": "La Bible dans cette langue n'est pas disponible — affichage en anglais"
+  },
+  "audio": {
+    "play": "Lecture",
+    "pause": "Pause",
+    "stop": "Arrêt",
+    "volume": "Volume",
+    "speed": "Vitesse",
+    "loading": "Chargement de l'audio...",
+    "nowPlaying": "En lecture",
+    "notAvailable": "L'audio n'est pas disponible"
+  },
+  "prayer": {
+    "myPrayers": "Mes prières",
+    "newPrayer": "Nouvelle prière",
+    "addPrayer": "Ajouter une prière",
+    "deletePrayer": "Supprimer la prière",
+    "editPrayer": "Modifier la prière"
+  },
+  "notifications": {
+    "daily": "Notification quotidienne",
+    "reminder": "Rappel",
+    "turnOn": "Activer",
+    "turnOff": "Désactiver",
+    "enabled": "Activé",
+    "disabled": "Désactivé"
+  },
+  "profile": {
+    "name": "Nom",
+    "email": "Email",
+    "language": "Langue",
+    "theme": "Apparence",
+    "logout": "Déconnexion"
+  },
+  "store": {
+    "premium": "Premium",
+    "subscribe": "S'abonner",
+    "cancel": "Annuler",
+    "price": "Prix"
+  },
+  "settings": {
+    "appSettings": "Paramètres de l'application",
+    "about": "À propos",
+    "privacyPolicy": "Politique de confidentialité"
+  },
+  "errors": {
+    "networkError": "Erreur réseau",
+    "frenchUnavailable": "La Bible en français n'est pas disponible pour le moment. Veuillez utiliser l'anglais.",
+    "loadingFailed": "Échec du chargement"
+  }
+}

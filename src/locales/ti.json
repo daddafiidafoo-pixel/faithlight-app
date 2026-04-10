@@ -1,0 +1,185 @@
+{
+  "meta": {
+    "language": "ti",
+    "name": "Tigrigna",
+    "nativeName": "ትግርኛ",
+    "reviewed": true,
+    "reviewDate": "2026-03-30",
+    "version": "1.0.0",
+    "notes": "Single source of truth for Tigrigna UI strings. Bible verse content comes from Bible Brain only."
+  },
+  "common": {
+    "ok": "ይሕመት",
+    "cancel": "መጽሓፍ ሲደይሙ",
+    "close": "ዝጋ",
+    "back": "ወደ ኋላ",
+    "next": "ቀጣይ",
+    "prev": "ቀደም",
+    "retry": "ድጋሚ ሞክር",
+    "loading": "በሰኞ ላይ...",
+    "error": "ስህተት ተከስቷል",
+    "noData": "ማንኛውም ውሂብ አልተገኘም",
+    "settings": "ምደባ",
+    "profile": "መገለጫ",
+    "logout": "ውጫ",
+    "language": "ሕሩይ ቋንቋ",
+    "save": "ቆምጣጭ",
+    "delete": "ጠፊ",
+    "edit": "ተስተካካይ",
+    "search": "ፈልግ",
+    "filter": "ማጣሪያ",
+    "sort": "ተደርድር"
+  },
+  "home": {
+    "greetings": {
+      "morning": "ጠዋት ጥሩ",
+      "afternoon": "ድሕሪት ጥሩ",
+      "evening": "ምሽት ጥሩ"
+    },
+    "subtitle": "ዕለታዊ መንፈሳዊ ጉዞ ምስ ንጹህ ቃል",
+    "heroLine": "መንግስተ ሃይማኖት ይገብር",
+    "verseOfDay": "ቁራጭ ዕለታ",
+    "openBible": "ንጹህ ቃል ክፍት",
+    "explainVerse": "ይምህራ",
+    "share": "ያጋሩ",
+    "bookmark": "ቅመር",
+    "continueReading": "ማንበብ ይቀጥሉ",
+    "streak": "ማንበብ ተከታታይ",
+    "selectLanguage": "ቋንቋ ይምረጡ",
+    "verseError": "ቁራጩ አልተገኘም",
+    "noVerse": "ምንም ቁራጭ አልተገኘም",
+    "nowPlaying": "አሁን ሲጫወት"
+  },
+  "bible": {
+    "title": "መጽሐፍ ቅዱስ",
+    "selectBook": "መጽሐፍ ይምረጡ",
+    "selectChapter": "ምዕራፍ ይምረጡ",
+    "playAudio": "ሰምትዋ",
+    "noAudio": "ይህ ምዕራፍ ወይ ድምጽ ለመድረስ できませんでした",
+    "chapterUnavailable": "ትግርኛ ንጹህ ቃል አሁን ለመድረስ できませんでした። እባክዎ ኢንግሊዝኛ ይጠቀሙ።",
+    "audioUnavailable": "የዚህ ምዕራፍ ድምጽ ለመድረስ できませんでした",
+    "verseUnavailable": "ይህ ቁራጭ አሁን ለመድረስ できませんでした",
+    "tryAnother": "ሌላ ምዕራፍ ይሞክሩ",
+    "highlight": "ስምምባ",
+    "copy": "ከግራ",
+    "attachPrayer": "ምስሊት ላይ ያያይዙ",
+    "attachComment": "አስተያየት ላይ ያያይዙ",
+    "createImage": "ሥዕል ፍጠር",
+    "oldTestament": "ብሉይ ኪዳን",
+    "newTestament": "ሓድሽ ኪዳን",
+    "chapters": "ምዕራፋት",
+    "verses": "ቁጽርታት",
+    "books": "መጻሕፍቲ",
+    "search": "ድለ",
+    "searchPlaceholder": "ቃል ወይ ቁጽሪ ኣእትው...",
+    "noResults": "ውጽኢት ኣይተረኽበን",
+    "read": "ኣንብብ",
+    "listen": "ስማዕ",
+    "share": "ኣጋራ",
+    "copy": "ቅዳ",
+    "next": "ቀጻሊ",
+    "previous": "ዝሓለፈ",
+    "selectVerse": "ቁጽሪ ምረጽ",
+    "loading": "ንጹህ ቃል በሰኞ ላይ...",
+    "fallbackNote": "ይህ ቋንቋ ንጹህ ቃል ለመድረስ できませんでした — ኢንግሊዝኛ ሲይ"
+  },
+  "audio": {
+    "play": "ጀምር",
+    "pause": "ቆም",
+    "stop": "ተወ",
+    "volume": "ድምጽ",
+    "speed": "ፍጥነት",
+    "loading": "ድምጽ በሰኞ ላይ...",
+    "nowPlaying": "አሁን ሲጫወት"
+  },
+  "prayer": {
+    "myPrayers": "ምስሊታተይ",
+    "newPrayer": "አዲስ ምስሊት",
+    "addPrayer": "ምስሊት ያክሉ"
+  },
+  "communityPrayerBoard": {
+    "title": "ሰሌዳ ጸሎት",
+    "subtitle": "ብጸሎት ንሓድሕድና ንደግፍ",
+    "selectLanguage": "ቋንቋ ምረጽ",
+    "request": "ሕቶ",
+    "categories": {
+      "all": "ኩሉ",
+      "health": "ጥዕና",
+      "family": "ቤተሰብ",
+      "faith": "እምነት",
+      "work": "ስራ",
+      "relationships": "ግንኙነት",
+      "gratitude": "ምስጋና",
+      "other": "ካልእ"
+    },
+    "emptyState": {
+      "title": "ክሳብ ሕጂ ሕቶ ጸሎት የለን",
+      "subtitle": "መጀመርታ ዝኾነ ሕቶ ኣጋራ"
+    },
+    "form": {
+      "title": "ሕቶ ጸሎት ኣእትው",
+      "name": "ስምካ",
+      "request": "ሕቶ ጸሎትካ",
+      "category": "ምድብ",
+      "submit": "ኣእትው",
+      "cancel": "ሰርዝ"
+    }
+  },
+  "notifications": {
+    "daily": "ዕለታዊ ምልክት",
+    "reminder": "ማሳወቂያ",
+    "turnOn": "ያብራሩ",
+    "turnOff": "ዝጋ"
+  },
+  "profile": {
+    "name": "ስም",
+    "email": "ኢሜይል",
+    "language": "ቋንቋ",
+    "logout": "ውጫ"
+  },
+  "errors": {
+    "networkError": "መስመር ስህተት",
+    "tigrignaUnavailable": "ትግርኛ ንጹህ ቃል አሁን ለመድረስ できませんでした። እባክዎ ኢንግሊዝኛ ይጠቀሙ።",
+    "loadingFailed": "ሸክላ አልተሳካም"
+  },
+  "settingsNotifications": {
+    "sectionLabel": "ቅጥዕታት",
+    "title": "ምልክታት",
+    "description": "ካብቲ መተግበሪ ክትቅበሎም እትደሊ መጠንቀቕታት፣ መዘኻኸሪታትን ሓዳሳትን ምረጽ።",
+    "cardTitle": "ምርጫታት ምልክታት",
+    "cardDescription": "ምልክታት ኣብ ዝደለኻዮ ግዜ ምኽኣል ወይ ምዕጻው ትኽእል ኢኻ።",
+    "quickActionsTitle": "ቅልጡፍ ተግባራት",
+    "quickActionsDescription": "ኩሎም ምልክታት መተግበሪ ብሓንቲ መትከል ኣኽእል ወይ ዕጸው።",
+    "noteTitle": "መተሓሳሰቢ",
+    "noteBody": "እዞም ቅጥዕታት ናይ ውሽጢ መተግበሪ ምርጫታት ምልክታት ይቆጻጸሩ። ኣብ ቅጥዕታት ስልክኻ ዝርከብ ናይ መሳርሒ ደረጃ ፍቓድ ምልክታት እውን ክኽእል ይግባእ ይኸውን።",
+    "actions": {
+      "save": "ለውጢ ኣቐምጥ",
+      "saving": "ይቕመጥ ኣሎ...",
+      "cancel": "ሰርዝ",
+      "enableAll": "ኩሉ ኣኽእል",
+      "disableAll": "ኩሉ ዕጸው"
+    },
+    "messages": {
+      "saved": "ቅጥዕታት ምልክታት ብዓወት ተሓዲሶም።",
+      "saveError": "ቅጥዕታት ምልክታት ምቕማጥ ኣይተኻእለን። እባክካ እንደገና ፈትን።"
+    },
+    "options": {
+      "prayerReminders": {
+        "title": "መዘኻኸሪ ጸሎት",
+        "description": "ክትጽሊ ዘዘኻኽሩኻ ምልክታት ተቐበል፣ ኣብ መንፈሳዊ ልምምድኻ ድማ ቀጻልነት ሓሉፍ።"
+      },
+      "communityUpdates": {
+        "title": "ሓዳሳት ማሕበረሰብ",
+        "description": "ብዛዕባ ንጥፈታት ሰሌዳ ጸሎትን ኣገዳሲ ሓዳሳት ማሕበረሰብን ምልክታት ተቐበል።"
+      },
+      "dailyVerse": {
+        "title": "ናይ መዓልቲ ጥቕሲ",
+        "description": "ናይ መዓልቲ ጥቕሲ መጽሓፍ ቅዱስ ወይ ሓጺር ምትብባዕ ካብቲ መተግበሪ ተቐበል።"
+      },
+      "appAnnouncements": {
+        "title": "ምልክታት መተግበሪ",
+        "description": "ብዛዕባ ሓደስቲ ባህርያት፣ ምምሕያሻትን ኣገዳሲ ዜና መተግበሪን ፍለጥ።"
+      }
+    }
+  }
+}

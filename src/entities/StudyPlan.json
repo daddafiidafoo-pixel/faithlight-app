@@ -1,0 +1,45 @@
+{
+  "name": "StudyPlan",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Title of the study plan (e.g., 'Overcoming Anxiety')"
+    },
+    "topic": {
+      "type": "string",
+      "enum": ["anxiety", "gratitude", "hope", "healing", "faith", "peace", "strength", "love", "wisdom", "joy"],
+      "description": "Topic category"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of the study plan"
+    },
+    "duration_days": {
+      "type": "number",
+      "default": 7,
+      "description": "Total number of days in the plan"
+    },
+    "daily_readings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "day": { "type": "number" },
+          "book_id": { "type": "string" },
+          "chapter": { "type": "number" },
+          "verse_start": { "type": "number" },
+          "verse_end": { "type": "number" },
+          "reference": { "type": "string" },
+          "reflection_prompt": { "type": "string" }
+        }
+      },
+      "description": "Daily reading schedule"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": ["title", "topic", "description", "duration_days", "daily_readings"]
+}

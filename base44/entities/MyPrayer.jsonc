@@ -1,0 +1,77 @@
+{
+  "name": "MyPrayer",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "description": "User ID who owns this prayer"
+    },
+    "title": {
+      "type": "string",
+      "description": "Prayer title"
+    },
+    "body": {
+      "type": "string",
+      "description": "Full prayer text"
+    },
+    "category": {
+      "type": "string",
+      "description": "Prayer category key (peace, healing, family, guidance, etc.)"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "waiting",
+        "answered",
+        "archived"
+      ],
+      "description": "Prayer status"
+    },
+    "privacy_level": {
+      "type": "string",
+      "enum": [
+        "private",
+        "shared",
+        "community"
+      ],
+      "description": "Privacy level"
+    },
+    "linked_verse_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Count of linked verses"
+    },
+    "is_answered": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether prayer is marked answered"
+    },
+    "answered_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When prayer was marked answered"
+    },
+    "favorite": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether marked as favorite"
+    },
+    "archived": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether prayer is archived"
+    }
+  },
+  "required": [
+    "user_id",
+    "title",
+    "body",
+    "status",
+    "privacy_level",
+    "linked_verse_count",
+    "is_answered",
+    "favorite",
+    "archived"
+  ]
+}

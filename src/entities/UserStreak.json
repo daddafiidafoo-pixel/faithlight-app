@@ -1,0 +1,44 @@
+{
+  "name": "UserStreak",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User email"
+    },
+    "current_streak": {
+      "type": "number",
+      "default": 0,
+      "description": "Current consecutive days"
+    },
+    "longest_streak": {
+      "type": "number",
+      "default": 0,
+      "description": "Longest streak ever"
+    },
+    "last_read_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Last reading activity date"
+    },
+    "total_xp": {
+      "type": "number",
+      "default": 0,
+      "description": "Total XP earned"
+    },
+    "level": {
+      "type": "number",
+      "default": 1,
+      "description": "User level (1-10)"
+    },
+    "badges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Badge IDs earned"
+    }
+  },
+  "required": ["user_email"]
+}

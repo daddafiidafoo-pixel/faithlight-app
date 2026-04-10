@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "language": "om",
+    "language_name": "Afaan Oromoo",
+    "version_id": "oromo_bible",
+    "version_name": "Afaan Oromoo Bible",
+    "direction": "ltr"
+  },
+  "book_id": "psalms",
+  "book_name": "Faarfannaa",
+  "book_abbr": "Faa",
+  "chapters": [
+    {
+      "chapter": 23,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "Waaqayyo jidha keya; waan tokko iyyuu haalaa hin qabu."
+        },
+        {
+          "verse": 2,
+          "text": "Ni raawwisaa anicha lallabaa midhaa olaanaa keessatti; ni geeddaara anicha bishaan sumaa birrii argisiisa dhumarraa."
+        },
+        {
+          "verse": 3,
+          "text": "Lubbuu koo ni deebisa; karaa qajeelaa gidduugaleessu noo geeddara sababni magaaloos sun."
+        },
+        {
+          "verse": 4,
+          "text": "Yoo gara giddugaleessa dubbii harbaa seenuu sun iyyuu, raphina hin nan sodaa; ati na waliin jirteedhaa; qamaa fi wandabura kee anicha wal'iisu."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "name": "User",
+  "type": "object",
+  "properties": {
+    "role": {
+      "type": "string",
+      "enum": [
+        "admin",
+        "user"
+      ],
+      "default": "user"
+    },
+    "daily_verse_enabled": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether user wants daily verse notifications"
+    },
+    "daily_verse_time": {
+      "type": "string",
+      "default": "08:00",
+      "description": "Preferred time for daily verse (HH:MM)"
+    },
+    "reading_streak": {
+      "type": "number",
+      "default": 0,
+      "description": "Current consecutive reading streak in days"
+    },
+    "longest_streak": {
+      "type": "number",
+      "default": 0,
+      "description": "All-time longest streak"
+    },
+    "prayer_streak": {
+      "type": "number",
+      "default": 0,
+      "description": "Current consecutive prayer streak in days"
+    },
+    "last_read_date": {
+      "type": "string",
+      "description": "Last date user read a chapter (YYYY-MM-DD)"
+    },
+    "preferred_language_code": {
+      "type": "string",
+      "description": "User preferred UI language"
+    },
+    "ai_onboarding_completed": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether user completed AI welcome flow"
+    },
+    "onboarding_goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "User's selected onboarding goals"
+    },
+    "onboarding_time": {
+      "type": "string",
+      "description": "User's selected daily study time preference"
+    },
+    "profileImageUrl": {
+      "type": "string",
+      "description": "URL of the user's profile picture"
+    },
+    "profileImageSource": {
+      "type": "string",
+      "enum": [
+        "gallery",
+        "verse_card"
+      ],
+      "description": "Source of the profile picture"
+    },
+    "profileVerseCardId": {
+      "type": "string",
+      "description": "ID of the verse card used as profile picture"
+    }
+  },
+  "required": [
+    "last_read_date",
+    "preferred_language_code"
+  ]
+}

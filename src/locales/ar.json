@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "language": "ar",
+    "name": "Arabic",
+    "nativeName": "العربية",
+    "reviewed": true,
+    "reviewDate": "2026-03-30",
+    "version": "1.0.0",
+    "isRTL": true,
+    "notes": "Single source of truth for Arabic UI strings. Bible verse content comes from Bible Brain only. RTL layout enabled."
+  },
+  "common": {
+    "ok": "موافق",
+    "cancel": "إلغاء",
+    "close": "إغلاق",
+    "back": "رجوع",
+    "next": "التالي",
+    "prev": "السابق",
+    "retry": "حاول مرة أخرى",
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ",
+    "noData": "لا توجد بيانات",
+    "settings": "الإعدادات",
+    "profile": "الملف الشخصي",
+    "logout": "تسجيل الخروج",
+    "language": "اللغة",
+    "save": "حفظ",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "search": "بحث",
+    "filter": "تصفية",
+    "sort": "ترتيب"
+  },
+  "home": {
+    "greetings": {
+      "morning": "صباح الخير",
+      "afternoon": "تحية بعد الظهر",
+      "evening": "مساء الخير"
+    },
+    "subtitle": "رحلة روحية يومية مع الله",
+    "heroLine": "ابدأ يومك بكلمة الله",
+    "verseOfDay": "آية اليوم",
+    "openBible": "فتح الكتاب المقدس",
+    "explainVerse": "شرح",
+    "share": "مشاركة",
+    "bookmark": "حفظ علامة",
+    "continueReading": "متابعة القراءة",
+    "streak": "سلسلة القراءة",
+    "selectLanguage": "اختر اللغة",
+    "verseError": "الآية غير متاحة",
+    "noVerse": "لم يتم العثور على آية",
+    "nowPlaying": "يتم التشغيل الآن"
+  },
+  "bible": {
+    "title": "قارئ الكتاب المقدس",
+    "selectBook": "اختر السفر",
+    "selectChapter": "اختر الإصحاح",
+    "playAudio": "تشغيل الصوت",
+    "noAudio": "الصوت غير متاح لهذا الإصحاح",
+    "chapterUnavailable": "كتاب الله بالعربية غير متاح حالياً. يرجى استخدام اللغة الإنجليزية.",
+    "audioUnavailable": "الصوت غير متاح لهذا الإصحاح",
+    "verseUnavailable": "الآية غير متاحة حالياً",
+    "tryAnother": "جرب إصحاحاً آخر",
+    "highlight": "تمييز",
+    "copy": "نسخ",
+    "attachPrayer": "إرفاق بالدعاء",
+    "attachComment": "إرفاق التعليق",
+    "createImage": "إنشاء صورة",
+    "oldTestament": "العهد القديم",
+    "newTestament": "العهد الجديد",
+    "loading": "جاري تحميل الكتاب المقدس...",
+    "fallbackNote": "كتاب الله بهذه اللغة غير متاح — يتم عرض اللغة الإنجليزية"
+  },
+  "audio": {
+    "play": "تشغيل",
+    "pause": "إيقاف مؤقت",
+    "stop": "إيقاف",
+    "volume": "مستوى الصوت",
+    "speed": "السرعة",
+    "loading": "جاري تحميل الصوت...",
+    "nowPlaying": "يتم التشغيل الآن",
+    "notAvailable": "الصوت غير متاح"
+  },
+  "prayer": {
+    "myPrayers": "أدعيتي",
+    "newPrayer": "دعاء جديد",
+    "addPrayer": "إضافة دعاء",
+    "deletePrayer": "حذف الدعاء",
+    "editPrayer": "تعديل الدعاء"
+  },
+  "notifications": {
+    "daily": "تنبيه يومي",
+    "reminder": "تذكير",
+    "turnOn": "تفعيل",
+    "turnOff": "تعطيل",
+    "enabled": "مفعّل",
+    "disabled": "معطّل"
+  },
+  "profile": {
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "language": "اللغة",
+    "theme": "المظهر",
+    "logout": "تسجيل الخروج"
+  },
+  "store": {
+    "premium": "متميز",
+    "subscribe": "الاشتراك",
+    "cancel": "إلغاء",
+    "price": "السعر"
+  },
+  "settings": {
+    "appSettings": "إعدادات التطبيق",
+    "about": "حول",
+    "privacyPolicy": "سياسة الخصوصية"
+  },
+  "errors": {
+    "networkError": "خطأ في الشبكة",
+    "arabicUnavailable": "كتاب الله بالعربية غير متاح حالياً. يرجى استخدام اللغة الإنجليزية.",
+    "loadingFailed": "فشل التحميل"
+  }
+}

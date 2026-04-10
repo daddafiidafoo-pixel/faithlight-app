@@ -1,0 +1,121 @@
+{
+  "name": "SermonArchive",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Sermon title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Sermon description"
+    },
+    "recorded_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the sermon was recorded"
+    },
+    "duration_seconds": {
+      "type": "number",
+      "description": "Duration of the recording in seconds"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "recording",
+        "processing",
+        "published",
+        "failed"
+      ],
+      "default": "recording",
+      "description": "Current status of the archive"
+    },
+    "video_url": {
+      "type": "string",
+      "description": "URL to the stored video file"
+    },
+    "thumbnail_url": {
+      "type": "string",
+      "description": "Thumbnail image URL"
+    },
+    "streaming_platform": {
+      "type": "string",
+      "enum": [
+        "youtube",
+        "facebook",
+        "internal"
+      ],
+      "description": "Where the stream was broadcast"
+    },
+    "platform_video_id": {
+      "type": "string",
+      "description": "Video ID on YouTube/Facebook if applicable"
+    },
+    "platform_url": {
+      "type": "string",
+      "description": "Direct URL on YouTube/Facebook"
+    },
+    "church_id": {
+      "type": "string",
+      "description": "Associated church ID (if applicable)"
+    },
+    "speaker_name": {
+      "type": "string",
+      "description": "Name of the speaker"
+    },
+    "scripture_references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Scripture passages covered in sermon",
+      "default": []
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "User-defined tags for organization",
+      "default": []
+    },
+    "is_public": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the archive is publicly viewable"
+    },
+    "view_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of views"
+    },
+    "download_allowed": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether users can download the video"
+    },
+    "recording_device_type": {
+      "type": "string",
+      "description": "Device used to record (e.g., 'agora', 'obs')"
+    },
+    "file_size_mb": {
+      "type": "number",
+      "description": "Size of the video file in MB"
+    },
+    "storage_location": {
+      "type": "string",
+      "description": "Where video is stored (internal, s3, youtube, facebook)"
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Additional metadata (resolution, bitrate, etc)",
+      "default": {}
+    }
+  },
+  "required": [
+    "title",
+    "recorded_date",
+    "status",
+    "streaming_platform"
+  ]
+}

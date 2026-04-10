@@ -1,0 +1,66 @@
+{
+  "name": "SermonComment",
+  "type": "object",
+  "properties": {
+    "sermon_id": {
+      "type": "string",
+      "description": "ID of the SermonOutline"
+    },
+    "section_id": {
+      "type": "string",
+      "description": "ID of the specific section being commented on (or 'general' for whole sermon)"
+    },
+    "section_title": {
+      "type": "string",
+      "description": "Title of the section for display purposes"
+    },
+    "author_email": {
+      "type": "string",
+      "description": "Email of the commenter"
+    },
+    "author_name": {
+      "type": "string",
+      "description": "Display name of the commenter"
+    },
+    "comment_text": {
+      "type": "string",
+      "description": "The comment content"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "comment",
+        "suggestion"
+      ],
+      "default": "comment",
+      "description": "comment = regular comment, suggestion = proposed edit"
+    },
+    "suggested_text": {
+      "type": "string",
+      "description": "If type=suggestion, the proposed replacement text"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "resolved",
+        "accepted",
+        "rejected"
+      ],
+      "default": "open",
+      "description": "Status of the comment/suggestion"
+    },
+    "resolved_by": {
+      "type": "string",
+      "description": "Email of who resolved this comment"
+    }
+  },
+  "required": [
+    "sermon_id",
+    "section_id",
+    "author_email",
+    "author_name",
+    "comment_text",
+    "type"
+  ]
+}

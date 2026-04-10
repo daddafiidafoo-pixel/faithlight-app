@@ -1,0 +1,392 @@
+[
+  {
+    "id": "genesis",
+    "order": 1,
+    "testament": "old",
+    "chapters": 50
+  },
+  {
+    "id": "exodus",
+    "order": 2,
+    "testament": "old",
+    "chapters": 40
+  },
+  {
+    "id": "leviticus",
+    "order": 3,
+    "testament": "old",
+    "chapters": 27
+  },
+  {
+    "id": "numbers",
+    "order": 4,
+    "testament": "old",
+    "chapters": 36
+  },
+  {
+    "id": "deuteronomy",
+    "order": 5,
+    "testament": "old",
+    "chapters": 34
+  },
+  {
+    "id": "joshua",
+    "order": 6,
+    "testament": "old",
+    "chapters": 24
+  },
+  {
+    "id": "judges",
+    "order": 7,
+    "testament": "old",
+    "chapters": 21
+  },
+  {
+    "id": "ruth",
+    "order": 8,
+    "testament": "old",
+    "chapters": 4
+  },
+  {
+    "id": "1_samuel",
+    "order": 9,
+    "testament": "old",
+    "chapters": 31
+  },
+  {
+    "id": "2_samuel",
+    "order": 10,
+    "testament": "old",
+    "chapters": 24
+  },
+  {
+    "id": "1_kings",
+    "order": 11,
+    "testament": "old",
+    "chapters": 22
+  },
+  {
+    "id": "2_kings",
+    "order": 12,
+    "testament": "old",
+    "chapters": 25
+  },
+  {
+    "id": "1_chronicles",
+    "order": 13,
+    "testament": "old",
+    "chapters": 29
+  },
+  {
+    "id": "2_chronicles",
+    "order": 14,
+    "testament": "old",
+    "chapters": 36
+  },
+  {
+    "id": "ezra",
+    "order": 15,
+    "testament": "old",
+    "chapters": 10
+  },
+  {
+    "id": "nehemiah",
+    "order": 16,
+    "testament": "old",
+    "chapters": 13
+  },
+  {
+    "id": "esther",
+    "order": 17,
+    "testament": "old",
+    "chapters": 10
+  },
+  {
+    "id": "job",
+    "order": 18,
+    "testament": "old",
+    "chapters": 42
+  },
+  {
+    "id": "psalms",
+    "order": 19,
+    "testament": "old",
+    "chapters": 150
+  },
+  {
+    "id": "proverbs",
+    "order": 20,
+    "testament": "old",
+    "chapters": 31
+  },
+  {
+    "id": "ecclesiastes",
+    "order": 21,
+    "testament": "old",
+    "chapters": 12
+  },
+  {
+    "id": "isaiah",
+    "order": 22,
+    "testament": "old",
+    "chapters": 66
+  },
+  {
+    "id": "jeremiah",
+    "order": 23,
+    "testament": "old",
+    "chapters": 52
+  },
+  {
+    "id": "lamentations",
+    "order": 24,
+    "testament": "old",
+    "chapters": 5
+  },
+  {
+    "id": "ezekiel",
+    "order": 25,
+    "testament": "old",
+    "chapters": 48
+  },
+  {
+    "id": "daniel",
+    "order": 26,
+    "testament": "old",
+    "chapters": 12
+  },
+  {
+    "id": "hosea",
+    "order": 27,
+    "testament": "old",
+    "chapters": 14
+  },
+  {
+    "id": "joel",
+    "order": 28,
+    "testament": "old",
+    "chapters": 3
+  },
+  {
+    "id": "amos",
+    "order": 29,
+    "testament": "old",
+    "chapters": 9
+  },
+  {
+    "id": "obadiah",
+    "order": 30,
+    "testament": "old",
+    "chapters": 1
+  },
+  {
+    "id": "jonah",
+    "order": 31,
+    "testament": "old",
+    "chapters": 4
+  },
+  {
+    "id": "micah",
+    "order": 32,
+    "testament": "old",
+    "chapters": 7
+  },
+  {
+    "id": "nahum",
+    "order": 33,
+    "testament": "old",
+    "chapters": 3
+  },
+  {
+    "id": "habakkuk",
+    "order": 34,
+    "testament": "old",
+    "chapters": 3
+  },
+  {
+    "id": "zephaniah",
+    "order": 35,
+    "testament": "old",
+    "chapters": 3
+  },
+  {
+    "id": "haggai",
+    "order": 36,
+    "testament": "old",
+    "chapters": 2
+  },
+  {
+    "id": "zechariah",
+    "order": 37,
+    "testament": "old",
+    "chapters": 14
+  },
+  {
+    "id": "malachi",
+    "order": 38,
+    "testament": "old",
+    "chapters": 4
+  },
+  {
+    "id": "matthew",
+    "order": 39,
+    "testament": "new",
+    "chapters": 28
+  },
+  {
+    "id": "mark",
+    "order": 40,
+    "testament": "new",
+    "chapters": 16
+  },
+  {
+    "id": "luke",
+    "order": 41,
+    "testament": "new",
+    "chapters": 24
+  },
+  {
+    "id": "john",
+    "order": 42,
+    "testament": "new",
+    "chapters": 21
+  },
+  {
+    "id": "acts",
+    "order": 43,
+    "testament": "new",
+    "chapters": 28
+  },
+  {
+    "id": "romans",
+    "order": 44,
+    "testament": "new",
+    "chapters": 16
+  },
+  {
+    "id": "1_corinthians",
+    "order": 45,
+    "testament": "new",
+    "chapters": 16
+  },
+  {
+    "id": "2_corinthians",
+    "order": 46,
+    "testament": "new",
+    "chapters": 13
+  },
+  {
+    "id": "galatians",
+    "order": 47,
+    "testament": "new",
+    "chapters": 6
+  },
+  {
+    "id": "ephesians",
+    "order": 48,
+    "testament": "new",
+    "chapters": 6
+  },
+  {
+    "id": "philippians",
+    "order": 49,
+    "testament": "new",
+    "chapters": 4
+  },
+  {
+    "id": "colossians",
+    "order": 50,
+    "testament": "new",
+    "chapters": 4
+  },
+  {
+    "id": "1_thessalonians",
+    "order": 51,
+    "testament": "new",
+    "chapters": 5
+  },
+  {
+    "id": "2_thessalonians",
+    "order": 52,
+    "testament": "new",
+    "chapters": 3
+  },
+  {
+    "id": "1_timothy",
+    "order": 53,
+    "testament": "new",
+    "chapters": 6
+  },
+  {
+    "id": "2_timothy",
+    "order": 54,
+    "testament": "new",
+    "chapters": 4
+  },
+  {
+    "id": "titus",
+    "order": 55,
+    "testament": "new",
+    "chapters": 3
+  },
+  {
+    "id": "philemon",
+    "order": 56,
+    "testament": "new",
+    "chapters": 1
+  },
+  {
+    "id": "hebrews",
+    "order": 57,
+    "testament": "new",
+    "chapters": 13
+  },
+  {
+    "id": "james",
+    "order": 58,
+    "testament": "new",
+    "chapters": 5
+  },
+  {
+    "id": "1_peter",
+    "order": 59,
+    "testament": "new",
+    "chapters": 5
+  },
+  {
+    "id": "2_peter",
+    "order": 60,
+    "testament": "new",
+    "chapters": 3
+  },
+  {
+    "id": "1_john",
+    "order": 61,
+    "testament": "new",
+    "chapters": 5
+  },
+  {
+    "id": "2_john",
+    "order": 62,
+    "testament": "new",
+    "chapters": 1
+  },
+  {
+    "id": "3_john",
+    "order": 63,
+    "testament": "new",
+    "chapters": 1
+  },
+  {
+    "id": "jude",
+    "order": 64,
+    "testament": "new",
+    "chapters": 1
+  },
+  {
+    "id": "revelation",
+    "order": 65,
+    "testament": "new",
+    "chapters": 22
+  }
+]

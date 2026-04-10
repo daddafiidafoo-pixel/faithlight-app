@@ -1,0 +1,37 @@
+{
+  "name": "VerseHighlight",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User email"
+    },
+    "book": {
+      "type": "string",
+      "description": "Bible book name"
+    },
+    "chapter": {
+      "type": "number",
+      "description": "Chapter number"
+    },
+    "verse": {
+      "type": "number",
+      "description": "Verse number"
+    },
+    "verse_text": {
+      "type": "string",
+      "description": "The verse text"
+    },
+    "color": {
+      "type": "string",
+      "enum": ["yellow", "green", "blue", "pink", "orange"],
+      "default": "yellow",
+      "description": "Highlight color"
+    },
+    "personal_note": {
+      "type": "string",
+      "description": "User's personal note"
+    }
+  },
+  "required": ["user_email", "book", "chapter", "verse", "verse_text"]
+}

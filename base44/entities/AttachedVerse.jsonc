@@ -1,0 +1,76 @@
+{
+  "name": "AttachedVerse",
+  "type": "object",
+  "properties": {
+    "parent_type": {
+      "type": "string",
+      "enum": [
+        "prayer_request",
+        "comment",
+        "reply"
+      ],
+      "description": "Type of parent record"
+    },
+    "parent_id": {
+      "type": "string",
+      "description": "ID of the parent prayer request, comment, or reply"
+    },
+    "language_code": {
+      "type": "string",
+      "description": "Language code of the verse (en, hae, gaz, am, etc.)"
+    },
+    "bible_id": {
+      "type": "string",
+      "description": "Bible Brain bible identifier (e.g. ENGESV, HAEBSE, GAZBIB)"
+    },
+    "audio_fileset_id": {
+      "type": "string",
+      "description": "Bible Brain audio fileset ID for playback (e.g. HAEBSEN2SA, GAZBIBN1DA)"
+    },
+    "book_id": {
+      "type": "string",
+      "description": "Book ID (e.g. PSA, JHN, GEN)"
+    },
+    "book_name": {
+      "type": "string",
+      "description": "Localized book name (e.g. Faarfannaa for Psalms in Oromo)"
+    },
+    "chapter": {
+      "type": "number",
+      "description": "Chapter number"
+    },
+    "verse_start": {
+      "type": "number",
+      "description": "Starting verse number"
+    },
+    "verse_end": {
+      "type": "number",
+      "description": "Ending verse number (same as verse_start for single verses)"
+    },
+    "reference_text": {
+      "type": "string",
+      "description": "Formatted localized reference (e.g. Psalm 23:1 or Faarfannaa 23:1)"
+    },
+    "verse_text": {
+      "type": "string",
+      "description": "Full verse text snapshot at time of attachment"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "Email of user who attached the verse"
+    }
+  },
+  "required": [
+    "parent_type",
+    "parent_id",
+    "language_code",
+    "bible_id",
+    "book_id",
+    "book_name",
+    "chapter",
+    "verse_start",
+    "verse_end",
+    "reference_text",
+    "verse_text"
+  ]
+}

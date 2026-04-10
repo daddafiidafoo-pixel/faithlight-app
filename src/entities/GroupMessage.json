@@ -1,0 +1,29 @@
+{
+  "name": "GroupMessage",
+  "type": "object",
+  "properties": {
+    "groupId": {
+      "type": "string",
+      "description": "Reference to StudyGroup"
+    },
+    "userEmail": {
+      "type": "string",
+      "description": "Email of message sender"
+    },
+    "userName": {
+      "type": "string",
+      "description": "Display name of sender"
+    },
+    "content": {
+      "type": "string",
+      "description": "Message content"
+    },
+    "messageType": {
+      "type": "string",
+      "enum": ["text", "discussion", "resource"],
+      "default": "text",
+      "description": "Type of message"
+    }
+  },
+  "required": ["groupId", "userEmail", "userName", "content"]
+}

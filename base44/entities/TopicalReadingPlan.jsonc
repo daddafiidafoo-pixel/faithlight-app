@@ -1,0 +1,74 @@
+{
+  "name": "TopicalReadingPlan",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Plan title (e.g. Overcoming Anxiety)"
+    },
+    "topic": {
+      "type": "string",
+      "enum": [
+        "anxiety",
+        "gratitude",
+        "hope",
+        "healing",
+        "faith",
+        "peace",
+        "strength",
+        "love",
+        "wisdom",
+        "joy"
+      ],
+      "description": "Topical theme"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of the plan"
+    },
+    "emoji": {
+      "type": "string",
+      "description": "Emoji icon for the plan"
+    },
+    "duration_days": {
+      "type": "number",
+      "default": 7,
+      "description": "Total number of days"
+    },
+    "readings": {
+      "type": "array",
+      "description": "Daily reading list",
+      "items": {
+        "type": "object",
+        "properties": {
+          "day": {
+            "type": "number"
+          },
+          "book_id": {
+            "type": "string"
+          },
+          "book_name": {
+            "type": "string"
+          },
+          "chapter": {
+            "type": "number"
+          },
+          "reference": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "title",
+    "topic",
+    "description",
+    "duration_days",
+    "readings"
+  ]
+}

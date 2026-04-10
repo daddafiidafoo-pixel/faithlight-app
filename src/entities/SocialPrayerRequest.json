@@ -1,0 +1,53 @@
+{
+  "name": "SocialPrayerRequest",
+  "type": "object",
+  "properties": {
+    "author_email": {
+      "type": "string",
+      "description": "Prayer request author email"
+    },
+    "author_name": {
+      "type": "string",
+      "description": "Author display name"
+    },
+    "title": {
+      "type": "string",
+      "description": "Prayer request title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Prayer request details"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["health", "family", "work", "faith", "relationships", "finances", "other"],
+      "default": "other",
+      "description": "Prayer category"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "answered", "closed"],
+      "default": "active",
+      "description": "Request status"
+    },
+    "prayed_by": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Emails of people who prayed"
+    },
+    "prayer_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of prayers"
+    },
+    "is_anonymous": {
+      "type": "boolean",
+      "default": false,
+      "description": "Anonymous post flag"
+    }
+  },
+  "required": ["author_email", "author_name", "title", "description"]
+}

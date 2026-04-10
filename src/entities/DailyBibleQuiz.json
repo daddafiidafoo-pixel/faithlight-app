@@ -1,0 +1,65 @@
+{
+  "name": "DailyBibleQuiz",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of the quiz"
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["standalone", "plan-based"],
+      "description": "Quiz mode: standalone daily challenge or tied to reading plan"
+    },
+    "plan_id": {
+      "type": "string",
+      "description": "Reference to reading plan (if mode is plan-based)"
+    },
+    "plan_title": {
+      "type": "string",
+      "description": "Cached plan title for display"
+    },
+    "book": {
+      "type": "string",
+      "description": "Bible book (e.g., John, Psalm)"
+    },
+    "chapter": {
+      "type": "number",
+      "description": "Chapter number"
+    },
+    "reference": {
+      "type": "string",
+      "description": "Verse reference (e.g., John 3:16)"
+    },
+    "topic": {
+      "type": "string",
+      "description": "Quiz topic or theme"
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "string"},
+          "question": {"type": "string"},
+          "options": {"type": "array", "items": {"type": "string"}},
+          "correct_answer": {"type": "number"},
+          "explanation": {"type": "string"}
+        }
+      },
+      "description": "Array of quiz questions"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["easy", "medium", "hard"],
+      "default": "medium"
+    },
+    "is_published": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether quiz is ready for users"
+    }
+  },
+  "required": ["date", "mode", "book", "chapter", "reference", "questions", "topic"]
+}

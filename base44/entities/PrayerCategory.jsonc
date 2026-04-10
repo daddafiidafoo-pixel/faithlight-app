@@ -1,0 +1,50 @@
+{
+  "name": "PrayerCategory",
+  "type": "object",
+  "properties": {
+    "category_key": {
+      "type": "string",
+      "description": "Unique category key (peace, healing, family, guidance, etc.)"
+    },
+    "name_en": {
+      "type": "string",
+      "description": "English name"
+    },
+    "name_om": {
+      "type": "string",
+      "description": "Afaan Oromoo name"
+    },
+    "name_am": {
+      "type": "string",
+      "description": "Amharic name (optional)"
+    },
+    "name_ti": {
+      "type": "string",
+      "description": "Tigrinya name (optional)"
+    },
+    "name_ar": {
+      "type": "string",
+      "description": "Arabic name (optional)"
+    },
+    "name_sw": {
+      "type": "string",
+      "description": "Swahili name (optional)"
+    },
+    "sort_order": {
+      "type": "number",
+      "description": "Display order"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether category is active"
+    }
+  },
+  "required": [
+    "category_key",
+    "name_en",
+    "name_om",
+    "sort_order",
+    "is_active"
+  ]
+}

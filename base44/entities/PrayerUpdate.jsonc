@@ -1,0 +1,33 @@
+{
+  "name": "PrayerUpdate",
+  "type": "object",
+  "properties": {
+    "prayer_id": {
+      "type": "string",
+      "description": "Reference to MyPrayer"
+    },
+    "user_id": {
+      "type": "string",
+      "description": "User ID"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "waiting",
+        "answered",
+        "archived"
+      ],
+      "description": "Status at time of update"
+    },
+    "note": {
+      "type": "string",
+      "description": "Update note or progress (optional)"
+    }
+  },
+  "required": [
+    "prayer_id",
+    "user_id",
+    "status"
+  ]
+}

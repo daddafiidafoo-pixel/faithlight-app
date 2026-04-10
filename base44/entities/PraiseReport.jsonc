@@ -1,0 +1,45 @@
+{
+  "name": "PraiseReport",
+  "type": "object",
+  "properties": {
+    "authorEmail": {
+      "type": "string",
+      "description": "Email of the user sharing the praise report"
+    },
+    "authorName": {
+      "type": "string",
+      "description": "Display name of the author"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the praise report (e.g., 'God Provided a Job')"
+    },
+    "testimony": {
+      "type": "string",
+      "description": "Full testimony of the answered prayer"
+    },
+    "linkedPrayerId": {
+      "type": "string",
+      "description": "Optional ID of the original prayer request this answers"
+    },
+    "likesCount": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of 'Amen' reactions"
+    },
+    "likedByEmails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Array of user emails who reacted with 'Amen'"
+    }
+  },
+  "required": [
+    "authorEmail",
+    "authorName",
+    "title",
+    "testimony"
+  ]
+}

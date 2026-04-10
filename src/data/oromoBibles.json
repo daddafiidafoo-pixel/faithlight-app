@@ -1,0 +1,23 @@
+{
+  "om": {
+    "name": "Afaan Oromoo",
+    "books": {
+      "MAT": {
+        "1": [
+          { "verse": 1, "text": "Kitaaban aarsaa Yesuus Kiristos, ilma Daawit, ilma Ibiraahiim:" },
+          { "verse": 2, "text": "Ibiraahiim Isaaks hamma guddisaa; Isaak Yaqobos hamma guddisaa; Yaqobo Yudaa fi obbollesaa hamma guddisaa;" },
+          { "verse": 3, "text": "Yudaan Faaroos fi Taamar hamma guddisaa; Faaroos Hesuun hamma guddisaa; Hesuun Yoojaakiin hamma guddisaa;" },
+          { "verse": 4, "text": "Yoojaakiin Shealtiyeel hamma guddisaa; Shealtiyeel Zeruubaabeelos hamma guddisaa;" }
+        ],
+        "2": [
+          { "verse": 1, "text": "Yesuus yeroo Daawit magaalaa Betelehemitti dhalate, hordoftoota gidduuma amantaa keessatti dhalata." }
+        ]
+      },
+      "MRK": {
+        "1": [
+          { "verse": 1, "text": "Jalqaba evangelii Yesuus Kiristoos ilma Waaqaa:" }
+        ]
+      }
+    }
+  }
+}

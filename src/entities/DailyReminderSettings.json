@@ -1,0 +1,31 @@
+{
+  "name": "DailyReminderSettings",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User's email (unique)"
+    },
+    "is_enabled": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether reminders are enabled"
+    },
+    "reminder_time": {
+      "type": "string",
+      "description": "Time in HH:MM format (24-hour, e.g., 08:00)"
+    },
+    "timezone": {
+      "type": "string",
+      "default": "America/Toronto",
+      "description": "User's timezone"
+    },
+    "reminder_type": {
+      "type": "string",
+      "enum": ["verse_of_day", "reflection", "both"],
+      "default": "both",
+      "description": "Type of reminder"
+    }
+  },
+  "required": ["user_email", "reminder_time"]
+}

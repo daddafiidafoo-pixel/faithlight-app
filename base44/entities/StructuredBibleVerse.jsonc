@@ -1,0 +1,77 @@
+{
+  "name": "StructuredBibleVerse",
+  "type": "object",
+  "properties": {
+    "verse_id": {
+      "type": "string",
+      "description": "Unique verse identifier e.g. JHN.3.16"
+    },
+    "book_key": {
+      "type": "string",
+      "description": "Bible book code e.g. JHN, GEN, PSA"
+    },
+    "chapter": {
+      "type": "number",
+      "description": "Chapter number"
+    },
+    "verse": {
+      "type": "number",
+      "description": "Verse number"
+    },
+    "reference": {
+      "type": "string",
+      "description": "Localized display reference e.g. John 3:16"
+    },
+    "text": {
+      "type": "string",
+      "description": "Full verse text in the target language"
+    },
+    "language_code": {
+      "type": "string",
+      "description": "ISO language code: en, hae, gaz, am, fr, sw, ar"
+    },
+    "bible_id": {
+      "type": "string",
+      "description": "Bible Brain bible ID e.g. ENGESV, HAEBSE, GAZBIB"
+    },
+    "fileset_id": {
+      "type": "string",
+      "description": "Bible Brain fileset ID e.g. HAEBSEN_ET-json, GAZBIBN_ET-json"
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "bible_brain",
+        "seed",
+        "manual"
+      ],
+      "default": "seed",
+      "description": "How this verse was added"
+    },
+    "is_fallback": {
+      "type": "boolean",
+      "default": false,
+      "description": "True if this is fallback text, not native language text"
+    },
+    "translation_code": {
+      "type": "string",
+      "description": "Translation identifier e.g. hae_bible, gaz_bible, en_web"
+    },
+    "testament": {
+      "type": "string",
+      "enum": [
+        "old",
+        "new"
+      ],
+      "description": "Old or New Testament"
+    }
+  },
+  "required": [
+    "verse_id",
+    "book_key",
+    "chapter",
+    "verse",
+    "text",
+    "language_code"
+  ]
+}

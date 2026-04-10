@@ -1,0 +1,51 @@
+{
+  "name": "SermonOutline",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User's email"
+    },
+    "passage_reference": {
+      "type": "string",
+      "description": "Bible passage (e.g. John 3:16)"
+    },
+    "passage_text": {
+      "type": "string",
+      "description": "Full passage text"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["sermon", "devotional"],
+      "description": "Content type"
+    },
+    "title": {
+      "type": "string",
+      "description": "Generated title"
+    },
+    "outline": {
+      "type": "string",
+      "description": "Full sermon/devotional outline"
+    },
+    "main_points": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Key points"
+    },
+    "applications": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Life applications"
+    },
+    "language": {
+      "type": "string",
+      "default": "en",
+      "description": "Language code"
+    },
+    "is_favorite": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": ["user_email", "passage_reference", "type", "title", "outline"]
+}

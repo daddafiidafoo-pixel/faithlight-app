@@ -1,0 +1,43 @@
+{
+  "name": "SermonCollaborator",
+  "type": "object",
+  "properties": {
+    "sermon_id": {
+      "type": "string",
+      "description": "ID of the SermonOutline being shared"
+    },
+    "invited_email": {
+      "type": "string",
+      "description": "Email of the invited collaborator"
+    },
+    "invited_by": {
+      "type": "string",
+      "description": "Email of the user who sent the invite"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "viewer",
+        "editor"
+      ],
+      "default": "viewer",
+      "description": "Access level: viewer (read-only) or editor (can suggest edits)"
+    },
+    "token": {
+      "type": "string",
+      "description": "Unique secure token for invite link"
+    },
+    "accepted": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the invite has been accepted"
+    }
+  },
+  "required": [
+    "sermon_id",
+    "invited_email",
+    "invited_by",
+    "role",
+    "token"
+  ]
+}

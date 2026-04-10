@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "language": "en",
+    "language_name": "English",
+    "version_id": "english_esv",
+    "version_name": "English Standard Version"
+  },
+  "book_id": "john",
+  "book_name": "John",
+  "book_abbr": "Jhn",
+  "chapters": [
+    {
+      "chapter": 1,
+      "verses": [
+        {
+          "verse": 1,
+          "text": "[ENGLISH VERSE TEXT PLACEHOLDER]",
+          "reference": "John 1:1"
+        },
+        {
+          "verse": 2,
+          "text": "[ENGLISH VERSE TEXT PLACEHOLDER]",
+          "reference": "John 1:2"
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verses": [
+        {
+          "verse": 16,
+          "text": "[ENGLISH VERSE TEXT PLACEHOLDER]",
+          "reference": "John 3:16"
+        }
+      ]
+    }
+  ]
+}

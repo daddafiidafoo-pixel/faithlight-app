@@ -1,0 +1,49 @@
+{
+  "name": "BibleReadingProgress",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user"
+    },
+    "book_id": {
+      "type": "string",
+      "description": "Bible book ID (e.g. GEN)"
+    },
+    "book_name": {
+      "type": "string",
+      "description": "Display name"
+    },
+    "chapters_read": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "default": [],
+      "description": "Array of chapter numbers read"
+    },
+    "total_chapters": {
+      "type": "number",
+      "description": "Total chapters in this book"
+    },
+    "percent_complete": {
+      "type": "number",
+      "default": 0,
+      "description": "0-100 completion percentage"
+    },
+    "last_read_chapter": {
+      "type": "number",
+      "description": "Last chapter the user read"
+    },
+    "last_read_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "user_email",
+    "book_id",
+    "book_name",
+    "total_chapters"
+  ]
+}

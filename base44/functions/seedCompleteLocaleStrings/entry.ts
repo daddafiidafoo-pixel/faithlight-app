@@ -1,0 +1,236 @@
+import { createClientFromRequest } from 'npm:@base44/sdk@0.8.6';
+
+Deno.serve(async (req) => {
+  try {
+    const base44 = createClientFromRequest(req);
+    const user = await base44.auth.me();
+    
+    if (!user || user.role !== 'admin') {
+      return Response.json({ error: 'Admin access required' }, { status: 403 });
+    }
+
+    // Complete translation pack (English + Oromo)
+    const translations = [
+      // ==================== NAVIGATION ====================
+      { lang: 'en', key: 'nav.home', value: 'Home' },
+      { lang: 'en', key: 'nav.bible', value: 'Bible' },
+      { lang: 'en', key: 'nav.advancedSearch', value: 'Advanced Search' },
+      { lang: 'en', key: 'nav.compare', value: 'Compare' },
+      { lang: 'en', key: 'nav.studyPlans', value: 'Study Plans' },
+      { lang: 'en', key: 'nav.goals', value: 'Goals' },
+      { lang: 'en', key: 'nav.myStudy', value: 'My Study' },
+      { lang: 'en', key: 'nav.audio', value: 'Audio' },
+      { lang: 'en', key: 'nav.groups', value: 'Groups' },
+      { lang: 'en', key: 'nav.downloads', value: 'Downloads' },
+      { lang: 'en', key: 'nav.settings', value: 'Settings' },
+
+      { lang: 'om', key: 'nav.home', value: 'Mana' },
+      { lang: 'om', key: 'nav.bible', value: 'Kitaaba Qulqulluu' },
+      { lang: 'om', key: 'nav.advancedSearch', value: 'Barbaacha Dabalataa' },
+      { lang: 'om', key: 'nav.compare', value: 'Walbira Qabi' },
+      { lang: 'om', key: 'nav.studyPlans', value: 'Karoora Barnootaa' },
+      { lang: 'om', key: 'nav.goals', value: 'Kaayyoo' },
+      { lang: 'om', key: 'nav.myStudy', value: 'Barnoota Koo' },
+      { lang: 'om', key: 'nav.audio', value: 'Sagalee' },
+      { lang: 'om', key: 'nav.groups', value: 'Gareewwan' },
+      { lang: 'om', key: 'nav.downloads', value: 'Buufata' },
+      { lang: 'om', key: 'nav.settings', value: 'Qindaa\'ina' },
+
+      // ==================== COMMON BUTTONS ====================
+      { lang: 'en', key: 'common.next', value: 'Next' },
+      { lang: 'en', key: 'common.back', value: 'Back' },
+      { lang: 'en', key: 'common.save', value: 'Save' },
+      { lang: 'en', key: 'common.cancel', value: 'Cancel' },
+      { lang: 'en', key: 'common.close', value: 'Close' },
+      { lang: 'en', key: 'common.retry', value: 'Retry' },
+      { lang: 'en', key: 'common.search', value: 'Scripture…' },
+      { lang: 'en', key: 'common.loading', value: 'Loading...' },
+      { lang: 'en', key: 'common.download', value: 'Download' },
+      { lang: 'en', key: 'common.remove', value: 'Remove' },
+      { lang: 'en', key: 'common.edit', value: 'Edit' },
+      { lang: 'en', key: 'common.publish', value: 'Publish' },
+      { lang: 'en', key: 'common.share', value: 'Share' },
+
+      { lang: 'om', key: 'common.next', value: 'Itti Aanu' },
+      { lang: 'om', key: 'common.back', value: 'Deebi\'i' },
+      { lang: 'om', key: 'common.save', value: 'Olkaa\'i' },
+      { lang: 'om', key: 'common.cancel', value: 'Dhiisi' },
+      { lang: 'om', key: 'common.close', value: 'Cufi' },
+      { lang: 'om', key: 'common.retry', value: 'Irra Deebi\'i' },
+      { lang: 'om', key: 'common.search', value: 'Barbaadi' },
+      { lang: 'om', key: 'common.loading', value: 'Fe\'amaa jira...' },
+      { lang: 'om', key: 'common.download', value: 'Buufadhu' },
+      { lang: 'om', key: 'common.remove', value: 'Haquu' },
+      { lang: 'om', key: 'common.edit', value: 'Sirreessi' },
+      { lang: 'om', key: 'common.publish', value: 'Maxxansi' },
+      { lang: 'om', key: 'common.share', value: 'Qoodi' },
+
+      // ==================== GLOBAL ERRORS ====================
+      { lang: 'en', key: 'error.generic', value: 'Something went wrong. Please try again.' },
+      { lang: 'en', key: 'error.offline', value: 'You are offline. Please check your internet connection.' },
+      { lang: 'en', key: 'error.noPermission', value: 'You do not have permission.' },
+      { lang: 'en', key: 'error.notFound', value: 'Not found.' },
+
+      { lang: 'om', key: 'error.generic', value: 'Rakkoon uumame. Mee irra deebi\'i.' },
+      { lang: 'om', key: 'error.offline', value: 'Offline jirta. Interneetii irratti yeroo deebi\'utti yaali.' },
+      { lang: 'om', key: 'error.noPermission', value: 'Eeyyama hin qabdu.' },
+      { lang: 'om', key: 'error.notFound', value: 'Kan barbaadde hin argamne.' },
+
+      // ==================== AI STUDY CONTENT CREATOR ====================
+      { lang: 'en', key: 'aiStudy.title', value: 'AI Study Content Creator' },
+      { lang: 'en', key: 'aiStudy.subtitle', value: 'Generate sermons, quizzes, devotionals — powered by AI' },
+      { lang: 'en', key: 'aiStudy.tabs.sermon', value: 'Sermon / Lesson Outline' },
+      { lang: 'en', key: 'aiStudy.tabs.lesson', value: 'Quiz & Flashcards' },
+      { lang: 'en', key: 'aiStudy.tabs.devTalk', value: 'Devotional Reflection' },
+      { lang: 'en', key: 'aiStudy.cards.sermon.desc', value: 'AI-structured outlines for any passage or theme' },
+      { lang: 'en', key: 'aiStudy.cards.quiz.desc', value: 'Interactive quizzes and study flashcards' },
+      { lang: 'en', key: 'aiStudy.cards.devotional.desc', value: 'Personal devotionals on any verse or topic' },
+      { lang: 'en', key: 'aiStudy.cards.devotional.title', value: 'Devotional Reflection' },
+      { lang: 'en', key: 'aiStudy.disclaimer', value: 'Please verify with Scripture. AI responses may contain errors.' },
+
+      { lang: 'om', key: 'aiStudy.title', value: 'Uumaa Barnoota AI' },
+      { lang: 'om', key: 'aiStudy.subtitle', value: 'Sagalee, quiz, cimsannaa amantii hojjedhu — AI irraa fa\'ii' },
+      { lang: 'om', key: 'aiStudy.tabs.sermon', value: 'Sagalee / Kutaa Barnootaa' },
+      { lang: 'om', key: 'aiStudy.tabs.lesson', value: 'Quiz & Karaa Barnoota' },
+      { lang: 'om', key: 'aiStudy.tabs.devTalk', value: 'Haasawa Cimsannaa' },
+      { lang: 'om', key: 'aiStudy.cards.sermon.desc', value: 'Sagalee AI-hiikkaa kutaa yookaan mata-duree kamii irraa' },
+      { lang: 'om', key: 'aiStudy.cards.quiz.desc', value: 'Quiz walwal-xiinxalinaa fi karaa barnoota hiikkaa' },
+      { lang: 'om', key: 'aiStudy.cards.devotional.desc', value: 'Yaada cimsannaa amantii dhuunfaa — kutaa Kitaabaa yookaan mata-duree irratti' },
+      { lang: 'om', key: 'aiStudy.cards.devotional.title', value: 'Cimsannaa Amantii' },
+      { lang: 'om', key: 'aiStudy.disclaimer', value: 'Yaada AI qoradhu; dogoggora qabaachuu danda\'a. Kitaaba Qulqulluu irratti mirkaneessi.' },
+
+      // ==================== BIBLE READER ====================
+      { lang: 'en', key: 'bibleReader.title', value: 'Read the Bible' },
+      { lang: 'en', key: 'bibleReader.selectPassage', value: 'Select a passage' },
+      { lang: 'en', key: 'bibleReader.chooseBook', value: 'Choose a book' },
+      { lang: 'en', key: 'bibleReader.chooseChapter', value: 'Choose a chapter' },
+      { lang: 'en', key: 'bibleReader.translation', value: 'Translation' },
+      { lang: 'en', key: 'bibleReader.offline', value: 'Offline' },
+      { lang: 'en', key: 'bibleReader.online', value: 'Online' },
+      { lang: 'en', key: 'bibleReader.empty', value: 'No chapter selected.' },
+      { lang: 'en', key: 'bibleReader.emptyDesc', value: 'Select a book and chapter above.' },
+      { lang: 'en', key: 'bibleReader.noVerses', value: 'No verses found.' },
+      { lang: 'en', key: 'bibleReader.noVersesDesc', value: 'Try another translation or check your internet connection.' },
+      { lang: 'en', key: 'bibleReader.highlight', value: 'Highlight' },
+      { lang: 'en', key: 'bibleReader.note', value: 'Add note' },
+      { lang: 'en', key: 'bibleReader.bookmark', value: 'Bookmark' },
+      { lang: 'en', key: 'bibleReader.copy', value: 'Copy' },
+      { lang: 'en', key: 'bibleReader.audio', value: 'Listen to audio' },
+      { lang: 'en', key: 'bibleReader.downloadChapter', value: 'Download chapter' },
+      { lang: 'en', key: 'bibleReader.removeDownload', value: 'Remove download' },
+      { lang: 'en', key: 'bibleReader.aiAnalysis', value: 'AI Analysis' },
+      { lang: 'en', key: 'bibleReader.quickQuiz', value: 'Quick Quiz' },
+      { lang: 'en', key: 'bibleReader.askAI', value: 'Ask AI' },
+      { lang: 'en', key: 'bibleReader.aiDisclaimer', value: 'AI responses may contain errors. Always verify with Scripture.' },
+
+      { lang: 'om', key: 'bibleReader.title', value: 'Kitaaba Qulqulluu Dubbisi' },
+      { lang: 'om', key: 'bibleReader.selectPassage', value: 'Kutaa filadhu' },
+      { lang: 'om', key: 'bibleReader.chooseBook', value: 'Kitaaba filadhu' },
+      { lang: 'om', key: 'bibleReader.chooseChapter', value: 'Boqonnaa filadhu' },
+      { lang: 'om', key: 'bibleReader.translation', value: 'Hiikkaa' },
+      { lang: 'om', key: 'bibleReader.offline', value: 'Offline' },
+      { lang: 'om', key: 'bibleReader.online', value: 'Online' },
+      { lang: 'om', key: 'bibleReader.empty', value: 'Boqonnaan hin filatamne.' },
+      { lang: 'om', key: 'bibleReader.emptyDesc', value: 'Kitaaba fi boqonnaa olitti filadhu.' },
+      { lang: 'om', key: 'bibleReader.noVerses', value: 'Lakkoofsi hin argamne.' },
+      { lang: 'om', key: 'bibleReader.noVersesDesc', value: 'Hiikkaa biraa yaali yookaan interneetii kee ilaali.' },
+      { lang: 'om', key: 'bibleReader.highlight', value: 'Mallattoo kaa\'i' },
+      { lang: 'om', key: 'bibleReader.note', value: 'Yaadannoo barreessi' },
+      { lang: 'om', key: 'bibleReader.bookmark', value: 'Mallattoo qubee' },
+      { lang: 'om', key: 'bibleReader.copy', value: 'Garagalchi' },
+      { lang: 'om', key: 'bibleReader.audio', value: 'Sagalee dhaggeeffadhu' },
+      { lang: 'om', key: 'bibleReader.downloadChapter', value: 'Boqonnaa buufadhu' },
+      { lang: 'om', key: 'bibleReader.removeDownload', value: 'Buufata haqi' },
+      { lang: 'om', key: 'bibleReader.aiAnalysis', value: 'Xiinxala AI' },
+      { lang: 'om', key: 'bibleReader.quickQuiz', value: 'Quiz Ariifachiisaa' },
+      { lang: 'om', key: 'bibleReader.askAI', value: 'AI gaafadhu' },
+      { lang: 'om', key: 'bibleReader.aiDisclaimer', value: 'Deebiin AI dogoggora qabaachuu danda\'a. Kitaaba Qulqulluu irratti mirkaneessi.' },
+
+      // ==================== GROUPS ====================
+      { lang: 'en', key: 'groups.title', value: 'Groups' },
+      { lang: 'en', key: 'groups.subtitle', value: 'Study and discuss with other believers' },
+      { lang: 'en', key: 'groups.searchPlaceholder', value: 'Search groups...' },
+      { lang: 'en', key: 'groups.members', value: 'Members' },
+      { lang: 'en', key: 'groups.join', value: 'Join' },
+      { lang: 'en', key: 'groups.joined', value: 'Joined' },
+      { lang: 'en', key: 'groups.leave', value: 'Leave' },
+      { lang: 'en', key: 'groups.public', value: 'Public' },
+      { lang: 'en', key: 'groups.private', value: 'Private' },
+      { lang: 'en', key: 'groups.bibleBook', value: 'Bible Book' },
+      { lang: 'en', key: 'groups.empty', value: 'No groups found.' },
+      { lang: 'en', key: 'groups.emptyDesc', value: 'Create a new group or search for an existing one.' },
+      { lang: 'en', key: 'groups.discussion', value: 'Discussion' },
+      { lang: 'en', key: 'groups.resources', value: 'Resources' },
+      { lang: 'en', key: 'groups.events', value: 'Events' },
+      { lang: 'en', key: 'groups.postPlaceholder', value: 'Write a message...' },
+      { lang: 'en', key: 'groups.post', value: 'Post' },
+      { lang: 'en', key: 'groups.noPosts', value: 'No posts yet.' },
+
+      { lang: 'om', key: 'groups.title', value: 'Gareewwan' },
+      { lang: 'om', key: 'groups.subtitle', value: 'Amantoota waliin baradhu fi mari\'adhu' },
+      { lang: 'om', key: 'groups.searchPlaceholder', value: 'Garee barbaadi...' },
+      { lang: 'om', key: 'groups.members', value: 'Miseensota' },
+      { lang: 'om', key: 'groups.join', value: 'Seeni' },
+      { lang: 'om', key: 'groups.joined', value: 'Seenteera' },
+      { lang: 'om', key: 'groups.leave', value: 'Ba\'i' },
+      { lang: 'om', key: 'groups.public', value: 'Iftaa (Public)' },
+      { lang: 'om', key: 'groups.private', value: 'Dhuunfaa (Private)' },
+      { lang: 'om', key: 'groups.bibleBook', value: 'Kitaaba Qulqulluu' },
+      { lang: 'om', key: 'groups.empty', value: 'Gareen hin argamne.' },
+      { lang: 'om', key: 'groups.emptyDesc', value: 'Garee haaraa uumi yookaan garee jiru barbaadi.' },
+      { lang: 'om', key: 'groups.discussion', value: 'Mari\'ii' },
+      { lang: 'om', key: 'groups.resources', value: 'Qabeenyaalee' },
+      { lang: 'om', key: 'groups.events', value: 'Sagantaalee' },
+      { lang: 'om', key: 'groups.postPlaceholder', value: 'Yaada kee barreessi...' },
+      { lang: 'om', key: 'groups.post', value: 'Maxxansi' },
+      { lang: 'om', key: 'groups.noPosts', value: 'Maxxansi hin jiru.' },
+
+      // ==================== DOWNLOADS ====================
+      { lang: 'en', key: 'downloads.title', value: 'Downloads' },
+      { lang: 'en', key: 'downloads.subtitle', value: 'Read the Bible offline' },
+      { lang: 'en', key: 'downloads.translations', value: 'Translations' },
+      { lang: 'en', key: 'downloads.books', value: 'Books' },
+      { lang: 'en', key: 'downloads.myDownloads', value: 'My Downloads' },
+      { lang: 'en', key: 'downloads.downloadAll', value: 'Download all' },
+      { lang: 'en', key: 'downloads.removeAll', value: 'Remove all' },
+      { lang: 'en', key: 'downloads.downloading', value: 'Downloading...' },
+      { lang: 'en', key: 'downloads.downloaded', value: 'Downloaded' },
+      { lang: 'en', key: 'downloads.notDownloaded', value: 'Not downloaded' },
+      { lang: 'en', key: 'downloads.resume', value: 'Resume' },
+      { lang: 'en', key: 'downloads.delete', value: 'Delete' },
+      { lang: 'en', key: 'downloads.offlineAvailable', value: 'Offline available' },
+      { lang: 'en', key: 'downloads.onlineRequired', value: 'Internet required' },
+      { lang: 'en', key: 'downloads.empty', value: 'No downloads yet.' },
+      { lang: 'en', key: 'downloads.emptyDesc', value: 'Download a chapter or book to read offline.' },
+
+      { lang: 'om', key: 'downloads.title', value: 'Buufata' },
+      { lang: 'om', key: 'downloads.subtitle', value: 'Kitaaba Qulqulluu offline dubbisi' },
+      { lang: 'om', key: 'downloads.translations', value: 'Hiikkaawwan' },
+      { lang: 'om', key: 'downloads.books', value: 'Kitaabota' },
+      { lang: 'om', key: 'downloads.myDownloads', value: 'Buufata Koo' },
+      { lang: 'om', key: 'downloads.downloadAll', value: 'Hundumaa buufadhu' },
+      { lang: 'om', key: 'downloads.removeAll', value: 'Hundumaa haqi' },
+      { lang: 'om', key: 'downloads.downloading', value: 'Buufamaa jira...' },
+      { lang: 'om', key: 'downloads.downloaded', value: 'Buufameera' },
+      { lang: 'om', key: 'downloads.notDownloaded', value: 'Hin buufamne' },
+      { lang: 'om', key: 'downloads.resume', value: 'Itti fufi' },
+      { lang: 'om', key: 'downloads.delete', value: 'Haquu' },
+      { lang: 'om', key: 'downloads.offlineAvailable', value: 'Offline jira' },
+      { lang: 'om', key: 'downloads.onlineRequired', value: 'Interneetii barbaachisa' },
+      { lang: 'om', key: 'downloads.empty', value: 'Buufanni hin jiru.' },
+      { lang: 'om', key: 'downloads.emptyDesc', value: 'Boqonnaa yookaan kitaaba buufadhu offline dubbisuuf.' },
+    ];
+
+    // Bulk create translations
+    const result = await base44.asServiceRole.entities.LocaleStrings.bulkCreate(translations);
+
+    return Response.json({ 
+      success: true, 
+      created: result.length,
+      message: `Seeded ${result.length} locale strings (English + Oromo)` 
+    });
+  } catch (error) {
+    console.error('Seed error:', error);
+    return Response.json({ error: error.message }, { status: 500 });
+  }
+});

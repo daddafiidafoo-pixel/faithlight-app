@@ -1,0 +1,35 @@
+{
+  "name": "PrayerPostFlag",
+  "type": "object",
+  "properties": {
+    "prayer_post_id": {
+      "type": "string",
+      "description": "Reference to the prayer post being reported"
+    },
+    "reported_by_email": {
+      "type": "string",
+      "description": "Email of the user reporting"
+    },
+    "reason": {
+      "type": "string",
+      "enum": ["Inappropriate content", "Harassment", "Spam", "Other"],
+      "description": "Reason for the report"
+    },
+    "content_preview": {
+      "type": "string",
+      "description": "Preview of the flagged content"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "approved", "rejected"],
+      "default": "pending",
+      "description": "Moderation status"
+    },
+    "resolved_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the report was resolved"
+    }
+  },
+  "required": ["prayer_post_id", "reported_by_email", "reason", "content_preview"]
+}

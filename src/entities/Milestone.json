@@ -1,0 +1,38 @@
+{
+  "name": "Milestone",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User's email"
+    },
+    "streak_type": {
+      "type": "string",
+      "enum": ["prayer", "bible_study"],
+      "description": "Type of streak"
+    },
+    "milestone_day": {
+      "type": "number",
+      "description": "Day count at milestone (7, 14, 30, 60, 100)"
+    },
+    "milestone_name": {
+      "type": "string",
+      "description": "Name of milestone (e.g., 'Week Warrior', '30-Day Devotee')"
+    },
+    "reward_points": {
+      "type": "number",
+      "description": "Points awarded for this milestone"
+    },
+    "unlocked_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When milestone was unlocked"
+    },
+    "is_notified": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether user was notified"
+    }
+  },
+  "required": ["user_email", "streak_type", "milestone_day", "milestone_name"]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "UserHighlight",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user who highlighted"
+    },
+    "book_id": {
+      "type": "string",
+      "description": "Bible book ID (e.g. PSA, JHN)"
+    },
+    "book_name": {
+      "type": "string",
+      "description": "Display name of the book"
+    },
+    "chapter": {
+      "type": "number",
+      "description": "Chapter number"
+    },
+    "verse_number": {
+      "type": "number",
+      "description": "Verse number"
+    },
+    "verse_text": {
+      "type": "string",
+      "description": "The verse text"
+    },
+    "reference_text": {
+      "type": "string",
+      "description": "Formatted reference (e.g. John 3:16)"
+    },
+    "color": {
+      "type": "string",
+      "enum": [
+        "yellow",
+        "green",
+        "blue",
+        "pink",
+        "purple"
+      ],
+      "default": "yellow",
+      "description": "Highlight color"
+    },
+    "language": {
+      "type": "string",
+      "default": "en",
+      "description": "Language code"
+    }
+  },
+  "required": [
+    "user_email",
+    "book_id",
+    "book_name",
+    "chapter",
+    "verse_number",
+    "verse_text",
+    "reference_text"
+  ]
+}

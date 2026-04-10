@@ -1,0 +1,48 @@
+{
+  "name": "UserQuizAttempt",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User's email"
+    },
+    "quiz_id": {
+      "type": "string",
+      "description": "Reference to BibleQuiz"
+    },
+    "quiz_title": {
+      "type": "string",
+      "description": "Quiz title at time of attempt"
+    },
+    "score": {
+      "type": "number",
+      "description": "Number of correct answers"
+    },
+    "total_questions": {
+      "type": "number",
+      "description": "Total questions in quiz"
+    },
+    "percentage": {
+      "type": "number",
+      "description": "Score percentage (0-100)"
+    },
+    "answers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question_id": {"type": "string"},
+          "selected_answer": {"type": "number"},
+          "correct_answer": {"type": "number"},
+          "is_correct": {"type": "boolean"}
+        }
+      },
+      "description": "User's answers"
+    },
+    "completion_time_seconds": {
+      "type": "number",
+      "description": "Time taken to complete quiz"
+    }
+  },
+  "required": ["user_email", "quiz_id", "score", "total_questions"]
+}

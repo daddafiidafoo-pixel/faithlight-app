@@ -1,0 +1,36 @@
+{
+  "name": "ReadingPlan",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Plan title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Plan description"
+    },
+    "duration_days": {
+      "type": "number",
+      "description": "Total days in plan"
+    },
+    "daily_chapters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "day": { "type": "number" },
+          "book": { "type": "string" },
+          "chapter": { "type": "number" }
+        }
+      },
+      "description": "Daily reading assignments"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether plan is available"
+    }
+  },
+  "required": ["title", "duration_days", "daily_chapters"]
+}

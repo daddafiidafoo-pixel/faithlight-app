@@ -1,0 +1,59 @@
+{
+  "name": "PinnedPrayerRequest",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user who posted the prayer request"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "Display name of the user"
+    },
+    "title": {
+      "type": "string",
+      "description": "Prayer request title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Full prayer request text"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "prayed_for"
+      ],
+      "default": "active",
+      "description": "Whether the request is active or marked as prayed for"
+    },
+    "comment_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of comments on this request"
+    },
+    "is_pinned": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the request is pinned"
+    },
+    "location_lat": {
+      "type": "number",
+      "description": "Latitude of prayer request origin"
+    },
+    "location_lng": {
+      "type": "number",
+      "description": "Longitude of prayer request origin"
+    },
+    "location_name": {
+      "type": "string",
+      "description": "Human-readable location name"
+    }
+  },
+  "required": [
+    "user_email",
+    "user_name",
+    "title",
+    "description"
+  ]
+}

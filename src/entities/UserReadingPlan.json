@@ -1,0 +1,50 @@
+{
+  "name": "UserReadingPlan",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user who created the plan"
+    },
+    "title": {
+      "type": "string",
+      "description": "Plan title"
+    },
+    "goal": {
+      "type": "string",
+      "enum": ["encouragement", "prayer", "anxiety_peace", "faith_growth", "family", "healing"],
+      "description": "User's spiritual goal"
+    },
+    "duration_days": {
+      "type": "number",
+      "enum": [7, 14, 30],
+      "description": "Plan duration in days"
+    },
+    "plan_days": {
+      "type": "array",
+      "description": "Daily readings for the plan",
+      "items": {
+        "type": "object",
+        "properties": {
+          "day": { "type": "number" },
+          "book_id": { "type": "string" },
+          "book_name": { "type": "string" },
+          "chapter": { "type": "number" },
+          "reference": { "type": "string" },
+          "reflection_prompt": { "type": "string" }
+        }
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the plan was created"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the plan is currently active"
+    }
+  },
+  "required": ["user_email", "title", "goal", "duration_days", "plan_days"]
+}

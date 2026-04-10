@@ -1,0 +1,51 @@
+{
+  "name": "OfflineLibraryItem",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User's email"
+    },
+    "item_type": {
+      "type": "string",
+      "enum": ["bible_passage", "reading_plan", "ai_insight"],
+      "description": "Type of offline content"
+    },
+    "title": {
+      "type": "string",
+      "description": "Item title"
+    },
+    "reference": {
+      "type": "string",
+      "description": "Bible reference or plan identifier"
+    },
+    "content": {
+      "type": "string",
+      "description": "Full content or JSON data"
+    },
+    "file_url": {
+      "type": "string",
+      "description": "Download URL if stored externally"
+    },
+    "file_size_kb": {
+      "type": "number",
+      "description": "File size in KB"
+    },
+    "downloaded_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When downloaded"
+    },
+    "is_pinned": {
+      "type": "boolean",
+      "default": false,
+      "description": "User's favorite items"
+    },
+    "language": {
+      "type": "string",
+      "default": "en",
+      "description": "Content language code"
+    }
+  },
+  "required": ["user_email", "item_type", "title"]
+}

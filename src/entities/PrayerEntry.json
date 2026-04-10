@@ -1,0 +1,57 @@
+{
+  "name": "PrayerEntry",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user who created the prayer"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title/topic of the prayer"
+    },
+    "content": {
+      "type": "string",
+      "description": "Full prayer text"
+    },
+    "prayer_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date when prayer was recorded"
+    },
+    "is_answered": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether this prayer has been answered"
+    },
+    "answered_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date when prayer was marked as answered"
+    },
+    "answered_reflection": {
+      "type": "string",
+      "description": "User's reflection on how the prayer was answered"
+    },
+    "linked_verses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "reference": { "type": "string" },
+          "book_id": { "type": "string" },
+          "chapter": { "type": "number" },
+          "verse": { "type": "number" }
+        }
+      },
+      "default": [],
+      "description": "Bible verses linked to this prayer"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["health", "family", "faith", "work", "relationships", "gratitude", "other"],
+      "default": "other"
+    }
+  },
+  "required": ["user_email", "title", "content", "prayer_date"]
+}

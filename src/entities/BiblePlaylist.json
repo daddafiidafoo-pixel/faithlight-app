@@ -1,0 +1,68 @@
+{
+  "name": "BiblePlaylist",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user who owns the playlist"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the playlist (e.g., Daily Devotion, Psalms Collection)"
+    },
+    "description": {
+      "type": "string",
+      "description": "Optional description of the playlist"
+    },
+    "verses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "verse_id": {
+            "type": "string",
+            "description": "Unique verse identifier (e.g., JHN.3.16)"
+          },
+          "book_id": {
+            "type": "string",
+            "description": "Bible book ID"
+          },
+          "book_name": {
+            "type": "string",
+            "description": "Display name of the book"
+          },
+          "chapter": {
+            "type": "number",
+            "description": "Chapter number"
+          },
+          "verse_number": {
+            "type": "number",
+            "description": "Verse number"
+          },
+          "reference": {
+            "type": "string",
+            "description": "Formatted reference (e.g., John 3:16)"
+          },
+          "language": {
+            "type": "string",
+            "description": "Language code (en, om, hae, gaz, am, sw, ti)"
+          }
+        },
+        "required": ["verse_id", "book_id", "chapter", "verse_number", "reference"]
+      },
+      "default": [],
+      "description": "Array of verses in the playlist"
+    },
+    "is_public": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the playlist is public or private"
+    },
+    "order_index": {
+      "type": "number",
+      "default": 0,
+      "description": "Display order for playlists"
+    }
+  },
+  "required": ["user_email", "name"]
+}

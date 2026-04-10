@@ -1,0 +1,38 @@
+{
+  "name": "PrayerCircle",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the prayer circle"
+    },
+    "description": {
+      "type": "string",
+      "description": "Optional description of the circle's purpose"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "Email of circle creator (admin)"
+    },
+    "created_by_name": {
+      "type": "string",
+      "description": "Display name of creator"
+    },
+    "member_count": {
+      "type": "number",
+      "default": 1,
+      "description": "Number of active members"
+    },
+    "post_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Total prayer requests posted"
+    },
+    "is_public": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether circle is discoverable"
+    }
+  },
+  "required": ["name", "created_by", "created_by_name"]
+}

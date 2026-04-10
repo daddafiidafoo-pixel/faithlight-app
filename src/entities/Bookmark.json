@@ -1,0 +1,41 @@
+{
+  "name": "Bookmark",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the user who bookmarked"
+    },
+    "content_type": {
+      "type": "string",
+      "enum": ["study_plan", "passage", "sermon", "prayer"],
+      "description": "Type of bookmarked content"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the bookmarked content"
+    },
+    "content": {
+      "type": "string",
+      "description": "Full content (JSON stringified for complex objects)"
+    },
+    "summary": {
+      "type": "string",
+      "description": "Brief summary for quick preview"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "User-defined tags for organization"
+    },
+    "is_favorite": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether marked as favorite"
+    }
+  },
+  "required": ["user_email", "content_type", "title", "content"]
+}
