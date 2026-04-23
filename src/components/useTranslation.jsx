@@ -1,10 +1,10 @@
 import { useEffect, useState, useRef } from 'react';
 import { base44 } from '@/api/base44Client';
-import { OROMO_GLOSSARY } from '@/functions/translations';
+import { t as globalT } from '@/lib/translations';
 
 /**
  * Hook to get translations for current language
- * Falls back to Oromo glossary for English keys, then English key itself
+ * Falls back to translations for English keys, then English key itself
  */
 export function useTranslation(languageCode = 'en') {
   const [translations, setTranslations] = useState({});
@@ -73,19 +73,12 @@ export function useTranslation(languageCode = 'en') {
     });
   }, [languageCode]);
 
-  const t = (key, defaultValue) => {
-    // Direct match in translations
-    if (translations[key]) {
+    const t = (key, defaultValue) => {
+    if (translations?.[key]) {
       return translations[key];
     }
 
-    // Fallback to Oromo glossary if language is Oromo
-    if (languageCode === 'om' && OROMO_GLOSSARY[key]) {
-      return OROMO_GLOSSARY[key];
-    }
-
-    // Return provided default or the key itself
-    return defaultValue || key;
+    return globalT(languageCode, key) || defaultValue || key;
   };
 
   return {
@@ -97,11 +90,8 @@ export function useTranslation(languageCode = 'en') {
 }
 
 /**
- * Get a single translation key synchronously (if available)
+ * Get a single translation key synchronously
  */
 export function translateKey(key, languageCode = 'en') {
-  if (languageCode === 'om' && OROMO_GLOSSARY[key]) {
-    return OROMO_GLOSSARY[key];
-  }
-  return key;
+  return globalT(languageCode, key) || key;
 }

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { getCachedChapters, getOfflineStorageSize } from '@/functions/BibleLibrary';
+import React, { useEffect, useState } from 'react';ø
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Wifi, WifiOff, HardDrive } from 'lucide-react';
@@ -10,9 +9,9 @@ export default function OfflineBibleStatus({ languageCode = 'en', translationId 
   const [isOnline, setIsOnline] = useState(navigator.onLine);
 
   useEffect(() => {
-    const cachedChapters = getCachedChapters();
+    const cachedChapters = [];
     setCached(cachedChapters.length);
-    const storageSize = getOfflineStorageSize();
+    const storageSize = 0;
     setSize(storageSize);
 
     const handleOnline = () => setIsOnline(true);

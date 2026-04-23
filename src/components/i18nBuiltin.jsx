@@ -1869,9 +1869,6 @@ export const BUILTIN = {
     'actions.share': 'Partager', 'actions.cancel': 'Annuler', 'actions.close': 'Fermer',
     'actions.download': 'Télécharger', 'actions.edit': 'Modifier', 'actions.delete': 'Supprimer',
     'topics.joy': 'Joie', 'topics.wisdom': 'Sagesse',
-    'audio.nowPlaying': 'En cours de lecture', 'audio.play': 'Lire', 'audio.pause': 'Pause',
-    'audio.playbackSpeed': 'Vitesse de lecture', 'audio.repeat': 'Répéter',
-    'prayer.answeredPrayer': 'Prière exaucée', 'prayer.markAnswered': 'Marquer comme exaucée',
     'prayer.prayerReminder': 'Rappel de prière', 'prayer.shareRequest': 'Partager une demande',
     'errors.pageNotFound': 'Page introuvable', 'errors.networkError': 'Erreur réseau. Vérifiez votre connexion.',
     'streak.current': 'Jours consécutifs', 'streak.nextMilestone': 'Prochain jalon',
@@ -1988,4 +1985,26 @@ export const BUILTIN = {
     'supportFaithLight': 'Apoiar FaithLight',
     'premium.upgrade': 'Atualizar para Premium', 'premium.cancelAnytime': 'Cancele a qualquer momento.',
   },
-};
+    "om": {
+  "home.title": "Fuula jalqabaa",
+  "home.continueReading": "Itti fufi dubbisuu",
+  "home.popularTopics": "Mata dureewwan beekamoo",
+
+  "topics.hope": "Abdii",
+  "topics.love": "Jaalala",
+  "topics.faith": "Amantii",
+  "topics.wisdom": "Ogummaa",
+  "topics.joy": "Gammachuu",
+
+  "prayer.title": "Kadhannaa",
+  "prayer.prayerReminder": "Yaadachiisa kadhannaa",
+
+  "settings.language": "Afaan",
+  "settings.theme": "Bifa",
+
+  "actions.read": "Dubbisi",
+  "actions.listen": "Dhaggeeffadhu",
+  "actions.save": "Kuusi"
+}
+   
+}

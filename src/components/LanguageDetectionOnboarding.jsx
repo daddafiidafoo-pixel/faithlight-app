@@ -10,7 +10,7 @@ import {
   detectDeviceLanguage,
   getSuggestedLanguagesForCountry,
   COUNTRY_LANGUAGE_MAP,
-} from '@/functions/translations';
+} from '@/lib/translations';
 
 export default function LanguageDetectionOnboarding({ userId, onComplete }) {
   const [detectedLanguage, setDetectedLanguage] = useState('en');

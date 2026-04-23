@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { HardDrive, Trash2, RefreshCw } from 'lucide-react';
-import offlineAudioStorage from '@/functions/offlineAudioStorage';
+import * as offlineAudioStorage from '@/functions/offlineAudioStorage';
 import { toast } from 'sonner';
 
 export default function OfflineStorageManager() {
